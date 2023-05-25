@@ -1,4 +1,5 @@
-
+font-family: 'Archivo', sans-serif;
+font-family: 'Open Sans', sans-serif;
 /********************************************
             TABLE OF CONTENTS
 ----------------------------------------
@@ -83,6 +84,7 @@ select {
 body {
 	line-height: 1.5;
 	min-height: 100vh;
+    font-family: 'Open Sans', sans-serif; /* Trish added 052523 11am */
 }
 /* Make images easier to work with */
 img {
@@ -103,19 +105,51 @@ root {
 
 /* Typography
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-    /* NOTE THESE OVERALL STYLES CAN BE PLACED ELSEWHERE I NEED FOR TYPE STYLING NOW */
-    body {
-        font-family: 'Open Sans', sans-serif;
-        line-height: 1.5;
-        margin: 1rem;
-        padding: 1rem;;
-    }
-    h1 { font-size: 4rem;}
-    h2 { font-size: 3.5rem;}
-    h3 { font-size: 3rem;}
-    h4 { font-size: 2.5rem;}
-    h5 { font-size: 2rem;}
-    h6 { font-size: 1.5rem;}
+/* NOTE THESE OVERALL STYLES CAN BE PLACED ELSEWHERE I NEED FOR TYPE STYLING NOW */
+#typography {
+
+    margin: 1rem;
+    padding: 1rem;
+}
+/* Heading styles */
+h1 { font-size: 4rem;}
+h2 { font-size: 3.5rem;}
+h3 { font-size: 3rem;}
+h4 { font-size: 2.5rem;}
+h5 { font-size: 2rem;}
+h6 { font-size: 1.5rem;}
+
+/* Font style/weight variations */
+p.fontStyle300 {font-weight: 300;}
+p.fontStyle300i {font-weight: 300; font-style: italic;}
+p.fontStyle400 {font-weight: 400;}
+p.fontStyle400i {font-weight: 400; font-style: italic;}
+p.fontStyle500 {font-weight: 500;}
+p.fontStyle500i {font-weight: 500; font-style: italic;}
+p.fontStyle600 {font-weight: 600;}
+p.fontStyle700 {font-weight: 700;}
+p.fontStyle800 {font-weight: 800;}
+
+
+/* TRISH: REMOVED SOME DEFAULT STYLES FOR NOW - put everything in lists for now so need to remove disc using revert to keep using it without bullet on rest of content. Probably need to change this so no confilicts later. */
+
+/* definition list */
+li.lists {
+    list-style-type: revert;
+    list-style-position: inside;
+}
+li {
+    list-style-type: none;
+}
+dt {
+    font-weight: bold;
+    text-decoration: underline;
+  }
+dd {
+    margin: 0;
+    padding: 0 0 0.5em 0;
+  }
+
 
 /* Spacing
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
