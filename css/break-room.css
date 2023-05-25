@@ -1,0 +1,215 @@
+/********************************************
+            TABLE OF CONTENTS
+----------------------------------------
+    0. Project details
+    1. CSS Reset
+    2. Global styles
+    3. Elements
+        -Typography
+        -Spacing
+        -Links
+        -Buttons
+        -Grid System
+        -Forms
+        -Lists
+        -Tables
+        -Images
+        -Helpers
+    4. Components
+        -Navigation
+        -Icons
+        -No Print
+        -
+    5.  Media queries
+ 
+   
+********************************************/
+
+/********************************************
+    0. Project details 
+--------------------------------------------
+    Author: Group 3
+    Project: 644 Final Project
+    Ver: 1.0
+    Last Updated: 5/24/2023
+********************************************/
+
+/********************************************
+    1. CSS Reset
+********************************************/
+
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+figure,
+blockquote,
+ol, 
+ul, 
+li,
+fieldset, 
+form, 
+label, 
+legend,
+table, 
+tr, 
+th, 
+td,
+dl,
+dd,
+input,
+button,
+textarea,
+select {
+    margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 10px;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* set up the body */
+body {
+	line-height: 1.5;
+	min-height: 100vh;
+}
+/* Make images easier to work with */
+img {
+  max-width: 100%;
+  display: block;
+}
+/********************************************
+    2. Global styles
+********************************************/
+root {
+	/* ************ */
+}
+
+/********************************************
+    3. Elements
+********************************************/
+
+/* Typography
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+/* Spacing
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+/* Links
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+/* Buttons
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+/* Grid System
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.room {
+    position: relative;
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 1.25rem;
+}
+.row {
+    display: flex;
+    flex-direction: column;
+}
+.column-one, 
+.column-two,
+.column-three,
+.column-four,
+.column-five,
+.column-six,
+.column-seven,
+.column-eight,
+.column-nine,
+.column-ten,
+.column-eleven,
+.column-twelve {
+    width: 100%;
+}
+/* For devices larger than 400px */
+@media (min-width: 400px) {
+    .room {
+      width: 90%;
+    }
+}
+/* For devices larger than 550px */
+@media (min-width: 550px) {
+    .room {
+      width: 85%; 
+    }
+    .row {
+        flex-direction: row;
+    }
+    .column-one             {flex: 1} 
+    .column-two             {flex: 2} 
+    .column-three           {flex: 3} 
+    .column-four            {flex: 4} 
+    .column-five            {flex: 5} 
+    .column-six             {flex: 6} 
+    .column-seven           {flex: 7} 
+    .column-eight           {flex: 8} 
+    .column-nine            {flex: 9} 
+    .column-ten             {flex: 10} 
+    .column-eleven          {flex: 11} 
+    .column-twelve          {flex: 100%} 
+}    
+/* Forms
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+/* Lists
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+/* Tables
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+/* Images
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+/* Helpers
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+/********************************************
+    4. Components
+********************************************/
+
+/* Navigation
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+/* Icons
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+/* No Print
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+
+/********************************************
+    5. Components
+********************************************/
+
+/* Mobile */
+@media (min-width: 400px) {}
+
+/* Our Grid System is activated */
+@media (min-width: 550px) {}
+
+/* Larger than tablet */
+@media (min-width: 750px) {}
+
+/* Desktop */
+@media (min-width: 1000px) {}
+
+/* Very Large Devices */
+@media (min-width: 1200px) {}
