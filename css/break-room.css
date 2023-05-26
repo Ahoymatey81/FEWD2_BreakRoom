@@ -272,6 +272,34 @@ dd {
     }
 }
 /* For devices larger than 550px */
+.column-one, 
+.column-two,
+.column-three,
+.column-four,
+.column-five,
+.column-six,
+.column-seven,
+.column-eight,
+.column-nine,
+.column-ten,
+.column-eleven,
+.column-twelve {
+    margin-left: 3%;
+}
+.column-one:first-child, 
+.column-two:first-child,
+.column-three:first-child,
+.column-four:first-child,
+.column-five:first-child,
+.column-six:first-child,
+.column-seven:first-child,
+.column-eight:first-child,
+.column-nine:first-child,
+.column-ten:first-child,
+.column-eleven:first-child,
+.column-twelve:first-child {
+    margin-left: 0;
+}
 @media (min-width: 550px) {
     .room {
       width: 85%; 
@@ -290,7 +318,7 @@ dd {
     .column-nine            {flex: 9} 
     .column-ten             {flex: 10} 
     .column-eleven          {flex: 11} 
-    .column-twelve          {flex: 100%} 
+    .column-twelve          {flex: 100%; margin-left: 0;} 
 }    
 /* Forms
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
