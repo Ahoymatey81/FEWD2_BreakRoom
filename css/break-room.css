@@ -154,6 +154,76 @@ dd {
 
 /* Colors
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* Dark and light */
+
+.dark               { color: #050500;}
+.bg-dark            { background-color: #050500;}
+.bc-dark            { border-color: #050500;}
+.light              { color: #fcfcfa;}
+.bg-light           { background-color: #fcfcfa;}
+.bc-light           { border-color: #fcfcfa;}
+.grey               { color: #858583;}
+.bg-grey            { background-color: #858583;}
+.bc-grey            { border-color: #858583;}
+
+/* Hazard colors */
+
+.warning            { color: #f20505;}
+.bg-warning         { background-color: #f20505}
+.bc-warning         { border-color: #f20505;}
+.hazard             { color: #f2ea05;}
+.bg-hazard          { background-color: #f2ea05;}
+.bc-hazard          { border-color: #f2ea05;}
+
+/* Primary color palet */
+
+.blue               { color: #063970;}
+.bg-blue            { background-color: #063970;}
+.bc-blue            { border-color: #063970;}
+.green              { color: #0a6118;}
+.bg-green           { background-color: #0a6118;}
+.bc-green           { border-color: #0a6118;}
+.red                { color: #610a11;}
+.bg-red             { background-color: #610a11;}
+.bc-red             { border-color: #610a11;}
+.purple             { color: #4a0a61;}
+.bg-purple          { background-color: #4a0a61;}
+.bc-purple          { border-color: #4a0a61;}
+.orange             { color: #73240b;}
+.bg-orange          { background-color: #73240b;}
+.bc-orange          { border-color: #73240b;}
+.yellow             { color: #a39e10;}
+.bg-yellow          { background-color: #a39e10;}
+.bc-yellow          { border-color: #a39e10;}
+.pink               { color: #a12596;}
+.bg-pink            { background-color: #a12596;}
+.bc-pink            { border-color: #a12596;}
+
+/* Pastel color palet */
+
+.p-blue             { color: #9bf6ff;}
+.bg-p-blue          { background-color: #9bf6ff;}
+.bc-p-blue          { border-color: #9bf6ff;}
+.p-green            { color: #caffbf;}
+.bg-p-green         { background-color: #caffbf;}
+.bc-p-green         { border-color: #caffbf;}
+.p-red              { color: #ffadad;}
+.bg-p-red           { background-color: #ffadad;}
+.bc-p-red           { border-color: #ffadad;}
+.p-purple           { color: #bdb2ff;}
+.bg-p-purple        { background-color: #bdb2ff;}
+.bc-p-purple        { border-color: #bdb2ff;}
+.p-orange           { color: #ffd6a5;}
+.bg-p-orange        { background-color: #ffd6a5;}
+.bc-p-orange        { border-color: #ffd6a5;}
+.p-yellow           { color: #fdffb6;}
+.bg-p-yellow        { background-color: #fdffb6;}
+.bc-p-yellow        { border-color: #fdffb6;}
+.p-pink             { color: #ffc6ff;}
+.bg-p-pink          { background-color: #ffc6ff;}
+.bc-p-pink          { border-color: #ffc6ff;}
+
+
 
 /* Links
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -170,6 +240,12 @@ dd {
     max-width: 960px;
     margin: 0 auto;
     padding: 0 1.25rem;
+}
+.full-room {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 0;
 }
 .row {
     display: flex;
@@ -230,6 +306,11 @@ dd {
 
 /* Images
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
 
 /* Helpers
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
