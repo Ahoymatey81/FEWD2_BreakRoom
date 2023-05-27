@@ -48,97 +48,196 @@
 
     <!-- Typography
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <section id="typography">
     <h2>Typography</h2>
 
-  <p>All type is Open Sans (a Google font) set in rems for responsive sizing and inclusive and accessible scaling. </p>
-  <hr>
-  <h3>Font styles</h3>
-  Light 300
-  Light 300 Italic
-  Regular 400
-  Medium 500
-  Medium 500 Italic
-  Semibold 600
-  Bold 700
-  <hr>
-  <h3>Standard Headings</h3>
-  <p>The family of headings creates the hierarchy to help users, search engines, and screen readers parse and understand the site content. <!--Headings have specific letter-spacing, line-height, and margins.--></p>
+    <p>All type is Open Sans (a Google font) set in rems for responsive sizing and inclusive and accessible scaling. </p>
 
-  <h1>h1 Heading</h1>
-  <h2>h2 Heading</h2>
-  <h3>h3 Heading</h3>
-  <h4>h4 Heading</h4>
-  <h5>h5 Heading</h5>
-  <h6>h6 Heading</h6>
-  <hr>
+    <h3>Font styles</h3>
+    <p>The base font weight is set to Regular. Here are all the classes of font weights you can use and the names of their classes. </p>
+    <div class="font-styles">
+      <div class="row">
+        <p class="column-three fw-light">Light class: .fw-light-it</p>
+        <p class="column-three .fw-regular">Regular class: .fw-regular</p>
+        <p class="column-three .fw-medium">Medium class .fw-medium</p>
+      </div> 
+      <div class="row">
+        <p class="column-three fw-light-it">Light Italic class: .fw-light-it</p>
+        <p class="column-three fw-regular-it">Regular Italic: class .fw-regular-it</p>
+        <p class="column-three .fw-medium-it">Medium Italic: class .fw-medium-it</p>
+      </div>     
+      <div class="row">
+        <p class="column-three .fw-semi-bold">Semi-bold class .fw-semi-bold</p>
+        <p class="column-three .fw-bold ">Bold: class .fw-bold </p>
+        <p class="column-three .fw-bolder">Extra Bold: class .fw-bolder</p>
+      </div>          
+    </div>
 
-  <h3>Base Paragraph</h3>
-  <p>The default body text font size is set to 1rem with a line height of 1.5, equivalent in most browsers to font size value of 16px with a line height of 24px.</p><br>
-  <h4>Paragraph Example</h4>
-  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint dolorum eveniet ad reiciendis laboriosam. Atque voluptate blanditiis excepturi eveniet hic sint consequatur doloremque. Reprehenderit nulla sed dolore impedit architecto fuga. Exercitationem architecto culpa nihil ipsam non ratione officiis assumenda dolores delectus itaque? Commodi odit cum fugit tenetur, reprehenderit quisquam sed. Quisquam officiis vel vitae doloremque mollitia nemo corporis explicabo quos? Voluptas, alias vitae quia, similique pariatur porro eius officia nam sed id et facere! Magni ducimus ex sunt labore. Accusantium perspiciatis vero commodi iure rem, deserunt illum nam perferendis tempora.</p>
-  <hr>
+    <hr>
+    <h3>Standard Headings</h3>
+    <p>The family of headings creates the hierarchy to help users, search engines, and screen readers parse and understand the site content. Heading tags have specific letter-spacing, line-height, and margins applied so no need to use classes unless you want to override those.</p>
+  
+    <h1>h1 Heading</h1>
+    <h2>h2 Heading</h2>
+    <h3>h3 Heading</h3>
+    <h4>h4 Heading</h4>
+    <h5>h5 Heading</h5>
+    <h6>h6 Heading</h6>
+    <hr>
+  
+    <h3>Paragraph</h3>
+    <p>The default body text font size is set to 1rem with a line height of 1.5, equivalent in most browsers to font size value of 16px with a line height of 24px. It is important to keep in mind how wide your paragraph is on larger screens; 45 to 80 characters (per line) is the ideal line length for text on websites to assist all viewers and make your content readible and accessible for those with vision issues.</p><br>
+    <h4>Base Paragraph Example</h4>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint dolorum eveniet ad reiciendis laboriosam. Atque voluptate blanditiis excepturi eveniet hic sint consequatur doloremque. Reprehenderit nulla sed dolore impedit architecto fuga. Exercitationem architecto culpa nihil ipsam non ratione officiis assumenda dolores delectus itaque? Commodi odit cum fugit tenetur, reprehenderit quisquam sed. Quisquam officiis vel vitae doloremque mollitia nemo corporis explicabo quos? Voluptas, alias vitae quia, similique pariatur porro eius officia nam sed id et facere! Magni ducimus ex sunt labore. Accusantium perspiciatis vero commodi iure rem, deserunt illum nam perferendis tempora.</p>
+    <h4>Paragraph With Spacing</h4>
+    <p>Use the class .space-p to space out letters and lines in a paragraph.</p>
+    <p class="space-p">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint dolorum eveniet ad reiciendis laboriosam. Atque voluptate blanditiis excepturi eveniet hic sint consequatur doloremque. Reprehenderit nulla sed dolore impedit architecto fuga. Exercitationem architecto culpa nihil ipsam non ratione officiis assumenda dolores delectus itaque? Commodi odit cum fugit tenetur, reprehenderit quisquam sed. Quisquam officiis vel vitae doloremque mollitia nemo corporis explicabo quos? Voluptas, alias vitae quia, similique pariatur porro eius officia nam sed id et facere! Magni ducimus ex sunt labore. Accusantium perspiciatis vero commodi iure rem, deserunt illum nam perferendis tempora.</p>
+    <hr>
+    <h3>Text Alignment</h3>
+    <p>Aligned Left: Use the class .t-left to align the paragraph to the left. This is commonly used for the maximum readibility.</p>
+    <p class=".t-left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, impedit, fuga velit vitae, nemo quam rem commodi ea beatae vero cupiditate quod et distinctio inventore aliquid. Voluptates ipsa quaerat odit!</p>
+    <p>Aligned Center: Use the class .t-center to center text in the paragraph.</p>
+    <p class=".t-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, impedit, fuga velit vitae, nemo quam rem commodi ea beatae vero cupiditate quod et distinctio inventore aliquid. Voluptates ipsa quaerat odit!</p>
+    <p>Aligned Right: Use the class .t-right to align text to the right in the paragraph. Readibility can be an issue so use with care.</p>
+    <p class=".t-right">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, impedit, fuga velit vitae, nemo quam rem commodi ea beatae vero cupiditate quod et distinctio inventore aliquid. Voluptates ipsa quaerat odit!</p>
+    <hr>
+    <h3>Text Elements</h3>
+    <p> Commonly used text elements include bold, strong, italic, emphasized, marked, small, deleted and inserted text. You can use the regular HTML tag names shown below for these and they will have the standard  settings that web users are familiar with. </p>
+    
+    <div class="text-elements">
+      <div class="row">
+        <p class="column-three bold"><b>bold </b>use for presentation purposes to draw attention</p>
+        <p class="column-three strong"> <strong>strong </strong>similar to bold more commonly used than the bold tag</p>
+        <p class="column-three em"><em>em </em>specifies the stress emphasis of its contents</p>
+      </div>
+      <div class="row">
+        <p class="column-three mark"><mark>mark </mark>  use the mark tag to highlight text.</p>
+        <p class="column-three small"><small>small </small> text meant to be treated as fine print</p>
+        <p class="column-three del"><del>del </del> for text meant to be treated as deleted text.</p>
+      </div>
+      <div class="row">
+        <p class="column-three ins"><ins>ins </ins> line of text meant to be treated as an addition to the document</p>
+        <p class="column-three cite"><cite>cite </cite>text that is a citation from another document</p>
+        <p class="column-three code"><code>code</code> computer code displayed in the browser's default monospace font.</p>
+      </div>
+      <div class="row">
+        <p class="column-three var"><var>var </var>a programming or math variable displayed in italic by the browser</p>
+        <p class="column-three u"><u>u </u>line of text will render as underlined</p>
+        <p class="column-three abbr"><abbr>abbr </abbr>defines an abbreviation or an acronym, like "HTML" or "CSS"</p>
+      </div>   
+    </div>
 
-  <h3>Text Elements</h3>
-  <p> Commonly used text elements include bold, strong, italic, emphasized, marked, small, deleted and inserted text.</p>
-  <ul>
-  <li><b>Bold text: </b>used for presentation purposes to draw attention</li>
-  <li><strong>Important text: </strong>similar to bold more commonly used than the bold tag</li>
-  <li><i>Italic text: </i>also for presentation purposes to indicate a mood or different quality</li>
-  <li><em>Emphasized text</em>specifies the stress emphasis of its contents</li>
-  <li><mark>Marked text: </mark>text which is marked or highlighted for reference or notation</li>
-  <li><small>Small Text: </small>smaller text like copyright and other side-comments but it is usually done with CSS instead.</li>
-  <li><del>Deleted text: </del>text that has been deleted from a document usually displayed with a line through deleted text</li>
-  <li><ins>Inserted text: </ins>defines a text that has been inserted into a document</li>
-  <li><cite>Cite: </cite>defines the title of a creative work</li>
-  <li><code>Code: </code> defines computer code displayed in the browser's default monospace font.</li>
-  <li><var>Var: </var> defines a variable in programming or in a mathematical expression usually displayed in italic</li>
-  </ul>
-  <hr>
-  <h3>Element Examples</h3>
-  <p>You can use the mark tag to <mark>highlight</mark> text.</p>
-  <p><del>This line of text is meant to be treated as deleted text.</del></p>
-  <p><s>This line of text is meant to be treated as no longer accurate.</s></p>
-  <p><ins>This line of text is meant to be treated as an addition to the document.</ins></p>
-  <p><u>This line of text will render as underlined.</u></p>
-  <p><small>This line of text is meant to be treated as fine print.</small></p>
-  <p><strong>This line rendered as bold text.</strong></p>
-  <p><em>This line rendered as italicized text.</em></p>
-  <hr>
+    <h3>Element Examples</h3>
+    <p>You can use the mark tag to <mark>highlight</mark> text.</p>
+    <p><del>This line of text is meant to be treated as deleted text.</del></p>
+  
+    <p><ins>This line of text is meant to be treated as an addition to the document.</ins></p>
 
-  <h3>Additional Text Elements</h3>
-  <ul>
-    <li><abbr>Abbr: </abbr>defines an abbreviation or an acronym, like "HTML" or "CSS"</li><address>Address</address>defines the contact information(email, phone, social media, etc.) for the author/owner of a document or an article, usually browsers render in italic, always with a line break before and after</li>
-    <li><blockquote>Blockquote: </blockquote>specifies a section that is quoted from another source which browser usually indent</li>
-    <li><li>Lists: </li>defines list item</li>
-    <li>
-      <ol>Ordered (numbered) list
-        <li>Item one</li>
-        <li>Item two</li>
-        <li>Item three</li>
-      </ol>
-    </li>
-    <li>
-      <br>
-      <ul>Unordered (bulleted) list
-        <li>Item one</li>
-        <li>Item two</li>
-        <li>Item three</li>
-      </ul>
-    </li>
-  </ul>
+    <p><small>This line of text is meant to be treated as fine print.</small></p>
+    <p><strong>This line rendered as bold text.</strong></p>
+    <p><em>This line rendered as em/emphasized text.</em></p>
+  
+    <h3>Additional Text Elements</h3>
+    
+    <address>address </address>defines the contact information (email, phone, social media, etc.) for the author/owner of a document or an article, usually browsers render in italic, always with a line break before and after
+      <blockquote>Blockquote </blockquote>specifies a section that is quoted from another source which browsers usually indent
+    <hr>
+  
+    <h3>Text Transformations</h3>
+    <div class="text-transform">
+      <p>Text transformations allow you a finer level of control for the display of the text. These changes are often used on headings.</p>
+      <div class="row">
+        <p class="column-three upper">class .upper: This transforms text to uppercase.</p>
+        <p class="column-three lower">class .lower: This text is transformed to uppercase.</p>
+        <p class="column-three caps">class .caps: This text is transformed to uppercase.</p>
+      </div>
+      </div>
+  
+    <hr>
+  </section>
+
+    <!-- Spacing
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <section id="spacing">
+    <h2>Spacing</h2>
+    Responsive-friendly margin or padding values can be added to an element or one of its sides. Includes support for individual properties, all properties, and vertical and horizontal properties. 
+    <h3>Margins</h3>
+    <div class="margins">
+    <div class="row">
+      <div class="column-one"><p>class name:</p></div>
+      <div class="column-one"><p>.m0</p></div>
+      <div class="column-three"><p>eliminates the margin by setting it to 0</p></div>
+    </div>
+    <div class="row">
+      <div class="column-one"><p>class name:</p></div>
+      <div class="column-one"><p>.m1</p></div>
+      <div class="column-three"><p>sets the margin to .25rem</p></div>
+    </div>
+    <div class="row">
+      <div class="column-one"><p>class name:</p></div>
+      <div class="column-one"><p>.m2</p></div>
+      <div class="column-three"><p>sets the margin to .5rem</p></div>
+    </div>
+    <div class="row">
+      <div class="column-one"><p>class name:</p></div>
+      <div class="column-one"><p>.m3</p></div>
+      <div class="column-three"><p>sets the margin to 1.0rem</p></div>
+    </div>
+    <div class="row">
+      <div class="column-one"><p>class name:</p></div>
+      <div class="column-one"><p>.m4</p></div>
+      <div class="column-three"><p>sets the margin to 1.5rem</p></div>
+    </div>
+    <div class="row">
+      <div class="column-one"><p>class name:</p></div>
+      <div class="column-one"><p>.m-auto</p></div>
+      <div class="column-three"><p>sets the margin to auto</p>
+      </div>
+    </div>
+
+  <h3>Padding</h3>
+    <div class="paddings"></div>
+    <div class="row">
+      <div class="column-one"><p>class name:</p></div>
+      <div class="column-one"><p>.p0</p></div>
+      <div class="column-three"><p>eliminates the padding by setting it to 0</p></div>
+    </div>
+    <div class="row">
+      <div class="column-one"><p>class name:</p></div>
+      <div class="column-one"><p>.p1</p></div>
+      <div class="column-three"><p>sets the padding to .25rem</p></div>
+    </div>
+    <div class="row">
+      <div class="column-one"><p>class name:</p></div>
+      <div class="column-one"><p>.p2</p></div>
+      <div class="column-three"><p>sets the padding to .5rem</p></div>
+    </div>
+    <div class="row">
+      <div class="column-one"><p>class name:</p></div>
+      <div class="column-one"><p>.p3</p></div>
+      <div class="column-three"><p>sets the padding to 1.0rem</p></div>
+    </div>
+    <div class="row">
+      <div class="column-one"><p>class name:</p></div>
+      <div class="column-one"><p>.p4</p></div>
+      <div class="column-three"><p>sets the padding to 1.5rem</p></div>
+    </div>
+  </div>
+  </section>
   <hr>
-
-  <h3>Text Transformations</h3>
-  <p class="uppercase" style="text-transform: uppercase;">This text is transformed to uppercase.</p>
-  <p class="lowercase" style="text-transform: lowercase;">This text is transformed to lowercase.</p>
-  <p class="capitalize" style="text-transform: capitalize;">This text is capitalized.</p>
-
+    <!-- Shadows
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <!-- style later if time and show examples -->
+  <section id="shadows"> 
+    <h2>Shadows</h2>
+    <p>Drop shadow styles can be used to help text or other element stand out from its background. Here are the classes to use for shadows:</p>
+    <p>.shadow-base</p>
+    <p>.shadows-xs</p>
+    <p>.shadows-sm</p>
+    <p>.shadows-md</p>
+    <p>.shadows-lg</p>
+  </section>
   <hr>
-  <h3>Text Alignment</h3>
-  <p style="text-align: left;">Aligned Left: Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, impedit, fuga velit vitae, nemo quam rem commodi ea beatae vero cupiditate quod et distinctio inventore aliquid. Voluptates ipsa quaerat odit!</p>
-  <p style="text-align: center;">Aligned Center: Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, impedit, fuga velit vitae, nemo quam rem commodi ea beatae vero cupiditate quod et distinctio inventore aliquid. Voluptates ipsa quaerat odit!</p>
-  <p style="text-align: right;">Aligned Right: Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, impedit, fuga velit vitae, nemo quam rem commodi ea beatae vero cupiditate quod et distinctio inventore aliquid. Voluptates ipsa quaerat odit!</p>
-
   <!-- Colors
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <section id="colors">
@@ -186,9 +285,9 @@
         
       </div>
       <div>
-        <h3>Pastele Color Palette</h3>
-        <p>Our pastele color palette is used by adding a class of .p-color: .p-blue, .p-green, .p-red, .p-purple, .p-orange, .p-yellow, and .p-pink.  Background color is added with the class .bg-p-color, for example: .bg-p-blue.  Border is added with the class .bc-p-color, for example: .bc-p-blue.</p>
-        <div class="exPastele-color">
+        <h3>Pastel Color Palette</h3>
+        <p>Our pastel color palette is used by adding a class of .p-color: .p-blue, .p-green, .p-red, .p-purple, .p-orange, .p-yellow, and .p-pink.  Background color is added with the class .bg-p-color, for example: .bg-p-blue.  Border is added with the class .bc-p-color, for example: .bc-p-blue.</p>
+        <div class="exPastel-color">
           <div class="row">
             <p class="column-three p-blue">Blue</p>
             <p class="column-three bg-p-blue">Blue</p>
