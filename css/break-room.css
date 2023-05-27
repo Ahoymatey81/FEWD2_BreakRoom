@@ -1,4 +1,4 @@
-
+/* font-family: 'Open Sans', sans-serif; */
 /********************************************
             TABLE OF CONTENTS
 ----------------------------------------
@@ -94,51 +94,91 @@ img {
 /********************************************
     2. Global styles
 ********************************************/
-root {
-	/* ************ */
-
-}
 
 /********************************************
     3. Elements
 ********************************************/
 
+
 /* Typography
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-
-/* NOTE THESE OVERALL STYLES CAN BE PLACED ELSEWHERE I NEED FOR TYPE STYLING NOW */
-#typography {
-
-    margin: 1rem;
-    padding: 1rem;
+/* FONT FAMILY */
+html {
+    font-family: 'Open Sans', sans-serif;
 }
+
 /* Heading styles */
-h1 { font-size: 4rem; margin: 1rem; padding-bottom: 1rem;}
-h2 { font-size: 3.5rem;}
-h3 { font-size: 3rem;}
-h4 { font-size: 2.5rem;}
-h5 { font-size: 2rem;}
-h6 { font-size: 1.5rem;}
+h1, h2, h3, h4, h5, h6 {
+    margin-top: 0;
+    margin-bottom: 2rem;
+    font-weight: 300; }
+  h1 { font-size: 4.0rem; line-height: 1.2;  letter-spacing: -.1rem; }
+  h2 { font-size: 3.5rem; line-height: 1.25; letter-spacing: -.1rem; }
+  h3 { font-size: 3.0rem; line-height: 1.3;  letter-spacing: -.1rem; }
+  h4 { font-size: 2.4rem; line-height: 1.35; letter-spacing: -.08rem; }
+  h5 { font-size: 1.8rem; line-height: 1.5;  letter-spacing: -.05rem; }
+  h6 { font-size: 1.5rem; line-height: 1.6;  letter-spacing: 0; }
+ 
+  /* Increase font size for larger screens */
+  /* @media (min-width: 550px) {
+    h1 { font-size: 5.0rem; }
+    h2 { font-size: 4.2rem; }
+    h3 { font-size: 3.6rem; }
+    h4 { font-size: 3.0rem; }
+    h5 { font-size: 2.4rem; }
+    h6 { font-size: 1.5rem; }
+  }
+   */
+p { margin-top: 0; padding-bottom: .2rem; }
+p.space-p {
+    letter-spacing: .2rem;
+    line-height: 1.75rem;
+}
 
 /* Font style/weight variations */
-p.fontStyle300 {font-weight: 300;}
-p.fontStyle300i {font-weight: 300; font-style: italic;}
-p.fontStyle400 {font-weight: 400;}
-p.fontStyle400i {font-weight: 400; font-style: italic;}
-p.fontStyle500 {font-weight: 500;}
-p.fontStyle500i {font-weight: 500; font-style: italic;}
-p.fontStyle600 {font-weight: 600;}
-p.fontStyle700 {font-weight: 700;}
-p.fontStyle800 {font-weight: 800;}
+.fw-light {font-weight: 300;}
+.fw-light-it {font-weight: 300; font-style: italic;}
+.fw-regular {font-weight: 400;}
+.fw-regular-it {font-weight: 400; font-style: italic;}
+.fw-medium {font-weight: 500;}
+.fw-medium-it {font-weight: 500; font-style: italic;}
+.fw-semi-bold  {font-weight: 600;}
+.fw-bold  {font-weight: 700;}
+.fw-bolder  {font-weight: 800;}
 
-/* TRISH: REMOVED SOME DEFAULT STYLES FOR NOW - put everything in lists for now but will convert to classes-- using revert on li to keep using it without bullet on rest of content. Probably need to change this so no confilicts later. */
-li.lists {
-    list-style-type: revert;
-    list-style-position: inside;
-}
-li {
-    list-style-type: none;
-}
+/* Text Alignment */
+.t-left { text-align: left !important; }
+.t-right { text-align: right !important; }
+.t-center { text-align: center !important; }
+   
+/* Text transformations */
+.lower { text-transform: lowercase !important; }
+.upper { text-transform: uppercase !important; }
+.caps { text-transform: capitalize !important; }
+
+
+/* Text Elements */
+.bold { font-weight: bold; }
+.italic { font-style: italic; }
+.em {font-style: italic ;}
+.cite { font-style: italic; }
+.var {  font-style: italic; }
+.marked { background-color: #f2ea05; }
+/* .small {( 100% * 0.09 );}  */
+/* need to fix this calc error later */
+.deleted { text-decoration: line-through; }
+.inserted { text-decoration: underline; }
+.code { font-family: 'Courier New', Courier, monospace;}
+.abbr { text-transform: uppercase; }
+
+/* Misc
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+hr {
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+    border-width: 0;
+    border-top: 1px solid #E1E1E1; }
+  
 /* definition list */
 dt {
     font-weight: bold;
@@ -149,8 +189,33 @@ dd {
     padding: 0 0 0.5em 0;
 }
 
+
 /* Spacing
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
+.m0 { margin: 0; }
+.m1 { margin: .25rem; }
+.m2 { margin: .5rem; }
+.m3 { margin: 1.0rem; }
+.m4 { margin: 1.5rem; }
+.m5 { margin: 2.0rem; }
+.m-auto { margin:auto; }
+
+.p0 { padding: 0; }
+.p1 { padding: .25rem; }
+.p2 { padding: .5rem; }
+.p3 { padding: 1.0rem; }
+.p4 { padding: 1.5rem; }
+.p5 { padding: 2.0rem; }
+
+/* Shadows
+/* these values have errors need to fix later - Yen??
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.shadows-base { 0 1px 3px 0, rgba(0, 0, 0, 0.1), 0 1px 2px 0, rgba(0, 0, 0, 0.6)}
+.shadows-xs { 0 0 0 1px, rgba(0, 0, 0, 0.5)}
+.shadows-sm { 0 1px 2px 0, rgba(0, 0, 0, 0.5)}
+.shadows-md { 0 4px 6px -1px, rgba(0, 0, 0, 0.1),0 2px 4px -1px, rgba(0, 0, 0, 0.6)}
+.shadows-lg { 0 10px 15px -3px, rgba(0, 0, 0, 0.1),0 4px 6px -2px, rgba(0, 0, 0, 0.5)}
+
 
 /* Colors
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -351,9 +416,142 @@ dd {
 
 /* Navigation
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
+header {
+    z-index: 9999;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: #333;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    opacity: .98;
+
+}
+
+.navbar {
+    height: calc(4rem + 1rem);
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 40px;
+    background-color: #333;
+    display: flex;
+    align-items: center;
+    transition: .3s ease;
+}
+
+.navbar a { text-decoration: none; }
+
+.navbar .navbar-logo {
+    color: #fefefe;
+    font-size: 2em;
+    font-weight: 600;
+}
+
+.navigation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: #323437;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: .3s ease-in-out;
+}
+
+.navigation.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.nav-items {
+    position: relative;
+    background: #fefefe;
+    width: 600px;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    transform: translateY(-50px);
+    transition: .3s ease-in-out;
+}
+
+.navigation.active .nav-items{ transform: translateY(0); }
+
+.nav-toggle {
+    color: #fefefe;
+    cursor: pointer;
+    display: block;
+    font-size: 2em;
+    margin-left: auto;
+}
+
+.nav-close {
+    cursor: pointer;
+    font-size: 2em;
+    margin: 10px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.nav-items a {
+    color: #333;
+    font-size: 1.5em;
+    font-weight: 550;
+    margin: 15px 50px;
+    text-align: center;
+}
 
 /* Icons
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
+.icon-section {
+    max-width: 900px;
+    color: #333;
+}
+
+.icon-section p {
+    font-size: 1.1rem;
+    margin-top: 10px;
+}
+
+.icon-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+    gap: 1.25rem;
+    margin-top: 1.75em;
+}
+
+.icon-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: solid 1px #333;
+    border-radius: 5px;
+    height: 2.5rem;
+    min-width: 2.5rem;
+    font-size: 1rem;
+    padding: 1rem 0;
+    gap: 3px;
+    background-color: #CBD5E0;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1),0 1px 2px 0 rgba(0, 0, 0, 0.06);
+}
+
+.sm-icon { font-size: 1rem; }
+.md-icon { font-size: 2rem; }
+.lg-icon { font-size: 3rem; }
+
+.icon-list:hover {
+    font-size: 1.1rem;
+    background-color: #EDF2F7;
+    transition: .2s ease;
+}
 
 /* No Print
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -370,10 +568,51 @@ dd {
 @media (min-width: 550px) {}
 
 /* Larger than tablet */
-@media (min-width: 750px) {}
+@media (min-width: 750px) {
+    .navbar {
+        height: calc(4.3rem + 1rem);
+        max-width: 1250px;
+        padding: 30px 50px;
+    }
+
+    .navigation {
+        position: relative;
+        top: 0;
+        width: fit-content;
+        height: fit-content;
+        margin-left: auto;
+        background-color: transparent;
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .nav-items {
+        width: auto;
+        display: flex;
+        flex-direction: row;
+        background-color: transparent;
+        box-shadow: none;
+        padding: 0;
+        transform: translateY(0);
+    }
+
+    .nav-close, .nav-toggle { display: none; }
+
+    .navbar .navbar-logo { font-size: 2.3em; }
+
+    .nav-items a {
+        color: #fefefe;
+        font-size: 2em;
+        font-weight: 550;
+        margin: 0 0 0 50px;
+    }
+}
+
 
 /* Desktop */
 @media (min-width: 1000px) {}
 
 /* Very Large Devices */
 @media (min-width: 1200px) {}
+
+/* Hello. I hope there wouldn't be a problem for us */
