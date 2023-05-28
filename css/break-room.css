@@ -467,16 +467,11 @@ See colors section for adding borders */
     position: relative;
     margin: 3rem;
     padding: 3rem;
-    color: #050500;
-    background-color: #ffffff;
     background-image: none;
     border-radius: 0.4rem;
     border: 1px solid #050500;
-    -moz-box-shadow: none;
-    -webkit-box-shadow: none;
-    box-shadow: none;
 }
-card-title {
+.card-title {
     font-size: 2rem;
     font-weight: 500;
     margin-top: 0;
