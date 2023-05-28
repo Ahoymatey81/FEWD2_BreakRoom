@@ -207,6 +207,19 @@ dd {
 .p4 { padding: 1.5rem; }
 .p5 { padding: 2.0rem; }
 
+/* Borders and Border radius
+––––––––––––––––––––––––––––––––––––––––––––––––––
+See colors section for adding borders */
+
+.br-sm          { border-radius: 10%;}
+.br-md          { border-radius: 25%;}
+.br-lg          { border-radius: 50%;}
+.br-left        { border-radius: 25% 10%;}
+.br-right       { border-radius: 10% 25%;}
+.br-box         { border-radius: 10% / 50%;}
+.br-box-r       { border-radius: 50% 20% / 10% 40%;}
+
+
 /* Shadows
 
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -328,27 +341,7 @@ dd {
 .column-twelve {
     width: 100%;
 }
-/* For devices larger than 400px */
-@media (min-width: 400px) {
-    .room {
-      width: 90%;
-    }
-}
-/* For devices larger than 550px */
-.column-one, 
-.column-two,
-.column-three,
-.column-four,
-.column-five,
-.column-six,
-.column-seven,
-.column-eight,
-.column-nine,
-.column-ten,
-.column-eleven,
-.column-twelve {
-    margin-left: 3%;
-}
+
 .column-one:first-child, 
 .column-two:first-child,
 .column-three:first-child,
@@ -363,6 +356,14 @@ dd {
 .column-twelve:first-child {
     margin-left: 0;
 }
+
+/* For devices larger than 400px */
+@media (min-width: 400px) {
+    .room {
+      width: 90%;
+    }
+}
+
 @media (min-width: 550px) {
     .room {
       width: 85%; 
@@ -370,6 +371,22 @@ dd {
     .row {
         flex-direction: row;
     }
+
+    .column-one, 
+    .column-two,
+    .column-three,
+    .column-four,
+    .column-five,
+    .column-six,
+    .column-seven,
+    .column-eight,
+    .column-nine,
+    .column-ten,
+    .column-eleven,
+    .column-twelve {
+        margin-left: 3%;
+    }
+
     .column-one             {flex: 1} 
     .column-two             {flex: 2} 
     .column-three           {flex: 3} 
