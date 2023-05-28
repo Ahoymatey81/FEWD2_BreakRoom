@@ -450,6 +450,64 @@ See colors section for adding borders */
 /* Cards
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
+.content {
+    margin: 3rem;
+}
+@media (min-width: 550px) {
+    .content {
+        margin: 2rem;
+    }
+}
+.content-title {
+    font-size: 2rem;
+    font-weight: 500;
+    margin-top: 0;
+}
+.card {
+    position: relative;
+    margin: 3rem;
+    padding: 3rem;
+    color: #050500;
+    background-color: #ffffff;
+    background-image: none;
+    border-radius: 0.4rem;
+    border: 1px solid #050500;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+card-title {
+    font-size: 2rem;
+    font-weight: 500;
+    margin-top: 0;
+}
+.p-card {
+    padding: 3rem;
+}
+.px-card {
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+.py-card {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+@media (min-width: 550px) {
+    .p-card {
+        padding: 2rem;
+    }
+    .px-card {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    .py-card {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+}
+
+
+
 /* Images
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
