@@ -419,7 +419,196 @@
 
   <!-- Tables
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-
+<h2>Tables</h2>     
+<p>The &lt;table&gt; tag defines an HTML table.</p>
+<p>It has just one &lt;table&gt; element with one or more &lt;tr&gt;, &lt;th&gt;, and &lt;td&gt; elements. The &lt;tr&gt; element refers to a table row, the &lt;th&gt; element refers to a table header, and the &lt;td&gt; element refers to a table cell.</p>
+<p>The HTML table may also include following: &lt;caption&gt;, &lt;colgroup&gt;, &lt;thead&gt;, &lt;tfoot&gt;, and &lt;tbody&gt; elements.</p>
+<p>This is the documentation and examples for styling tables using our framework.</p>
+<table class="table">
+    <caption>A Basic Table</caption>
+      <thead>
+          <tr>
+              <th scope="col">Position</th>
+              <th scope="col">First</th>
+              <th scope="col">Last</th>
+              <th scope="col">Employee #</th>
+          </tr>
+      </thead>
+      <tbody>
+          <tr>
+              <th scope="row">CEO</th>
+              <td>John</td>
+              <td>Jackson</td>
+              <td>001</td>
+          </tr>
+          <tr>
+              <th scope="row">Manager</th>
+              <td>Mary</td>
+              <td>Smith</td>
+              <td>002</td>
+          </tr>
+          <tr>
+              <th scope="row">Sales</th>
+              <td>Charles</td>
+              <td>Jones</td>
+              <td>003</td>
+          </tr>
+          <tr>
+              <th scope="row">Customer Service</th>
+              <td>Nancy</td>
+              <td>Lopez</td>
+              <td>004</td>
+          </tr>
+      </tbody>
+      <tfoot>
+          <tr>
+              <td colspan="2"></td>
+              <td>Total Employees:</td>
+              <td>4</td>
+          </tr>
+      </tfoot>
+</table>
+<pre>
+    <code class="language-html" data-lang="html">     
+        <span class="tableTags">&lt;table</span> <span class="tableAttribute">class=</span><span class="tableQuotes">"table"</span><span class="tableTags">&gt;</span>
+        <span class="tableTags">&lt;caption</span><span class="tableTags">&gt;</span>A Basic Table<span class="tableTags">&lt;/caption&gt;</span>
+        <span class="tableTags">&lt;thead&gt;</span>
+        <span class="tableTags">&lt;tr&gt;</span>
+            <span class="tableTags">&lt;th</span> <span class="tableAttribute">scope=</span><span class="tableQuotes">"col"</span><span class="tableTags">&gt;</span>Position<span class="tableTags">&lt;/th&gt;</span>
+            <span class="tableTags">&lt;th</span> <span class="tableAttribute">scope=</span><span class="tableQuotes">"col"</span><span class="tableTags">&gt;</span>First<span class="tableTags">&lt;/th&gt;</span>
+            <span class="tableTags">&lt;th</span> <span class="tableAttribute">scope=</span><span class="tableQuotes">"col"</span><span class="tableTags">&gt;</span>Last<span class="tableTags">&lt;/th&gt;</span>
+            <span class="tableTags">&lt;th</span> <span class="tableAttribute">scope=</span><span class="tableQuotes">"col"</span><span class="tableTags">&gt;</span>Employee #<span class="tableTags">&lt;/th&gt;</span>
+        <span class="tableTags">&lt;/tr&gt;</span>
+        <span class="tableTags">&lt;/thead&gt;</span>
+        <span class="tableTags">&lt;tbody&gt;</span>
+        <span class="tableTags">&lt;tr&gt;</span>
+            <span class="tableTags">&lt;th</span> <span class="tableAttribute">scope=</span><span class="tableQuotes">"row"</span><span class="tableTags">&gt;</span>CEO<span class="tableTags">&lt;/th&gt;</span>
+            <span class="tableTags">&lt;td&gt;</span>John<span class="tableTags">&lt;/td&gt;</span>
+            <span class="tableTags">&lt;td&gt;</span>Jackson<span class="tableTags">&lt;/td&gt;</span>
+            <span class="tableTags">&lt;td&gt;</span>001<span class="tableTags">&lt;/td&gt;</span>
+        <span class="tableTags">&lt;/tr&gt;</span>
+        <span class="tableTags">&lt;tr&gt;</span>
+            <span class="tableTags">&lt;th</span> <span class="tableAttribute">scope=</span><span class="tableQuotes">"row"</span><span class="tableTags">&gt;</span>Manager<span class="tableTags">&lt;/th&gt;</span>
+            <span class="tableTags">&lt;td&gt;</span>Mary<span class="tableTags">&lt;/td&gt;</span>
+            <span class="tableTags">&lt;td&gt;</span>Smith<span class="tableTags">&lt;/td&gt;</span>
+            <span class="tableTags">&lt;td&gt;</span>002<span class="tableTags">&lt;/td&gt;</span>
+        <span class="tableTags">&lt;/tr&gt;</span>
+        <span class="tableTags">&lt;tr&gt;</span>
+            <span class="tableTags">&lt;th</span> <span class="tableAttribute">scope=</span><span class="tableQuotes">"row"</span><span class="tableTags">&gt;</span>Sales<span class="tableTags">&lt;/th&gt;</span>
+            <span class="tableTags">&lt;td&gt;</span>Charles<span class="tableTags">&lt;/td&gt;</span>
+            <span class="tableTags">&lt;td&gt;</span>Jones<span class="tableTags">&lt;/td&gt;</span>
+            <span class="tableTags">&lt;td&gt;</span>003<span class="tableTags">&lt;/td&gt;</span>
+        <span class="tableTags">&lt;/tr&gt;</span>
+        <span class="tableTags">&lt;tr&gt;</span>
+            <span class="tableTags">&lt;th</span> <span class="tableAttribute">scope=</span><span class="tableQuotes">"row"</span><span class="tableTags">&gt;</span>Customer Service<span class="tableTags">&lt;/th&gt;</span>
+            <span class="tableTags">&lt;td&gt;</span>Nancy<span class="tableTags">&lt;/td&gt;</span>
+            <span class="tableTags">&lt;td&gt;</span>Lopez<span class="tableTags">&lt;/td&gt;</span>
+            <span class="tableTags">&lt;td&gt;</span>004<span class="tableTags">&lt;/td&gt;</span>
+        <span class="tableTags">&lt;/tr&gt;</span>
+            <span class="tableTags">&lt;/tbody&gt;</span>
+        <span class="tableTags">&lt;tfoot&gt;</span>
+            <span class="tableTags">&lt;tr</span><span class="tableTags">&gt;</span>
+            <span class="tableTags">&lt;td</span> <span class="tableAttribute">colspan=</span><span class="tableQuotes">"2"</span><span class="tableTags">&gt;</span>Customer Service<span class="tableTags">&lt;/th&gt;</span>
+            <span class="tableTags">&lt;td&gt;</span>Total Employees:<span class="tableTags">&lt;/td&gt;</span>
+            <span class="tableTags">&lt;td&gt;</span>4<span class="tableTags">&lt;/td&gt;</span>
+            <span class="tableTags">&lt;/tr&gt;</span>
+        <span class="tableTags">&lt;/tfoot&gt;</span>
+        <span class="tableTags">&lt;/table&gt;</span>
+    </code>
+</pre>
+<p>You can also change opposite colors by inverting them from light to dark backgrounds by using .tableDark. You can also add the .tableDark class to any parts of the table, including caption, thead, tr, th, td, and  tfoot.</p>
+<table class="table tableDark">
+    <caption>A Basic Table</caption>
+      <thead>
+          <tr>
+              <th scope="col">Position</th>
+              <th scope="col">First</th>
+              <th scope="col">Last</th>
+              <th scope="col">Employee #</th>
+          </tr>
+      </thead>
+      <tbody>
+          <tr>
+              <th scope="row">CEO</th>
+              <td>John</td>
+              <td>Jackson</td>
+              <td>001</td>
+          </tr>
+          <tr>
+              <th scope="row">Manager</th>
+              <td>Mary</td>
+              <td>Smith</td>
+              <td>002</td>
+          </tr>
+          <tr>
+              <th scope="row">Sales</th>
+              <td>Charles</td>
+              <td>Jones</td>
+              <td>003</td>
+          </tr>
+          <tr>
+              <th scope="row">Customer Service</th>
+              <td>Nancy</td>
+              <td>Lopez</td>
+              <td>004</td>
+          </tr>
+      </tbody>
+      <tfoot>
+          <tr>
+              <td colspan="2"></td>
+              <td>Total Employees:</td>
+              <td>4</td>
+          </tr>
+      </tfoot>
+</table>
+<pre>
+    <code class="language-html" data-lang="html">     
+        <span class="tableTags">&lt;table</span> <span class="tableAttribute">class=</span><span class="tableQuotes">"table tableDark"</span><span class="tableTags">&gt;</span>
+        <span class="tableTags">&lt;caption</span><span class="tableTags">&gt;</span>A Basic Table<span class="tableTags">&lt;/caption&gt;</span>
+        <span class="tableTags">&lt;thead&gt;</span>
+        <span class="tableTags">&lt;tr&gt;</span>
+            <span class="tableTags">&lt;th</span> <span class="tableAttribute">scope=</span><span class="tableQuotes">"col"</span><span class="tableTags">&gt;</span>Position<span class="tableTags">&lt;/th&gt;</span>
+            <span class="tableTags">&lt;th</span> <span class="tableAttribute">scope=</span><span class="tableQuotes">"col"</span><span class="tableTags">&gt;</span>First<span class="tableTags">&lt;/th&gt;</span>
+            <span class="tableTags">&lt;th</span> <span class="tableAttribute">scope=</span><span class="tableQuotes">"col"</span><span class="tableTags">&gt;</span>Last<span class="tableTags">&lt;/th&gt;</span>
+            <span class="tableTags">&lt;th</span> <span class="tableAttribute">scope=</span><span class="tableQuotes">"col"</span><span class="tableTags">&gt;</span>Employee #<span class="tableTags">&lt;/th&gt;</span>
+        <span class="tableTags">&lt;/tr&gt;</span>
+        <span class="tableTags">&lt;/thead&gt;</span>
+        <span class="tableTags">&lt;tbody&gt;</span>
+        <span class="tableTags">&lt;tr&gt;</span>
+            <span class="tableTags">&lt;th</span> <span class="tableAttribute">scope=</span><span class="tableQuotes">"row"</span><span class="tableTags">&gt;</span>CEO<span class="tableTags">&lt;/th&gt;</span>
+            <span class="tableTags">&lt;td&gt;</span>John<span class="tableTags">&lt;/td&gt;</span>
+            <span class="tableTags">&lt;td&gt;</span>Jackson<span class="tableTags">&lt;/td&gt;</span>
+            <span class="tableTags">&lt;td&gt;</span>001<span class="tableTags">&lt;/td&gt;</span>
+        <span class="tableTags">&lt;/tr&gt;</span>
+        <span class="tableTags">&lt;tr&gt;</span>
+            <span class="tableTags">&lt;th</span> <span class="tableAttribute">scope=</span><span class="tableQuotes">"row"</span><span class="tableTags">&gt;</span>Manager<span class="tableTags">&lt;/th&gt;</span>
+            <span class="tableTags">&lt;td&gt;</span>Mary<span class="tableTags">&lt;/td&gt;</span>
+            <span class="tableTags">&lt;td&gt;</span>Smith<span class="tableTags">&lt;/td&gt;</span>
+            <span class="tableTags">&lt;td&gt;</span>002<span class="tableTags">&lt;/td&gt;</span>
+        <span class="tableTags">&lt;/tr&gt;</span>
+        <span class="tableTags">&lt;tr&gt;</span>
+            <span class="tableTags">&lt;th</span> <span class="tableAttribute">scope=</span><span class="tableQuotes">"row"</span><span class="tableTags">&gt;</span>Sales<span class="tableTags">&lt;/th&gt;</span>
+            <span class="tableTags">&lt;td&gt;</span>Charles<span class="tableTags">&lt;/td&gt;</span>
+            <span class="tableTags">&lt;td&gt;</span>Jones<span class="tableTags">&lt;/td&gt;</span>
+            <span class="tableTags">&lt;td&gt;</span>003<span class="tableTags">&lt;/td&gt;</span>
+        <span class="tableTags">&lt;/tr&gt;</span>
+        <span class="tableTags">&lt;tr&gt;</span>
+            <span class="tableTags">&lt;th</span> <span class="tableAttribute">scope=</span><span class="tableQuotes">"row"</span><span class="tableTags">&gt;</span>Customer Service<span class="tableTags">&lt;/th&gt;</span>
+            <span class="tableTags">&lt;td&gt;</span>Nancy<span class="tableTags">&lt;/td&gt;</span>
+            <span class="tableTags">&lt;td&gt;</span>Lopez<span class="tableTags">&lt;/td&gt;</span>
+            <span class="tableTags">&lt;td&gt;</span>004<span class="tableTags">&lt;/td&gt;</span>
+        <span class="tableTags">&lt;/tr&gt;</span>
+            <span class="tableTags">&lt;/tbody&gt;</span>
+        <span class="tableTags">&lt;tfoot&gt;</span>
+            <span class="tableTags">&lt;tr</span><span class="tableTags">&gt;</span>
+            <span class="tableTags">&lt;td</span> <span class="tableAttribute">colspan=</span><span class="tableQuotes">"2"</span><span class="tableTags">&gt;</span>Customer Service<span class="tableTags">&lt;/th&gt;</span>
+            <span class="tableTags">&lt;td&gt;</span>Total Employees:<span class="tableTags">&lt;/td&gt;</span>
+            <span class="tableTags">&lt;td&gt;</span>4<span class="tableTags">&lt;/td&gt;</span>
+            <span class="tableTags">&lt;/tr&gt;</span>
+        <span class="tableTags">&lt;/tfoot&gt;</span>
+        <span class="tableTags">&lt;/table&gt;</span>
+    </code>
+</pre>
   
  <!-- Components
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
