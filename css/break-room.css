@@ -241,15 +241,18 @@ See colors section for adding borders */
 .grey               { color: #858583;}
 .bg-grey            { background-color: #858583;}
 .bc-grey            { border: 2px solid #858583;}
+.white               { color: #fff;}
+.bg-white            { background-color: #fff;}
+.bc-white            { border: 2px solid #fff;}
 
 /* Hazard colors */
 
-.warning            { color: #f20505;}
-.bg-warning         { background-color: #f20505;}
-.bc-warning         { border: 2px solid #f20505;}
-.hazard             { color: #f2ea05;}
-.bg-hazard          { background-color: #f2ea05;}
-.bc-hazard          { border: 2px solid #f2ea05;}
+.danger            { color: #cc0f35;}
+.bg-danger         { background-color: #cc0f35;}
+.bc-danger         { border: 2px solid #cc0f35;}
+.warning             { color: #ffc409;}
+.bg-warning          { background-color: #ffc409;}
+.bc-warning          { border: 2px solid #ffc409;}
 
 /* Primary color palet */
 
