@@ -530,6 +530,7 @@ div.button-example {
 .column-eleven,
 .column-twelve {
     width: 100%;
+    margin-bottom: 0.75rem;
 }
 
 .column-one:first-child, 
