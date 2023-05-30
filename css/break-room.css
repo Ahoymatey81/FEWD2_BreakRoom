@@ -241,18 +241,17 @@ See colors section for adding borders */
 .grey               { color: #858583;}
 .bg-grey            { background-color: #858583;}
 .bc-grey            { border: 2px solid #858583;}
-.white               { color: #fff;}
-.bg-white            { background-color: #fff;}
-.bc-white            { border: 2px solid #fff;}
+.white              { color: #fff;}
+.bg-white           { background-color: #fff;}
+.bc-white           { border: 2px solid #fff;}
 
 /* Hazard colors */
-
-.danger            { color: #cc0f35;}
-.bg-danger         { background-color: #cc0f35;}
-.bc-danger         { border: 2px solid #cc0f35;}
-.warning             { color: #ffc409;}
-.bg-warning          { background-color: #ffc409;}
-.bc-warning          { border: 2px solid #ffc409;}
+.danger             { color: #cc0f35;}
+.bg-danger          { background-color: #cc0f35;}
+.bc-danger          { border: 2px solid #cc0f35;}
+.warning            { color: #ffc409;}
+.bg-warning         { background-color: #ffc409;}
+.bc-warning         { border: 2px solid #ffc409;}
 
 /* Primary color palet */
 
@@ -309,6 +308,194 @@ See colors section for adding borders */
 
 /* Buttons
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
+#button {
+    font-size: 1.5rem;
+}
+
+#button .section {
+    margin-top: 30px;
+}
+
+div.button-example {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-bottom: .5rem;
+    gap: 10px;
+}
+
+.button {
+    justify-content: center;
+    text-align: center;
+    padding: calc(.5em - 1px) 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.6rem;
+    box-shadow: 0 1px 3px 0, rgba(0, 0, 0, 0.1), 0 1px 2px 0, rgba(0, 0, 0, 0.6);
+    font-weight: 530;
+}
+
+.button:hover {
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    transform: translateY(-3px);
+    transition: all .3s ease;
+  }
+  
+.button:active {
+    transform: translateY(3px);
+    transition: .4s;
+    opacity: .75;
+    transition: all .3s ease;
+} 
+
+/* size */
+.xsm-btn { font-size: 1.2rem; }
+
+.sm-btn { font-size: 1.6rem; }
+
+.md-btn { font-size: 2rem; }
+
+.lg-btn { font-size: 2.4rem; }
+
+/* display */
+.btn-fullwidth {
+    display: flex;
+    width: 100%;
+}
+
+/* color */
+.btn-white {
+    background-color: #fff;
+    color: #050500;
+}
+
+.btn-light {
+    background-color: #f4f5f8;
+    color: #858583;
+}
+
+.btn-dark {
+    background-color: #858583;
+    color: #fcfcfa;
+}
+
+.btn-black {
+    background-color: #050500;
+    color: #fff;
+}
+
+.btn-primary {
+    background-color: #3880ff;
+    color: #fcfcfa;
+}
+
+.btn-info {
+    background-color: #3dc2ff;
+    color: #fcfcfa;
+}
+
+.btn-success {
+    background-color: #2dd36f;
+    color: #fcfcfa;
+}
+
+.btn-warning {
+    background-color: #ffc409;
+    color: #fcfcfa;
+}
+
+.btn-danger {
+    background-color: #cc0f35;
+    color: #fcfcfa;
+}
+
+
+.btn-primary.btn-light-bg {
+    background-color: #fefefe;
+    color: #3880ff;
+    border: solid 1.5px #3880ff;
+}
+
+.btn-info.btn-light-bg {
+    background-color: #fefefe;
+    color: #3dc2ff;
+    border: solid 1.5px #3dc2ff;
+}
+
+.btn-success.btn-light-bg {
+    background-color: #fefefe;
+    color: #2dd36f;
+    border: solid 1.5px #2dd36f;
+}
+
+.btn-warning.btn-light-bg {
+    background-color: #fefefe;
+    color: #ffc409;
+    border: solid 1.5px #ffc409;
+}
+
+.btn-danger.btn-light-bg {
+    background-color: #fefefe;
+    color: #cc0f35;
+    border: solid 1.5px #cc0f35;
+}
+
+
+.button.submit-btn {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    transition: .3s;
+    color: #063970;
+    background-color: #fcfcfa;
+    border: solid 2px #063970;
+    font-weight: 600;
+    letter-spacing: .8px;
+}
+
+.button.submit-btn:hover {
+    background-color: #063970;
+    color: #fcfcfa;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.button.submit-btn:hover i {
+    animation: arrow-right ease 2s infinite;
+}
+
+@keyframes arrow-right {
+    0% { transform: translateX(0); }
+    30% { transform: translateX(7px); }
+}
+
+.button.reset-btn {
+    transition: .3s;
+    color: #cc0f35;
+    background-color: #fcfcfa;
+    border: solid 2px #cc0f35;
+    font-weight: 600;
+    letter-spacing: .8px;
+}
+
+.button.reset-btn:hover {
+    background-color: #cc0f35;
+    color: #fcfcfa;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.button.disabled-btn {
+    color: #666666;
+    background-color: #cccccc;
+    cursor: not-allowed;
+    letter-spacing: .8px;
+    font-weight: 550;
+}
+
+.button.disabled-btn:active, .button.disabled-btn:hover {
+    transform: translateY(0);
+}
 
 /* Grid System
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -343,6 +530,7 @@ See colors section for adding borders */
 .column-eleven,
 .column-twelve {
     width: 100%;
+    margin-bottom: 0.75rem;
 }
 
 .column-one:first-child, 
@@ -652,64 +840,6 @@ a.navbar-item.active {
     transition: .1s ease;
 }
 
-/* Icons
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-.icon-section {
-    max-width: 900px;
-    color: #333;
-}
-
-.icon-section p {
-    font-size: 1.1rem;
-    margin-top: 10px;
-}
-
-.icon-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
-    gap: 1.25rem;
-    margin-top: 1.75em;
-}
-
-.icon-list {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border: solid 1px #333;
-    border-radius: 5px;
-    height: 2.5rem;
-    min-width: 2.5rem;
-    font-size: 1rem;
-    padding: 1rem 0;
-    gap: 3px;
-    background-color: #CBD5E0;
-    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1),0 1px 2px 0 rgba(0, 0, 0, 0.06);
-}
-
-.sm-icon { font-size: 1rem; }
-.md-icon { font-size: 2rem; }
-.lg-icon { font-size: 3rem; }
-
-.icon-list:hover {
-    font-size: 1.1rem;
-    background-color: #EDF2F7;
-    transition: .2s ease;
-}
-
-/* No Print
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-
-
-/********************************************
-    5. Components
-********************************************/
-
-/* Mobile */
-@media (min-width: 400px) {}
-
-/* Our Grid System is activated */
-@media (min-width: 550px) {}
-
 /* Larger than tablet */
 @media (min-width: 750px) {
     .navbar-container {
@@ -767,6 +897,70 @@ a.navbar-item.active {
     }
 }
 
+/* Icons
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.icon-section {
+    max-width: 900px;
+    color: #333;
+}
+
+.icon-section p {
+    font-size: 1.1rem;
+    margin-top: 10px;
+}
+
+.icon-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+    gap: 1.25rem;
+    margin-top: 1.75em;
+}
+
+.icon-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: solid 1px #333;
+    border-radius: 5px;
+    height: 2.5rem;
+    min-width: 2.5rem;
+    font-size: 1rem;
+    padding: 1rem 0;
+    gap: 3px;
+    background-color: #CBD5E0;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1),0 1px 2px 0 rgba(0, 0, 0, 0.06);
+}
+
+.sm-icon { font-size: 1rem; }
+.md-icon { font-size: 2rem; }
+.lg-icon { font-size: 3rem; }
+
+.icon-list:hover {
+    font-size: 1.1rem;
+    background-color: #EDF2F7;
+    transition: .2s ease;
+}
+
+/* No Print
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+
+/********************************************
+    5. Components
+********************************************/
+
+
+
+/* Responsive Media For Users to use 
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* Mobile */
+@media (min-width: 400px) {}
+
+/* Our Grid System is activated */
+@media (min-width: 550px) {}
+
+/* Larger than tablet */
+@media (min-width: 750px) {}
 
 /* Desktop */
 @media (min-width: 1000px) {}
