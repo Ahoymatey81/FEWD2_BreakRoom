@@ -118,9 +118,9 @@ h1, h2, h3, h4, h5, h6 {
   h4 { font-size: 2.4rem; line-height: 1.35; letter-spacing: -.08rem; }
   h5 { font-size: 1.8rem; line-height: 1.5;  letter-spacing: -.05rem; }
   h6 { font-size: 1.5rem; line-height: 1.6;  letter-spacing: 0; }
- 
+
   /* Increase font size for larger screens */
-  /* @media (min-width: 550px) {
+ @media (min-width: 550px) {
     h1 { font-size: 5.0rem; }
     h2 { font-size: 4.2rem; }
     h3 { font-size: 3.6rem; }
@@ -128,7 +128,7 @@ h1, h2, h3, h4, h5, h6 {
     h5 { font-size: 2.4rem; }
     h6 { font-size: 1.5rem; }
   }
-   */
+
 p { margin-top: 0; padding-bottom: .2rem; }
 p.space-p {
     letter-spacing: .2rem;
@@ -150,7 +150,7 @@ p.space-p {
 .t-left { text-align: left !important; }
 .t-right { text-align: right !important; }
 .t-center { text-align: center !important; }
-   
+
 /* Text transformations */
 .lower { text-transform: lowercase !important; }
 .upper { text-transform: uppercase !important; }
@@ -178,7 +178,7 @@ hr {
     margin-bottom: 1.5rem;
     border-width: 0;
     border-top: 1px solid #E1E1E1; }
-  
+
 /* definition list */
 dt {
     font-weight: bold;
@@ -200,6 +200,20 @@ dd {
 .m5 { margin: 2.0rem; }
 .m-auto { margin:auto; }
 
+/* START: TRISH CHANGED SUNDAY MAY 29 4 PM */
+
+.m0t { margin-top: 0; }
+.m1t { margin-top: .25rem; }
+.m2t { margin-top: .5rem; }
+.m3t { margin-top: 1.0rem; }
+.m4t { margin-top: 1.5rem; }
+.m5t { margin-top: 2.0rem; }
+.m0r { margin-top: 0; }
+.m1r{ margin-top: .25rem; }
+.m2r { margin-top: .5rem; }
+.m3r { margin-top: 1.0rem; }
+.m4r { margin-top: 1.5rem; }
+.m5r { margin-top: 2.0rem; }
 .p0 { padding: 0; }
 .p1 { padding: .25rem; }
 .p2 { padding: .5rem; }
@@ -221,11 +235,11 @@ See colors section for adding borders */
 
 
 /* Shadows
-
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-.shadows-sm { box-shadow: 0 1px 3px 0, rgba(0, 0, 0, 0.1), 0 1px 2px 0, rgba(0, 0, 0, 0.6);}
-.shadows-md { box-shadow: 0 4px 6px -1px, rgba(0, 0, 0, 0.1),0 2px 4px -1px, rgba(0, 0, 0, 0.6);}
-.shadows-lg { box-shadow: 0 10px 15px -3px, rgba(0, 0, 0, 0.1),0 4px 6px -2px, rgba(0, 0, 0, 0.5);}
+/* TRISH CHANGED NAME from shadows to shadow  */
+/*–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.shadow-sm { box-shadow: 0 1px 3px 0, rgba(0, 0, 0, 0.1), 0 1px 2px 0, rgba(0, 0, 0, 0.6);}
+.shadow-md { box-shadow: 0 4px 6px -1px, rgba(0, 0, 0, 0.1),0 2px 4px -1px, rgba(0, 0, 0, 0.6);}
+.shadow-lg { box-shadow: 0 10px 15px -3px, rgba(0, 0, 0, 0.1),0 4px 6px -2px, rgba(0, 0, 0, 0.5);}
 
 
 /* Colors
@@ -341,7 +355,7 @@ div.button-example {
     transform: translateY(-3px);
     transition: all .3s ease;
   }
-  
+
 .button:active {
     transform: translateY(3px);
     transition: .4s;
