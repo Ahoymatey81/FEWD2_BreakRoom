@@ -758,12 +758,14 @@
     <!-- ==================== INTRO ==================== -->
     <h5>The classic button we have:</h5>
     <div class="button-example">
-        <button class="button">Button</button>
+        <button type="button" class="button">Button</button>
     </div>
 
-    <!-- FOR CODE EXAMPLE
-        <button class="button">Button</button> 
-    -->
+    <div class="example">
+        <xmp><button type="button" class="button">Button</button></xmp>
+    </div>
+
+
 
     <div class="btn-intro section">
         <h5>We can use the button class on:</h5>
@@ -776,24 +778,28 @@
         <br>
 
         <div class="button-example">
-            <button class="button">Button</button>
+            <button type="button" class="button">Button</button>
             <input class="button" type="button" value="Button input">
             <input class="button" type="submit" value="Submit input">
             <input class="button" type="reset" value="Reset input">
         </div>
 
-        <!-- FOR CODE EXAMPLE
-            <button class="button">Button</button>
-            <input class="button" type="button" value="Button input">
-            <input class="button" type="submit" value="Submit input">
-            <input class="button" type="reset" value="Reset input">
-        -->
-    </div>
+        <div class="example">
+            <xmp>
+                <button type="button" class="button">Button</button>
+                <input class="button" type="button" value="Button input">
+                <input class="button" type="submit" value="Submit input">
+                <input class="button" type="reset" value="Reset input">
+            </xmp>
+        </div>
 
+        
+    </div>
+    <hr>
     <!-- ==================== SIZE ==================== -->
     <div class="btn-size section">
-        <h4 class="fw-semi-bold">Size:</h4>
-        <h5>We have 4 different sizes for buttons:</h5>
+        <h5 class="fw-semi-bold">Size:</h5>
+        <h6>We have 4 different sizes for buttons:</h6>
         <ul>
             <li>extra small: <span class="blue italic">.xsm-btn</span></li>
             <li>small: <span class="blue italic">.sm-btn</span></li>
@@ -801,129 +807,150 @@
             <li>large: <span class="blue italic">.lg-btn</span></li>
         </ul>
         <div class="button-example">
-            <button class="button xsm-btn">Extra Small</button>
-            <button class="button sm-btn">Small</button>
-            <button class="button md-btn">Medium</button>
-            <button class="button lg-btn">Large</button>
+            <button type="button" class="button xsm-btn">Extra Small</button>
+            <button type="button" class="button sm-btn">Small</button>
+            <button type="button" class="button md-btn">Medium</button>
+            <button type="button" class="button lg-btn">Large</button>
         </div>
 
         <p>*Small-sized button is the default button size</p>
 
-        <!-- FOR CODE EXAMPLE
-            <button class="button xsm-btn">Extra Small</button>
-            <button class="button sm-btn">Small</button>
-            <button class="button md-btn">Medium</button>
-            <button class="button lg-btn">Large</button>
-        -->
+        <div class="example">
+            <xmp>
+                <button type="button" class="button xsm-btn">Extra Small</button>
+                <button type="button" class="button sm-btn">Small</button>
+                <button type="button" class="button md-btn">Medium</button>
+                <button type="button" class="button lg-btn">Large</button>
+            </xmp>
+        </div>
     </div>
-
+    <hr>
      <!-- ==================== DISPLAY ==================== -->
     <div class="btn-display section">
-        <h4 class="fw-semi-bold">Display:</h4>
-        <h5>We can also display a full-width button:</h5>
+        <h5 class="fw-semi-bold">Display:</h5>
+        <h6>We can also display a full-width button:</h6>
         <div class="button-example">
-            <button class="button xsm-btn btn-fullwidth">Extra small</button>  
-            <button class="button sm-btn btn-fullwidth">Small</button> 
-            <button class="button md-btn btn-fullwidth">Medium</button> 
-            <button class="button lg-btn btn-fullwidth">Large</button> 
+            <button type="button" class="button xsm-btn btn-fullwidth">Extra small</button>  
+            <button type="button" class="button sm-btn btn-fullwidth">Small</button> 
+            <button type="button" class="button md-btn btn-fullwidth">Medium</button> 
+            <button type="button" class="button lg-btn btn-fullwidth">Large</button> 
         </div>
 
-        <!-- FOR CODE EXAMPLE 
-            <button class="button xsm-btn btn-fullwidth">Extra small</button>  
-            <button class="button sm-btn btn-fullwidth">Small</button> 
-            <button class="button md-btn btn-fullwidth">Medium</button> 
-            <button class="button lg-btn btn-fullwidth">Large</button> 
-        -->
-    </div>    
+        <div class="example">
+            <xmp>
+                <button type="button" class="button xsm-btn btn-fullwidth">Extra small</button>  
+                <button type="button" class="button sm-btn btn-fullwidth">Small</button> 
+                <button type="button" class="button md-btn btn-fullwidth">Medium</button> 
+                <button type="button" class="button lg-btn btn-fullwidth">Large</button> 
+            </xmp>
+        </div>
+    </div>   
+    <hr> 
      <!-- ==================== COLOR ==================== -->    
      <div class="btn-color section">
-        <h4 class="fw-semi-bold">Color:</h4>
-        <h5>Here are some built-in buttons we have:</h5>
+        <h5 class="fw-semi-bold">Color:</h5>
+        <h6>Here are some built-in buttons we have:</h6>
 
         <!-- submit & reset -->
-        <h5>Submit and Reset</h5>
+        <h6>Submit / Reset / Disabled</h6>
         <div class="button-example">
-            <button class="button submit-btn">Submit <i class="fa-solid fa-arrow-right"></i></button>
-            <button class="button reset-btn">Reset</button>
-            <button class="button disabled-btn">Disabled</button>
+            <button type="button" class="button submit-btn">Submit <i class="fa-solid fa-arrow-right"></i></button>
+            <button type="button" class="button reset-btn">Reset</button>
+            <button type="button" class="button disabled-btn">Disabled</button>
         </div>
 
-        <!-- FOR CODE EXAMPLE
-            <button class="button submit-btn">Submit</button>
-            <button class="button reset-btn">Reset</button>
-            <button class="button disabled-btn">Disabled</button>
-        -->
+        <div class="example">
+            <xmp>
+                <button type="button" class="button submit-btn">Submit<i class="fa-solid fa-arrow-right"></i></button>
+                <button type="button" class="button reset-btn">Reset</button>
+                <button type="button" class="button disabled-btn">Disabled</button>
+            </xmp>
+        </div>
         <br> <br>
         
         <!-- black & white -->
-        <h5>White, light, dark, black versions</h5>
+        <h6>White, light, dark, black versions</h6>
         <div class="button-example">
-            <button class="button btn-white">White</button>
-            <button class="button btn-light">Light</button>
-            <button class="button btn-dark">Dark</button>
-            <button class="button btn-black">Black</button>
+            <button type="button" class="button btn-white">White</button>
+            <button type="button" class="button btn-light">Light</button>
+            <button type="button" class="button btn-dark">Dark</button>
+            <button type="button" class="button btn-black">Black</button>
         </div>
-        <!-- FOR CODE EXAMPLE
-            <button class="button btn-white">White</button>
-            <button class="button btn-light">Light</button>
-            <button class="button btn-dark">Dark</button>
-            <button class="button btn-black">Black</button>
-        -->
+
+        <div class="example">
+            <xmp>
+                <button type="button" class="button btn-white">White</button>
+                <button type="button" class="button btn-light">Light</button>
+                <button type="button" class="button btn-dark">Dark</button>
+                <button type="button" class="button btn-black">Black</button>
+            </xmp>
+        </div>
+
         <br><br>
         <!-- color background -->
-        <h5>Color background versions</h5>
+        <h6>Color background versions</h6>
         <div class="button-example">
-            <button class="button btn-primary">Primary</button>
-            <button class="button btn-info">Info</button>
-            <button class="button btn-success">Success</button>
-            <button class="button btn-warning">Warning</button>
-            <button class="button btn-danger">Danger</button>
+            <button type="button" class="button btn-primary btn-color-bg">Primary</button>
+            <button type="button" class="button btn-info btn-color-bg">Info</button>
+            <button type="button" class="button btn-success btn-color-bg">Success</button>
+            <button type="button" class="button btn-warning btn-color-bg">Warning</button>
+            <button type="button" class="button btn-danger btn-color-bg">Danger</button>
         </div>
 
-        <!-- FOR CODE EXAMPLE
-            <button class="button btn-primary">Primary</button>
-            <button class="button btn-info">Info</button>
-            <button class="button btn-success">Success</button>
-            <button class="button btn-warning">Warning</button>
-            <button class="button btn-danger">Danger</button>
-        -->
-        <br><br>
+        <div class="example">
+            <xmp>
+                <button type="button" class="button btn-primary btn-color-bg">Primary</button>
+                <button type="button" class="button btn-info btn-color-bg">Info</button>
+                <button type="button" class="button btn-success btn-color-bg">Success</button>
+                <button type="button" class="button btn-warning btn-color-bg">Warning</button>
+                <button type="button" class="button btn-danger btn-color-bg">Danger</button>
+            </xmp>
+        </div> 
 
+        <br><br>
         <!-- light-color background -->
-        <h5>Light color background versions</h5>
+        <h6>Light color background versions</h6>
         <div class="button-example">
-            <button class="button btn-primary btn-light-bg">Primary</button>
-            <button class="button btn-info btn-light-bg">Info</button>
-            <button class="button btn-success btn-light-bg">Success</button>
-            <button class="button btn-warning btn-light-bg">Warning</button>
-            <button class="button btn-danger btn-light-bg">Danger</button>
+            <button type="button" class="button btn-primary btn-light-bg">Primary</button>
+            <button type="button" class="button btn-info btn-light-bg">Info</button>
+            <button type="button" class="button btn-success btn-light-bg">Success</button>
+            <button type="button" class="button btn-warning btn-light-bg">Warning</button>
+            <button type="button" class="button btn-danger btn-light-bg">Danger</button>
         </div>
 
-        <!-- FOR CODE EXAMPLE
-            <button class="button btn-primary btn-light-bg">Primary</button>
-            <button class="button btn-info btn-light-bg">Info</button>
-            <button class="button btn-success btn-light-bg">Success</button>
-            <button class="button btn-warning btn-light-bg">Warning</button>
-            <button class="button btn-danger btn-light-bg">Danger</button>
-        -->
+        <div class="example">
+            <xmp>
+                <button type="button" class="button btn-primary btn-light-bg">Primary</button>
+                <button type="button" class="button btn-info btn-light-bg">Info</button>
+                <button type="button" class="button btn-success btn-light-bg">Success</button>
+                <button type="button" class="button btn-warning btn-light-bg">Warning</button>
+                <button type="button" class="button btn-danger btn-light-bg">Danger</button>
+            </xmp>
+        </div>
+        
         <br><br>
-        <h5>More than that, the button is available in all the different colors which are defined in our color library, for background and text color. You can always style them with the color you want.</h5>
+        <h6>More than that, the button is available in all the different colors which are defined in our color library, for background and text color. You can always style them with the color you want.</h6>
         <div class="button-example">
-            <button class="button blue bg-p-blue">Button</button>
-            <button class="button green bg-p-green">Button</button>
-            <button class="button purple bg-p-purple">Button</button>
-            <button class="button orange bg-p-orange">Button</button>
-            <button class="button pink bg-p-pink">Button</button>
+            <button type="button" class="button blue bg-p-blue">Button</button>
+            <button type="button" class="button green bg-p-green">Button</button>
+            <button type="button" class="button purple bg-p-purple">Button</button>
+            <button type="button" class="button orange bg-p-orange">Button</button>
+            <button type="button" class="button pink bg-p-pink">Button</button>
         </div>
 
-        <!-- FOR CODE EXAMPLE 
-            <button class="button blue bg-p-blue">Button</button>
-            <button class="button green bg-p-green">Button</button>
-            <button class="button purple bg-p-purple">Button</button>
-            <button class="button orange bg-p-orange">Button</button>
-            <button class="button pink dark bg-p-pink">Button</button>
-        -->
+        <div class="example">
+            <xmp>
+                <button type="button" class="button blue bg-p-blue">Button</button>
+                <button type="button" class="button green bg-p-green">Button</button>
+                <button type="button" class="button purple bg-p-purple">Button</button>
+                <button type="button" class="button orange bg-p-orange">Button</button>
+                <button type="button" class="button pink dark bg-p-pink">Button</button>
+            </xmp>
+        </div>
      </div>   
+     <br><br>
+
+
 </section>
   
  <!-- Components
