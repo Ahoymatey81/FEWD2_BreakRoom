@@ -58,19 +58,21 @@
     <p>The base font weight is set to Regular. Here are all the classes of font weights you can use and the names of their classes. </p>
     <div class="font-styles">
       <div class="row">
+      <!-- END: TRISH CHANGED SUNDAY MAY 29 4 PM -->
         <p class="column-three fw-light">Light class: .fw-light-it</p>
-        <p class="column-three .fw-regular">Regular class: .fw-regular</p>
-        <p class="column-three .fw-medium">Medium class .fw-medium</p>
+        <p class="column-three fw-regular">Regular class: .fw-regular</p>
+        <p class="column-three fw-medium">Medium class .fw-medium</p>
       </div> 
       <div class="row">
         <p class="column-three fw-light-it">Light Italic class: .fw-light-it</p>
         <p class="column-three fw-regular-it">Regular Italic: class .fw-regular-it</p>
-        <p class="column-three .fw-medium-it">Medium Italic: class .fw-medium-it</p>
+        <p class="column-three fw-medium-it">Medium Italic: class .fw-medium-it</p>
       </div>     
       <div class="row">
-        <p class="column-three .fw-semi-bold">Semi-bold class .fw-semi-bold</p>
-        <p class="column-three .fw-bold ">Bold: class .fw-bold </p>
-        <p class="column-three .fw-bolder">Extra Bold: class .fw-bolder</p>
+        <p class="column-three fw-semi-bold">Semi-bold class .fw-semi-bold</p>
+        <p class="column-three fw-bold ">Bold: class .fw-bold </p>
+        <p class="column-three fw-bolder">Extra Bold: class .fw-bolder</p>
+    <!-- END: TRISH CHANGED SUNDAY MAY 29 4 PM -->
       </div>          
     </div>
 
@@ -141,9 +143,29 @@
     <h3>Additional Text Elements</h3>
     
     <address>address </address>defines the contact information (email, phone, social media, etc.) for the author/owner of a document or an article, usually browsers render in italic, always with a line break before and after
-      <blockquote>Blockquote </blockquote>specifies a section that is quoted from another source which browsers usually indent
+
+    <!-- START: TRISH ADDED SUNDAY MAY 29 4 PM -->
+    <address>
+      <pre>
+        <code>
+            Business name
+            123 Main Street
+            City, State 00000
+        </code>
+      </pre>
+    </address>
+    
+    <blockquote>Blockquote </blockquote>specifies a section that is quoted from another source which browsers usually indent
     <hr>
-  
+    <blockquote>
+      <pre>
+        <code>
+            An Example of a blockquote
+        </code>
+      </pre>
+    </blockquote>
+     <!-- END: TRISH ADDED SUNDAY MAY 29 4 PM -->
+
     <h3>Text Transformations</h3>
     <div class="text-transform">
       <p>Text transformations allow you a finer level of control for the display of the text. These changes are often used on headings.</p>
@@ -161,7 +183,11 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <section id="spacing">
     <h2>Spacing</h2>
-    Responsive-friendly margin or padding values can be added to an element or one of its sides. Includes support for individual properties, all properties, and vertical and horizontal properties. 
+    <p>Responsive-friendly margin or padding values can be added to an element, or on one or more of its sides. Includes support for individual properties, all properties, and vertical and horizontal properties. </p>     
+     <!-- START: TRISH CHANGED SUNDAY MAY 29 4 PM --> 
+    <p><strong>To apply spacing in a specific direction, add the abbreviations for top right bottom and left (t,r,b,l) to the base class names</strong>. x is used for adding to both sides, y for top or bottom. For example, the class .m3t adds space to the top only, .p2x adds padding to both sides, etc.</p>
+      <!-- END: TRISH CHANGED SUNDAY MAY 29 4 PM -->  
+ 
     <h3>Margins</h3>
     <div class="margins">
     <div class="row">
@@ -228,15 +254,17 @@
   <hr>
     <!-- Shadows
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <!-- style later if time and show examples -->
+<!-- START: TRISH ADDED SUNDAY MAY 29 4 PM changed names to match css names-->
+  <!-- Style later if time and show examples -->
   <section id="shadows"> 
     <h2>Shadows</h2>
-    <p>Drop shadow styles can be used to help text or other element stand out from its background. Here are the classes to use for shadows:</p>
-    <p>.shadow-base</p>
-    <p>.shadows-xs</p>
-    <p>.shadows-sm</p>
-    <p>.shadows-md</p>
-    <p>.shadows-lg</p>
+    <p>Shadow styles can be used to help text or other element stand out from its background. Here are the classes to use for shadows:</p>
+    <!-- <p>.shadow-base</p>
+    <p>.shadow-xs</p> -->
+    <p>.shadow-sm</p>
+    <p>.shadow-md</p>
+    <p>.shadow-lg</p>
+    <!-- END: TRISH ADDED SUNDAY MAY 29 4 PM -->
   </section>
   <hr>
   <!-- Colors
