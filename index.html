@@ -38,6 +38,7 @@
 <div class="room">
   <!-- Navigation
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    
 
   <!-- Introduction to Break Room
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -1397,6 +1398,53 @@
 
   <!-- Example Navigation
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <section id="navigation" class="home">
+    <h2>Navigation</h2>
+    <p>A simple responsive navbar we have, has the fixed position, which appears on top of the page, has dark background and lighe text.</p>
+    <img src="images/navbar-large.png" alt="Large-navbar">
+    <div class="smNavbar-example">
+        <img src="images/navbar-small.png" alt="Small-navbar">
+        <img src="images/hamburger-menu.png" alt="pop-up menu">
+    </div>
+    <p>Here is what a complete basic navbar looks like:</p>
+    <xmp class="example">
+        <nav class="navbar">
+            <div class="navbar-container">
+                <div class="navbar-logo">
+                    <a href="" class="navbar-item">LOGO</a>
+                </div>
+                <div class="navbar-menu-container">
+                    <div class="navbar-menu">
+                        <div class="navbar-close">
+                            <i class="fa-sharp fa-solid fa-xmark close-icon"></i>
+                        </div>
+                        <a href="#" class="navbar-item active">Home</a>
+                        <a href="#" class="navbar-item">About</a>
+                        <a href="#" class="navbar-item">Work</a>
+                        <a href="#" class="navbar-item">Contact</a>
+                    </div>    
+                </div>
+                <div class="navbar-toggle">
+                    <i class="fa-solid fa-bars menu-toggle-icon"></i>
+                </div>
+            </div>
+        </nav>
+    </xmp>
+
+    <div class="navbar-example">
+        <ul>
+            <li><span class="blue fw-semi-bold">navbar</span> is the main container.</li>
+            <li><span class="blue fw-semi-bold">navbar-container</span> includes the logo and the navigation.</li>
+            <li><span class="blue fw-semi-bold">navbar-logo</span> is for the logo brand. It always appears on the left side of the navbar.</li>
+            <li><span class="blue fw-semi-bold">navbar-menu-container</span> is the container for navbar menu. It works as a modal window for navbar menu on mobile devices.</li>
+            <li><span class="blue fw-semi-bold">navbar-menu</span> is the container for the navigation items. It appears on the right side, hidden on mobile devices, visible on tablets and desktop.</li>
+            <li><span class="blue fw-semi-bold">navbar-close</span> is the button to close the navigation menu. It is on the top right of the menu, visible on mobile devices, hidden on tablets and desktop.</li>
+            <li><span class="blue fw-semi-bold">navbar-items</span> is the single item of the navbar.</li>
+            <li><span class="blue fw-semi-bold">navbar-toggle</span> is the hamburger icon, which toggles the navbar menu on mobile devices.</li>
+            <li>You can add <span class="blue fw-semi-bold">active</span> to any class of <span class="blue fw-semi-bold">navbar-item</span> for the active menu item, so it can look different than other items and let you know which page you are on.</li>
+        </ul>
+    </div>   
+</section>
 
  
   <!-- JavaScript
