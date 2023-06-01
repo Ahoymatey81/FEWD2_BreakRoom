@@ -695,6 +695,243 @@ xmp {
 }    
 /* Forms
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
+div.forms-intro {
+    margin-left: 10px;
+    margin-bottom: 20px;
+  }    
+  
+  form#form-example {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid #363636;
+    border-radius: 5px;
+    padding: 2em 2.3em;
+  }
+  
+  /*========== FORM-FIELD ==========*/
+  .form-field:not(:last-child) {
+    margin-bottom: 1.2em;
+  }
+  
+  /*========== LABEL ==========*/
+  .form-field .label {
+    display: block;
+    color: #363636;
+    padding-top: .6em;
+    font-size: 1.7em;
+    font-weight: 700;
+    margin-bottom: .7rem;
+  }
+  
+  .form-field .label.is-small {
+    font-size: 1.3em;
+  }
+  
+  .form-field .label.is-large{
+    font-size: 2.1em;
+  }
+  
+  /*========== FORM-CONTROL ==========*/
+  .form-control {
+    clear: both;
+    position: relative;
+    text-align: left;
+    width: auto;
+  }
+  
+  /*========== INPUT - SELECT ==========*/
+  .form-control .input,
+  .form-control .text-area,
+  .form-control .select select {
+    padding: .7em 0.5em;
+    border-radius: 3px;
+    border: 2px solid #d0c4c4;
+    box-shadow: inset 0 1px 3px 0, rgba(0, 0, 0, 0.1), 0 1px 2px 0, rgba(0, 0, 0, 0.6);
+    font-size: 1.6em;
+    background-color: #fff;
+    color: #363636;
+  }
+  
+  .form-control .input {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 2.2em;
+  }
+  
+  /*========== TEXTAREA ==========*/
+  .form-control .text-area {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    max-height: 40em;
+    min-height: 10em;
+    height: initial;
+    resize: none;
+  }
+  
+  /* Size */
+  .form-control .input.is-small, 
+  .form-control .select.is-small select,
+  .form-control .text-area.is-small,
+  label.radio-btn.is-small,
+  label.checkbox.is-small {
+    font-size: 1.2em;
+  }
+  
+  .form-control .input.is-large, 
+  .form-control .select.is-large select,
+  .form-control .text-area.is-large,
+  label.radio-btn.is-large,
+  label.checkbox.is-large {
+    font-size: 1.9em;
+  }
+  
+  /* Hover - Focus */
+  .form-control .input:hover,
+  .form-control .select select:hover,
+  .form-control .text-area:hover,
+  .form-control .select select:hover {
+    outline: 1px solid #858583;
+  } 
+  
+  .form-control .input:focus,
+  .form-control .text-area:focus,
+  .form-control .select select:focus {
+    box-shadow: inset 0 0.0625em 0.125em rgba(10,10,10,.05);
+    outline: 2px solid #3880ff;
+    border: none;
+  }
+  
+  /*========== DROP DOWN MENU - SELECT ==========*/
+  .form-control .select {
+    display: inline-block;
+    width: 100%;
+    max-width: 100%;
+    position: relative;
+    vertical-align: top;
+  }
+  
+  .form-control .select select {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    cursor: pointer;
+    outline: none;
+    padding-top: .4em;
+    padding-bottom: .4em;
+  }
+  
+  .form-control .select select option {
+    font-size: 1.4rem;
+  }
+  
+  .form-control .select.is-small select.is-small option {
+    font-size: 1rem;
+  }
+  
+  .form-control .select.is-large select.is-large option {
+    font-size: 1.7rem;
+  }
+  
+  /*========== FORM-CONTROL HAS ICON ==========*/
+  .form-control.has-icon .icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 3.35em;
+    width: 3.35em;
+  }
+  
+  .form-control.has-icon .input {
+    padding-left: 3.35rem;
+  }
+  
+  .form-control.has-icon .icon i {
+    font-size: 1.6em;
+    height: 1.6rem;
+    width: 1.6rem;
+    color: #363636;
+  }
+  
+  .form-control.has-icon .icon.is-small {
+    height: 2.7em;
+    width: 2.7em;
+    top: 0;
+    left: 0;
+  }
+  
+  .form-control.has-icon .icon.is-small i {
+    font-size: 1.2em;
+    height: 1.2rem;
+    width: 1.2rem;
+  }
+  
+  .form-control.has-icon input.is-small {
+    padding-left: 2.7rem;
+  }
+  
+  .form-control.has-icon .icon.is-large {
+    height: 4em;
+    width: 4em;
+    top: 0;
+    left: 0;
+  }
+  
+  .form-control.has-icon .icon.is-large i {
+    font-size: 2em;
+    height: 2rem;
+    width: 2rem;
+  }
+  
+  .form-control.has-icon input.is-large {
+    padding-left: 4rem;
+  }
+  
+  /*========== RADIO BUTTON - CHECKBOX ==========*/
+  label.radio-btn,
+  label.checkbox {
+    position: relative;
+    display: inline-block;
+    line-height: 1.25;
+    font-size: 1.6em;
+    margin-right: 4em;
+  }
+  
+  label.radio-btn input,
+  label.checkbox input {
+    cursor: pointer;
+    margin-right: 5px;
+  }
+  
+  input[type='radio'],
+  input[type='checkbox'] {
+    accent-color: #2dd36f;
+    width: .9em;
+    height: .9em;
+    border-radius: .9em;
+  }
+  
+  /*========== GROUP BUTTONS ==========*/
+  .form-field.group-btn {
+    display: flex;
+    justify-content: flex-start;
+  }
+  
+  .form-field.group-btn .form-control {
+    flex-shrink: 0;
+    margin: 1.2rem 2rem 1.2rem 1.2rem;
+  }
+  
+  .form-field.group-btn .form-control:first-child {
+    margin-left: 0;
+  }
+  
+  .form-field.group-btn.group-center {
+    justify-content: center;
+  } 
 
 /* Lists
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -815,6 +1052,7 @@ xmp {
 
 /* Navigation
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* Updated 3:32PM Yen - changed something on navbar */
 #navigation img {
     max-width: 40%;
     height: auto;
@@ -916,14 +1154,14 @@ a.navbar-item {
 a.navbar-item.active {
     background-color: #CBD5E0;
     width: 100%;
-    border-radius: 5px;
+    border-radius: 7px;
 }
 
 .navbar-menu a.navbar-item {
     color: #333;
     font-size: 2.4rem;
     font-weight: 500; 
-    padding: 1rem;
+    padding: .5rem .7rem;
 }
 
 .navbar-menu .navbar-item:not(:last-of-type) {
@@ -965,12 +1203,12 @@ a.navbar-item.active {
 @media (min-width: 750px) {
     .navbar-container {
         max-width: 1250px;
-        height: calc(6rem + 1rem);
+        height: calc(5.5rem + 1rem);
         padding: 40px 50px;
     }
 
     .navbar.sticky .navbar-container {
-        height: calc(5rem + 1rem);
+        height: calc(4rem + 1rem);
     }
 
     .navbar-menu-container {
@@ -999,9 +1237,12 @@ a.navbar-item.active {
 
     .navbar-menu a.navbar-item {
         color: #fefefe;;
-        font-size: 2.5em;
-        margin-left: 4rem;
-        padding: .5rem .8rem;
+        font-size: 2em;
+        padding: .5rem .7rem;
+    }
+
+    .navbar-menu a.navbar-item:not(:first-of-type) {
+        margin-left: 2.8rem;
     }
 
     .navbar-menu .navbar-item:hover {
@@ -1334,11 +1575,13 @@ CSS COMPONENT TEXT EFFECTS STARTS HERE
 *****************************************/
 
  /****************************************
- START ACCORDIAN CSS 
+Trish changed 053123 220pm #my-accordion min height from 100 to 50vh
+
+ START ACCORDION CSS 
 *****************************************/
 #my-accordion {
     font-family: sans-serif;
-    min-height: 100vh;
+    min-height: 50vh;
     padding: 3em;
 }
 #my-accordion h1 {
