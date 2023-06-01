@@ -1764,6 +1764,771 @@ ADDED PREFORMATTED CODE COMPONENTS ADDED BACK IN PARTS THAT WERE MISSING  -->
 </section>
 
 
+<!-- Forms
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<section id="forms">
+  <h2>Forms</h2>
+  <p>Our framework supports the following native HTML form element: <span class="blue italic">&lt;form&gt;</span>, <span class="blue italic">&lt;button&gt;</span>, <span class="blue italic">&lt;input&gt; </span>, <span class="blue italic">&lt;textarera&gt;</span>, and <span class="blue italic">&lt;label&gt;.</span></p>
+  <p>The following CSS classes are supported:</p>
+  <div class="forms-intro">
+    <ul>
+      <li>label</li>
+      <li>input</li>
+      <li>textarea</li>
+      <li>select</li>
+      <li>checkbox</li>
+      <li>radio</li>
+      <li>button</li>
+    </ul>
+  </div>
+  <h5>Complete form example:</h5>
+  <!--========== COMPLETE FORM ==========-->
+  <form action="" id="form-example">
+    <fieldset class="form-field">
+      <label class="label" for="name">Name</label>
+      <div class="form-control">
+        <input class="input" type="text" placeholder="Your name" id="name">
+      </div>
+    </fieldset>
+
+    <fieldset class="form-field">
+      <label class="label">Email</label>
+      <div class="form-control has-icon">
+        <input class="input" type="email" placeholder="Your email">
+        <span class="icon">
+          <i class="fa-solid fa-envelope"></i>
+        </span>
+      </div>
+    </fieldset> 
+
+    <fieldset class="form-field">
+      <label class="label">Subject</label>
+      <div class="form-control">
+        <div class="select">
+          <select>
+            <option>Please choose one</option>
+            <option checked>Option 1</option>
+            <option>Option 2</option>
+            <option>Option 2</option>
+          </select>
+        </div>
+      </div>
+    </fieldset>
+
+    <fieldset class="form-field">
+      <label class="label">Message</label>
+      <div class="form-control">
+        <textarea class="text-area" placeholder="Type your message here..."></textarea>
+      </div>
+    </fieldset> 
+
+    <fieldset class="form-field">
+      <label class="label">Multiple choices - checkbox</label>
+      <div class="form-control">
+        <label class="checkbox">
+          <input type="checkbox" checked>Option 1
+        </label>
+        <label class="checkbox">
+          <input type="checkbox">Option 2
+        </label>
+        <label class="checkbox">
+          <input type="checkbox">Option 3
+        </label>
+      </div>
+    </fieldset>
+
+    <fieldset class="form-field">
+      <label class="label">Just one right choice - radio button</label>
+      <div class="form-control">
+        <label class="radio-btn">
+          <input type="radio" name="question">Yes
+        </label>
+        <label class="radio-btn">
+          <input type="radio" name="question">No
+        </label>
+      </div>
+    </fieldset>
+
+    <fieldset class="form-field group-btn">
+      <div class="form-control">
+        <button class="button submit-btn">Submit <i class="fa-solid fa-arrow-right"></i></button>
+      </div>
+      <div class="form-control">
+        <button class="button reset-btn">Cancel</button>
+    </fieldset> 
+  </form>
+
+  <xmp>
+    <fieldset class="form-field">
+      <label class="label" for="name">Name</label>
+      <div class="form-control">
+        <input class="input" type="text" placeholder="Your name" id="name">
+      </div>
+    </fieldset>
+
+    <fieldset class="form-field">
+      <label class="label">Email</label>
+      <div class="form-control has-icon">
+        <input class="input" type="email" placeholder="Your email">
+        <span class="icon">
+          <i class="fa-solid fa-envelope"></i>
+        </span>
+      </div>
+    </fieldset> 
+
+    <fieldset class="form-field">
+      <label class="label">Subject</label>
+      <div class="form-control">
+        <div class="select">
+          <select>
+            <option>Please choose one</option>
+            <option checked>Option 1</option>
+            <option>Option 2</option>
+            <option>Option 2</option>
+          </select>
+        </div>
+      </div>
+    </fieldset>
+
+    <fieldset class="form-field">
+      <label class="label">Message</label>
+      <div class="form-control">
+        <textarea class="text-area" placeholder="Type your message here..."></textarea>
+      </div>
+    </fieldset> 
+
+    <fieldset class="form-field">
+      <label class="label">Multiple choices - checkbox</label>
+      <div class="form-control">
+        <label class="checkbox">
+          <input type="checkbox" checked>Option 1
+        </label>
+        <label class="checkbox">
+          <input type="checkbox">Option 2
+        </label>
+        <label class="checkbox">
+          <input type="checkbox">Option 3
+        </label>
+      </div>
+    </fieldset>
+
+    <fieldset class="form-field">
+      <label class="label">Just one right choice - radio button</label>
+      <div class="form-control">
+        <label class="radio-btn">
+          <input type="radio" name="question">Yes
+        </label>
+        <label class="radio-btn">
+          <input type="radio" name="question">No
+        </label>
+      </div>
+    </fieldset>
+
+    <fieldset class="form-field group-btn">
+      <div class="form-control">
+        <button class="button submit-btn">Submit <i class="fa-solid fa-arrow-right"></i></button>
+      </div>
+      <div class="form-control">
+        <button class="button reset-btn">Cancel</button>
+    </fieldset>
+  </xmp>
+  <p>*When combining several controls in a <span class="red">form</span>, use the <span class="red">form-field class</span> as a container, to keep the spacing consistent.</p>
+
+  <br><Hr>
+  <!--========== FORM-FIELD ==========-->
+  <h5>Form-field</h5>
+  <p>The <span class="red">form-field</span> container is a container for:</p>
+  <div class="forms-intro">
+    <ul>
+      <li>label</li>
+      <li>form-control</li>
+    </ul>
+  </div>
+  <br><hr>
+
+  <!--========== LABEL ==========-->
+  <h5>Label</h5>
+  <fieldset class="form-field">
+    <label class="label" for="name">Label</label>
+    <div class="form-control">
+      <input class="input" type="text" placeholder="Text input..." id="name">
+    </div>
+  </fieldset>
+
+  <xmp>
+    <fieldset class="form-field">
+      <label class="label" for="name">Label</label>
+      <div class="form-control">
+        <input class="input" type="text" placeholder="Text input..." id="name">
+      </div>
+    </fieldset>
+  </xmp> 
+  <br>
+  <p>*This container allows form-field to be spaced consistently.</p>
+  <br><hr>
+
+  <!--========== FORM-CONTROL ==========-->
+  <h5>Form-control</h5>
+  <p>The <span class="red">form-control</span> is the container of the following elements:</p>
+  <div class="forms-intro">
+    <ul>
+      <li>input</li>
+      <li>select</li>
+      <li>button</li>
+      <li>icon</li>
+    </ul>
+  </div>
+
+  <!-- text input -->
+  <h6>Text input</h6>
+  <div class="form-control">
+    <input class="input" type="text" placeholder="Text input">
+  </div>
+
+  <xmp>
+    <div class="form-control">
+      <input class="input" type="text" placeholder="Text input">
+    </div>
+  </xmp>
+
+  <!-- dropdown menu -->
+  <h6>Select dropdown</h6>
+  <div class="form-control">
+    <div class="select">
+      <select>
+        <option>Select dropdown</option>
+        <option>Option 1</option>
+        <option>Option 1</option>
+      </select>
+    </div>
+  </div>
+
+  <xmp>
+    <div class="form-control">
+      <div class="select">
+        <select>
+          <option>Select dropdown</option>
+          <option>Option 1</option>
+          <option>Option 1</option>
+        </select>
+      </div>
+    </div>
+  </xmp>
+
+  <!-- button -->
+  <h6>Button</h6>
+  <div class="control">
+    <button class="button btn-info btn-color-bg">Submit</button>
+  </div>
+
+  <xmp>
+    <div class="control">
+      <button class="button btn-info btn-color-bg">Submit</button>
+    </div>
+  </xmp>
+
+  <h6>Icons</h6>
+  <fieldset class="form-field">
+    <label class="label">Email</label>
+    <div class="form-control has-icon">
+      <input class="input" type="email" placeholder="Your email">
+      <span class="icon">
+        <i class="fa-solid fa-envelope"></i>
+      </span>
+    </div>
+  </fieldset> 
+
+  <xmp>
+    <fieldset class="form-field">
+      <label class="label">Email</label>
+      <div class="form-control has-icon">
+        <input class="input" type="email" placeholder="Your email">
+        <span class="icon">
+          <i class="fa-solid fa-envelope"></i>
+        </span>
+      </div>
+    </fieldset>
+  </xmp>
+  <br><hr>
+
+  <!--========== INPUT ==========-->
+  <h5>Input</h5>
+  <p>We have three sizes for each of <span class="blue">input text</span>, <span class="blue">input text with icon</span> and <span class="blue">select dropdown</span>, which are <span class="red">small</span>, <span class="red">medium/ default</span> and <span class="red">large</span>.</p>
+
+  <h6>Input Text</h6>
+  <fieldset class="form-field">
+    <label class="label is-small">Small label + input</label>
+    <div class="form-control">
+      <input class="input is-small" type="text" placeholder="Small size">
+    </div>
+  </fieldset>
+
+  <fieldset class="form-field">
+    <label class="label">Default label + input</label>
+    <div class="form-control">
+      <input class="input" type="text" placeholder="Default size">
+    </div>
+  </fieldset>
+
+  <fieldset class="form-field">
+    <label class="label is-large">Large label + input</label>
+    <div class="form-control">
+      <input class="input is-large" type="text" placeholder="Large size">
+    </div>
+  </fieldset>
+
+  <xmp>
+    <fieldset class="form-field">
+      <label class="label is-small">Small label + input</label>
+      <div class="form-control">
+        <input class="input is-small" type="text" placeholder="Small size">
+      </div>
+    </fieldset>
+
+    <fieldset class="form-field">
+      <label class="label">Default label + input</label>
+      <div class="form-control">
+        <input class="input" type="text" placeholder="Default size">
+      </div>
+    </fieldset>
+
+    <fieldset class="form-field">
+      <label class="label is-large">Large label + input</label>
+      <div class="form-control">
+        <input class="input is-large" type="text" placeholder="Large size">
+      </div>
+    </fieldset>
+  </xmp>
+
+  <h6>Input text with icon</h6>
+  <fieldset class="form-field">
+    <label class="label is-small">Small label + input + icon</label>
+    <div class="form-control has-icon">
+      <input class="input is-small" type="email" placeholder="Small size">
+      <span class="icon is-small">
+        <i class="fa-solid fa-envelope"></i>
+      </span>
+    </div>
+  </fieldset> 
+
+  <fieldset class="form-field">
+    <label class="label">Default label + input + icon</label>
+    <div class="form-control has-icon">
+      <input class="input" type="email" placeholder="Default size">
+      <span class="icon">
+        <i class="fa-solid fa-envelope"></i>
+      </span>
+    </div>
+  </fieldset> 
+
+  <fieldset class="form-field">
+    <label class="label is-large">Large label + input + icon</label>
+    <div class="form-control has-icon">
+      <input class="input is-large" type="email" placeholder="Large size">
+      <span class="icon is-large">
+        <i class="fa-solid fa-envelope"></i>
+      </span>
+    </div>
+  </fieldset> 
+
+  <xmp>
+    <fieldset class="form-field">
+      <label class="label is-small">Small label + input + icon</label>
+      <div class="form-control has-icon">
+        <input class="input is-small" type="email" placeholder="Small size">
+        <span class="icon is-small">
+          <i class="fa-solid fa-envelope"></i>
+        </span>
+      </div>
+    </fieldset> 
+
+    <fieldset class="form-field">
+      <label class="label">Default label + input + icon</label>
+      <div class="form-control has-icon">
+        <input class="input" type="email" placeholder="Default size">
+        <span class="icon">
+          <i class="fa-solid fa-envelope"></i>
+        </span>
+      </div>
+    </fieldset> 
+
+    <fieldset class="form-field">
+      <label class="label is-large">Large label + input + icon</label>
+      <div class="form-control has-icon">
+        <input class="input is-large" type="email" placeholder="Large size">
+        <span class="icon is-large">
+          <i class="fa-solid fa-envelope"></i>
+        </span>
+      </div>
+    </fieldset> 
+  </xmp>
+
+  <h6>Select dropdown</h6>
+  <fieldset class="form-field">
+    <label class="label is-small">Small select dropdown</label>
+    <div class="form-control">
+      <div class="select is-small">
+        <select class="is-small">
+          <option>Please choose one</option>
+          <option checked>Option 1</option>
+          <option>Option 2</option>
+          <option>Option 2</option>
+        </select>
+      </div>
+    </div>
+  </fieldset>
+
+  <fieldset class="form-field">
+    <label class="label">Default select dropdown</label>
+    <div class="form-control">
+      <div class="select">
+        <select>
+          <option>Please choose one</option>
+          <option checked>Option 1</option>
+          <option>Option 2</option>
+          <option>Option 2</option>
+        </select>
+      </div>
+    </div>
+  </fieldset>
+
+  <fieldset class="form-field">
+    <label class="label is-large">Large select dropdown</label>
+    <div class="form-control">
+      <div class="select is-large">
+        <select class="is-large">
+          <option>Please choose one</option>
+          <option checked>Option 1</option>
+          <option>Option 2</option>
+          <option>Option 2</option>
+        </select>
+      </div>
+    </div>
+  </fieldset>
+
+  <xmp>
+    <fieldset class="form-field">
+      <label class="label is-small">Small select dropdown</label>
+      <div class="form-control">
+        <div class="select is-small">
+          <select class="is-small">
+            <option>Please choose one</option>
+            <option checked>Option 1</option>
+            <option>Option 2</option>
+            <option>Option 2</option>
+          </select>
+        </div>
+      </div>
+    </fieldset>
+
+    <fieldset class="form-field">
+      <label class="label">Default select dropdown</label>
+      <div class="form-control">
+        <div class="select">
+          <select>
+            <option>Please choose one</option>
+            <option checked>Option 1</option>
+            <option>Option 2</option>
+            <option>Option 2</option>
+          </select>
+        </div>
+      </div>
+    </fieldset>
+
+    <fieldset class="form-field">
+      <label class="label is-large">Large select dropdown</label>
+      <div class="form-control">
+        <div class="select is-large">
+          <select class="is-large">
+            <option>Please choose one</option>
+            <option checked>Option 1</option>
+            <option>Option 2</option>
+            <option>Option 2</option>
+          </select>
+        </div>
+      </div>
+    </fieldset>
+  </xmp>
+  <br><hr>
+
+  <!-- ======== TEXTAREA ======== -->
+  <h2>Textarea</h2>
+  <p>We also have three sizes of <span class="blue">textarea</span>, which are <span class="red">small</span>, <span class="red">medium/ default</span> and <span class="red">large</span>.</p>
+
+  <fieldset class="form-field">
+    <label class="label is-small">Small Textarea</label>
+    <div class="form-control">
+      <textarea class="text-area is-small" placeholder="Type your message here..."></textarea>
+    </div>
+  </fieldset> 
+
+  <fieldset class="form-field">
+    <label class="label">Default Textarea</label>
+    <div class="form-control">
+      <textarea class="text-area" placeholder="Type your message here..."></textarea>
+    </div>
+  </fieldset> 
+
+  <fieldset class="form-field">
+    <label class="label is-large">Large Textarea</label>
+    <div class="form-control">
+      <textarea class="text-area is-large" placeholder="Type your message here..."></textarea>
+    </div>
+  </fieldset> 
+  <xmp>
+    <fieldset class="form-field">
+      <label class="label is-small">Small Textarea</label>
+      <div class="form-control">
+        <textarea class="text-area is-small" placeholder="Type your message here..."></textarea>
+      </div>
+    </fieldset> 
+
+    <fieldset class="form-field">
+      <label class="label">Default Textarea</label>
+      <div class="form-control">
+        <textarea class="text-area" placeholder="Type your message here..."></textarea>
+      </div>
+    </fieldset> 
+
+    <fieldset class="form-field">
+      <label class="label is-large">Large Textarea</label>
+      <div class="form-control">
+        <textarea class="text-area is-large" placeholder="Type your message here..."></textarea>
+      </div>
+    </fieldset>
+  </xmp>
+  <br><hr>
+
+  <!--========== RADIO BUTTON ==========-->
+  <h2>RADIO BUTTON</h2>
+  <p>The <span class="red">radio-btn</span> class wraps around <span class="red">&lt;input type="radio"&gt;</span>. Make sure the linked radio buttons have the same value for their <span class="red">name</span> attribute.</p>
+
+  <fieldset class="form-field">
+    <label class="label is-small">Small radio button</label>
+    <div class="form-control">
+      <label class="radio-btn is-small">
+        <input type="radio" name="question">Yes
+      </label>
+      <label class="radio-btn is-small">
+        <input type="radio" name="question">No
+      </label>
+    </div>
+  </fieldset>
+
+  <fieldset class="form-field">
+    <label class="label">Default radio button</label>
+    <div class="form-control">
+      <label class="radio-btn">
+        <input type="radio" name="question">Yes
+      </label>
+      <label class="radio-btn">
+        <input type="radio" name="question">No
+      </label>
+    </div>
+  </fieldset>
+
+  <fieldset class="form-field">
+    <label class="label is-large">Large radio button</label>
+    <div class="form-control">
+      <label class="radio-btn is-large">
+        <input type="radio" name="question">Yes
+      </label>
+      <label class="radio-btn is-large">
+        <input type="radio" name="question">No
+      </label>
+    </div>
+  </fieldset>
+
+  <xmp>
+    <fieldset class="form-field">
+      <label class="label is-small">Small radio button</label>
+      <div class="form-control">
+        <label class="radio-btn is-small">
+          <input type="radio" name="question">Yes
+        </label>
+        <label class="radio-btn is-small">
+          <input type="radio" name="question">No
+        </label>
+      </div>
+    </fieldset>
+
+    <fieldset class="form-field">
+      <label class="label">Default radio button</label>
+      <div class="form-control">
+        <label class="radio-btn">
+          <input type="radio" name="question">Yes
+        </label>
+        <label class="radio-btn">
+          <input type="radio" name="question">No
+        </label>
+      </div>
+    </fieldset>
+
+    <fieldset class="form-field">
+      <label class="label is-large">Large radio button</label>
+      <div class="form-control">
+        <label class="radio-btn is-large">
+          <input type="radio" name="question">Yes
+        </label>
+        <label class="radio-btn is-large">
+          <input type="radio" name="question">No
+        </label>
+      </div>
+    </fieldset>
+  </xmp>
+  <br><hr>
+
+  <!--========== CHECKBOX ==========-->
+  <h2>Checkbox</h2>
+  <p>The <span class="red">checkbox</span> class wraps around <span class="red">&lt;input type="checkbox"&gt;</span>.
+
+  <fieldset class="form-field">
+    <label class="label is-small">Small checkbox</label>
+    <div class="form-control">
+      <label class="checkbox is-small">
+        <input type="checkbox" checked>Option 1
+      </label>
+      <label class="checkbox is-small">
+        <input type="checkbox">Option 2
+      </label>
+      <label class="checkbox is-small">
+        <input type="checkbox">Option 3
+      </label>
+    </div>
+  </fieldset>  
+
+  <fieldset class="form-field">
+    <label class="label">Default checkbox</label>
+    <div class="form-control">
+      <label class="checkbox">
+        <input type="checkbox" checked>Option 1
+      </label>
+      <label class="checkbox">
+        <input type="checkbox">Option 2
+      </label>
+      <label class="checkbox">
+        <input type="checkbox">Option 3
+      </label>
+    </div>
+  </fieldset>  
+
+  <fieldset class="form-field">
+    <label class="label is-large">Large checkbox</label>
+    <div class="form-control">
+      <label class="checkbox is-large">
+        <input type="checkbox" checked>Option 1
+      </label>
+      <label class="checkbox is-large">
+        <input type="checkbox">Option 2
+      </label>
+      <label class="checkbox is-large">
+        <input type="checkbox">Option 3
+      </label>
+    </div>
+  </fieldset>  
+
+  <xmp>
+    <fieldset class="form-field">
+      <label class="label is-small">Small checkbox</label>
+      <div class="form-control">
+        <label class="checkbox is-small">
+          <input type="checkbox" checked>Option 1
+        </label>
+        <label class="checkbox is-small">
+          <input type="checkbox">Option 2
+        </label>
+        <label class="checkbox is-small">
+          <input type="checkbox">Option 3
+        </label>
+      </div>
+    </fieldset>  
+
+    <fieldset class="form-field">
+      <label class="label">Default checkbox</label>
+      <div class="form-control">
+        <label class="checkbox">
+          <input type="checkbox" checked>Option 1
+        </label>
+        <label class="checkbox">
+          <input type="checkbox">Option 2
+        </label>
+        <label class="checkbox">
+          <input type="checkbox">Option 3
+        </label>
+      </div>
+    </fieldset>  
+
+    <fieldset class="form-field">
+      <label class="label is-large">Large checkbox</label>
+      <div class="form-control">
+        <label class="checkbox is-large">
+          <input type="checkbox" checked>Option 1
+        </label>
+        <label class="checkbox is-large">
+          <input type="checkbox">Option 2
+        </label>
+        <label class="checkbox is-large">
+          <input type="checkbox">Option 3
+        </label>
+      </div>
+    </fieldset> 
+  </xmp>
+  <br><hr>
+
+  <!--========== BUTTON ==========-->
+  <h2>Button</h2>
+  <p>A <span class="red">form-control</span> can wrap a single <span class="red">button</span>, or if you want to group two <span class="red">form-control(s)</span> for two single <span class="red">button</span>, you can do that by adding the class <span class="red">group-btn</span> on the <span class="red">form-field</span>  container.</p>
+  <p>You can also adjust the position of group of buttons. The default position is on the left side, you can position them to center by adding <span class="red">group-center</span> class, together with <span class="red">form-field</span> and <span class="red">group-btn</span> class on <span class="red">form-field</span> container.</p>
+  <br>
+
+  <fieldset class="form-field">
+    <div class="form-control">
+      <button class="button btn-warning btn-color-bg">Single button</button>
+    </div>
+  </fieldset>
+
+  <fieldset class="form-field group-btn">
+    <div class="form-control">
+      <button class="button submit-btn">Default</button>
+    </div>
+    <div class="form-control">
+      <button class="button reset-btn">Default</button>
+  </fieldset> 
+
+  <fieldset class="form-field group-btn group-center">
+    <div class="form-control">
+      <button class="button submit-btn">Center</button>
+    </div>
+    <div class="form-control">
+      <button class="button reset-btn">Center</button>
+  </fieldset> 
+
+  <xmp>
+    <fieldset class="form-field">
+      <div class="form-control">
+        <button class="button btn-warning btn-color-bg">Single button</button>
+      </div>
+    </fieldset>
+
+    <fieldset class="form-field group-btn">
+      <div class="form-control">
+        <button class="button submit-btn">Default</button>
+      </div>
+      <div class="form-control">
+        <button class="button reset-btn">Default</button>
+    </fieldset> 
+
+    <fieldset class="form-field group-btn group-center">
+      <div class="form-control">
+        <button class="button submit-btn">Center</button>
+      </div>
+      <div class="form-control">
+        <button class="button reset-btn">Center</button>
+    </fieldset>
+  </xmp>
+
+</section>
+
 <!-- JavaScript
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 <script src="scripts/break-room.js"></script>
