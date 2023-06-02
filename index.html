@@ -2620,6 +2620,81 @@
     </section>
     <hr>
 
+        <!-- To Dos
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <section id="todos">
+      <h2>To Dos</h2>
+      <div class="containerTD">
+        <header class="headerTD">
+          <h2>ToDo List: Building A Website</h2>
+          <p>Information needed to start your project</p>
+          <p>Here's a list you can use on your website to keep track of your tasks.</p>
+        </header>
+        <div>
+          <!-- <button onclick="handlers.displayTDs()">Display Website Tasks</button> -->
+          <button onclick="handlers.tgAll()">Toggle all completed or not</button>
+        </div>
+        <div>
+          <input type="text" id="addTDTextInput">
+          <button onclick="handlers.addTD()">Add</button>
+        </div>
+        <div>
+          <input type="number" id="editTDPosInput">
+          <input type="text" id="editTDTextInput">
+          <button onclick="handlers.editTD()">Edit</button>
+        </div>
+        <div>
+          <input type="number" id="deleteTDPosInput">
+          <button onclick="handlers.deleteTD()">Delete</button>
+        </div>
+        <div>
+          <input type="number" id="tgCompletedPosInput">
+          <button onclick="handlers.toggleCompleted()">Mark completed</button>
+        </div>
+        <ul></ul> <!-- NOTE THE UL IS NEEDED FOR ADDING THE JAVASCRIPT TO THE PAGE -->
+  
+      </div>
+  
+    <section id="todoCode">
+      <h3>Here is the ToDo code to use on your site:</h3>
+      <p>The first item starts at number 0 not 1. Sorry,  you have to do the math! <br>Note: If you leave this page or refresh your screen your tasks are not saved. <br>Check back for the updated version.</p>
+      <p></p>
+  <pre>
+  <code>
+    &lt;section class="containerTD"&gt;
+    &lt;header class="headerTD"&gt;
+      &lt;h2&gt;ToDo List: Building A Website&lt;/h2&gt;
+      &lt;p&gt;Information needed to start your project&lt;/p&gt;
+      &lt;p&gt;Here's a list you can use on your website to keep track of your tasks.&lt;/p&gt;
+    &lt;/header&gt;
+    &lt;div&gt;
+      &lt;!-- &lt;button onclick="handlers.displayTDs()"&gt;Display Website Tasks&lt;/button&gt; --&gt;
+      &lt;button onclick="handlers.tgAll()"&gt;Toggle all completed or not&lt;/button&gt;
+    &lt;/div&gt;
+    &lt;div&gt;
+      &lt;input type="text" id="addTDTextInput"&gt;
+      &lt;button onclick="handlers.addTD()"&gt;Add&lt;/button&gt;
+    &lt;/div&gt;
+    &lt;div&gt;
+      &lt;input type="number" id="editTDPosInput"&gt;
+      &lt;input type="text" id="editTDTextInput"&gt;
+      &lt;button onclick="handlers.editTD()"&gt;Edit&lt;/button&gt;
+    &lt;/div&gt;
+    &lt;div&gt;
+      &lt;input type="number" id="deleteTDPosInput"&gt;
+      &lt;button onclick="handlers.deleteTD()"&gt;Delete&lt;/button&gt;
+    &lt;/div&gt;
+    &lt;div&gt;
+      &lt;input type="number" id="tgCompletedPosInput"&gt;
+      &lt;button onclick="handlers.toggleCompleted()"&gt;Mark completed&lt;/button&gt;
+    &lt;/div&gt;
+    &lt;ul&gt;&lt;/ul&gt; &lt;!-- NOTE THE UL IS NEEDED FOR ADDING THE JAVASCRIPT TO THE PAGE --&gt;
+    &lt;/section&gt;
+  </code>
+  </pre>
+  </section>
+  </section>
+
   </main>
   <footer class="bg-dark">
     <section id="footer">
