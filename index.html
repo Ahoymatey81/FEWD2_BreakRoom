@@ -175,11 +175,11 @@
       <!-- THIS NEEDS TO BE LOOKED AT: need to show address tag line -->
       <pre>
         <code class="language-html" data-lang="html">
-          <address>
-            Business name
-            123 Main Street
-            City, State 00000
-          </address>
+          &lt;address&gt;
+          Business name
+          123 Main Street
+          City, State 00000
+        &lt;/address&gt;
         </code>
       </pre>
       
@@ -188,9 +188,9 @@
       <!-- THIS NEEDS TO BE LOOKED AT: need to show blockquote tag line -->
       <pre>
         <code class="language-html" data-lang="html">
-          <blockquote>
-            An Example of a blockquote
-          </blockquote>
+          &lt;blockquote&gt;
+          An Example of a blockquote
+          &lt;/blockquote&gt;
         </code>
       </pre>
       
@@ -354,13 +354,15 @@
             <p>sets the padding to 1.5rem</p>
           </div>
         </div>
-      </div>
+      <!--  TD 060123 930pm - validates if this closing div is removed  -->
+      <!-- </div>-->
     </section>
     <hr>
     <!-- Shadows
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <!--THIS SECTION NEEDS TO BE LOOKED AT: I CHANGED IT TO SHOW AN EXAMPLE- CSS DOES NOT WORK-->
-    <section id="shadows">
+    <!-- I DONT THINK ITS REQUIRED I SUGGEST WE OMIT IT  -->
+    <!-- <section id="shadows">
       <h2>Shadows</h2>
       <p>Shadow styles can be used to help text or other element stand out from its background. Here are the classes to use for shadows:</p>
     
@@ -369,7 +371,7 @@
       <h6 class="shadow-lg">.shadow-lg</h6>
 
     </section>
-    <hr>
+    <hr> -->
 
     <!-- Colors
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -419,8 +421,8 @@
           </div>
         </div>
       </div>
-
-      <>
+<!-- TD 6-1-23 940pm not sure how to fix  - omit or make it a closing div -->
+      <!-- <> -->
         <h3>Pastel Color Palette</h3>
         <p>Our pastel color palette is used by adding a class of .p-color: .p-blue, .p-green, .p-red, .p-purple, .p-orange, .p-yellow, and .p-pink. Background color is added with the class .bg-p-color, for example: .bg-p-blue. Border is added with the class .bc-p-color, for example: .bc-p-blue.</p>
         <div class="exPastel-color">
@@ -1486,8 +1488,8 @@
 <section id="hero-page">
   <section class="hero">
     <div class="hero-inner">
-      <h1>Your catchy message</h1>
-      <h2>Say something here to interest your visitor</h2>
+      <h2>Your catchy message</h2>
+      <h3>Say something here to interest your visitor</h3>
       <a href="#" class="btn">Find out more</a>
     </div>
   </section>
