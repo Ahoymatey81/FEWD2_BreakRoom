@@ -37,11 +37,11 @@
 <body>
   <header>
     <!-- Navigation
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <nav class="navbar">
       <div class="navbar-container">
         <div class="navbar-logo">
-          <a href="" class="navbar-item">Break Room</a>
+          <a href="" class="navbar-item">Breakroom</a>
         </div>
         <div class="navbar-menu-container">
           <div class="navbar-menu">
@@ -66,10 +66,10 @@
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
     <section class="navbar-nav-m" id="intro">
-      <h1>Break Room</h1>
-      <p>Frameworks give developers the tools to quickly create user interfaces. This makes it easier for the user since they don't have to start with a blank document each time. It’s easy to make new versions starting from the framework. This is very useful for teams to help standardize a project. By starting with the same code base, team members will find it easier to read each other’s code and make changes across the board. Developers may want to create a theme and reuse it on different projects which is a perfect application for frameworks.</p>
+      <h1 class="t-center">Breakroom</h1>
+      <p>Breakroom Framework was made for professional offices.  It uses a grid system based off flex box and highlights the use of tables, forms, and cards.  These are often needed by office websites and we have styled them for easy use with our color system.  We have chosen two color palettes which look good when used together, or they can be used separately.  One is bold and the other is muted.  We link to Font Awesome for easy use of their catalogue of icons. </p><br>
       
-      <p>The Breakroom Framework has a zip file with the basic HTML, CSS and JavaScript ready to be downloaded and used. You will find starter navbars, pages, and other elements and can be used and expanded upon. You add your HTML with the appropriate structure, classes, and IDs referred to in our framework.</p>
+      <p>The Breakroom Framework has a zip file with the basic HTML, CSS and JavaScript ready to be downloaded and used. We include a boilerplate with included links and a template navigation.  You will find starter navbars, pages, and other elements that can be used and expanded upon. You add your HTML with the appropriate structure, classes, and IDs referred to in our framework.</p>
       
     </section>
 
@@ -172,20 +172,20 @@
       <h3>Additional Text Elements</h3>
 
       <address>address </address>defines the contact information (email, phone, social media, etc.) for the author/owner of a document or an article, usually browsers render in italic, always with a line break before and after
-      <!-- THIS NEEDS TO BE LOOKED AT: need to show address tag line -->
+      
       <pre>
         <code class="language-html" data-lang="html">
           &lt;address&gt;
           Business name
           123 Main Street
           City, State 00000
-        &lt;/address&gt;
+          &lt;/address&gt;
         </code>
       </pre>
       
 
       <blockquote>Blockquote </blockquote>specifies a section that is quoted from another source which browsers usually indent
-      <!-- THIS NEEDS TO BE LOOKED AT: need to show blockquote tag line -->
+      
       <pre>
         <code class="language-html" data-lang="html">
           &lt;blockquote&gt;
@@ -298,7 +298,7 @@
 
       <h3>Padding</h3>
 
-      <div class="paddings"></div>
+      <div class="paddings">
         <div class="row">
           <div class="column-one">
             <p>class name:</p>
@@ -354,25 +354,10 @@
             <p>sets the padding to 1.5rem</p>
           </div>
         </div>
-      <!--  TD 060123 930pm - validates if this closing div is removed  -->
-      <!-- </div>-->
+      </div>
     </section>
     <hr>
-    <!-- Shadows
-    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <!--THIS SECTION NEEDS TO BE LOOKED AT: I CHANGED IT TO SHOW AN EXAMPLE- CSS DOES NOT WORK-->
-    <!-- I DONT THINK ITS REQUIRED I SUGGEST WE OMIT IT  -->
-    <!-- <section id="shadows">
-      <h2>Shadows</h2>
-      <p>Shadow styles can be used to help text or other element stand out from its background. Here are the classes to use for shadows:</p>
     
-      <h6 class="shadow-sm">.shadow-sm</h6>
-      <h6 class="shadow-md">.shadow-md</h6>
-      <h6 class="shadow-lg">.shadow-lg</h6>
-
-    </section>
-    <hr> -->
-
     <!-- Colors
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <section id="colors">
@@ -421,8 +406,8 @@
           </div>
         </div>
       </div>
-<!-- TD 6-1-23 940pm not sure how to fix  - omit or make it a closing div -->
-      <!-- <> -->
+
+      <div>
         <h3>Pastel Color Palette</h3>
         <p>Our pastel color palette is used by adding a class of .p-color: .p-blue, .p-green, .p-red, .p-purple, .p-orange, .p-yellow, and .p-pink. Background color is added with the class .bg-p-color, for example: .bg-p-blue. Border is added with the class .bc-p-color, for example: .bc-p-blue.</p>
         <div class="exPastel-color">
@@ -431,37 +416,37 @@
             <p class="column-four bg-p-blue">.bg-p-blue</p>
             <p class="column-four bc-p-blue">.bc-p-blue</p>
           </div>
-        <div class="row">
-          <p class="column-four p-green">.p-green</p>
-          <p class="column-four bg-p-green">.bg-p-green</p>
-          <p class="column-four bc-p-green">.bc-p-green</p>
+          <div class="row">
+            <p class="column-four p-green">.p-green</p>
+            <p class="column-four bg-p-green">.bg-p-green</p>
+            <p class="column-four bc-p-green">.bc-p-green</p>
+          </div>
+          <div class="row">
+            <p class="column-four p-red">.p-red</p>
+            <p class="column-four bg-p-red">.bg-p-red</p>
+            <p class="column-four bc-p-red">.bc-p-red</p>
+          </div>
+          <div class="row">
+            <p class="column-four p-purple">.p-purple</p>
+            <p class="column-four bg-p-purple">.bg-p-purple</p>
+            <p class="column-four bc-p-purple">.bc-p-purple</p>
+          </div>
+          <div class="row">
+            <p class="column-four p-orange">.p-orange</p>
+            <p class="column-four bg-p-orange">.bg-p-orange</p>
+            <p class="column-four bc-p-orange">.bc-p-orange</p>
+          </div>
+          <div class="row">
+            <p class="column-four p-yellow">.p-yellow</p>
+            <p class="column-four bg-p-yellow">.bg-p-yellow</p>
+            <p class="column-four bc-p-yellow">.bc-p-yellow</p>
+          </div>
+          <div class="row">
+            <p class="column-four p-pink">.p-pink</p>
+            <p class="column-four bg-p-pink">.bg-p-pink</p>
+            <p class="column-four bc-p-pink">.bc-p-pink</p>
+          </div>
         </div>
-        <div class="row">
-          <p class="column-four p-red">.p-red</p>
-          <p class="column-four bg-p-red">.bg-p-red</p>
-          <p class="column-four bc-p-red">.bc-p-red</p>
-        </div>
-        <div class="row">
-          <p class="column-four p-purple">.p-purple</p>
-          <p class="column-four bg-p-purple">.bg-p-purple</p>
-          <p class="column-four bc-p-purple">.bc-p-purple</p>
-        </div>
-        <div class="row">
-          <p class="column-four p-orange">.p-orange</p>
-          <p class="column-four bg-p-orange">.bg-p-orange</p>
-          <p class="column-four bc-p-orange">.bc-p-orange</p>
-        </div>
-        <div class="row">
-          <p class="column-four p-yellow">.p-yellow</p>
-          <p class="column-four bg-p-yellow">.bg-p-yellow</p>
-          <p class="column-four bc-p-yellow">.bc-p-yellow</p>
-        </div>
-        <div class="row">
-          <p class="column-four p-pink">.p-pink</p>
-          <p class="column-four bg-p-pink">.bg-p-pink</p>
-          <p class="column-four bc-p-pink">.bc-p-pink</p>
-        </div>
-
       </div>
 
       <div>
@@ -502,6 +487,7 @@
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <section id="borders">
       <h2>Borders and Border Radius</h2>
+
       <p>Borders are added automatically when you add a border color, see colors section above. It is a solid border of 2px.</p>
       <p>Border radius is added as follow:</p>
       <p>Standard border radius of .br-sm, .br-md, and .br-lg.</p>
@@ -854,6 +840,7 @@
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <section id="exCards">
       <h2>Content and Cards</h2>
+
       <p>By using the class of content (.content) a margin is automatically applied. A class of content-title (.content-title) is used provide spacing and font weight.</p>
 
       <div class="content">
@@ -931,6 +918,7 @@
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <section id="icons">
       <h2>Icons</h2>
+
       <p>Icons serve a very similar function to text in a page. In Semantic icons receive a special tag <span>&lt;i&gt;</span> which allow for an abbreviated markup when sitting along-side text.</p> 
       <p>We use some icons from Font Awesome for our icon library. Here is the list of icon we have:</p>
   
@@ -1109,17 +1097,18 @@
       </pre>
       <!-- ======== ICON SIZES ========= -->
       <h5>Icon Sizes:</h5>
+
       <p>We provide 3 sizes for the icons: small, medium and large. The default size for the icons is small.</p>
       <span class="icon">
-              <i class="fa-solid fa-user"></i>
+        <i class="fa-solid fa-user"></i>
       </span>
   
       <span class="icon is-medium">
-              <i class="fa-solid fa-user"></i>
+        <i class="fa-solid fa-user"></i>
       </span>
   
       <span class="icon is-large">
-              <i class="fa-solid fa-user"></i>
+        <i class="fa-solid fa-user"></i>
       </span>
   
       <!-- Code example -->
@@ -1161,7 +1150,7 @@
       <br>
       <div class="icon-text">
           <span class="icon">
-              <i class="fa-brands fa-square-twitter"></i>
+            <i class="fa-brands fa-square-twitter"></i>
           </span>
           <span>Twitter</span>
       </div>
@@ -1196,1408 +1185,1447 @@
       </pre>      
     </section>
 
-<!-- Buttons
-–––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <section id="button">
-    <h2>Button</h2>
-    <!-- ==================== INTRO ==================== -->
-    <h5>The classic button we have:</h5>
-    <div class="button-example">
-      <button type="button" class="button">Button</button>
-    </div>
+    <!-- Buttons
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <section id="button">
+      <h2>Button</h2>
 
-    <!-- Code example -->
-    <pre>
-      <code class="language-html" data-lang="html">
-      &lt;button type="button" class="button"&gt;Button&lt;/button&gt;
-      </code>
-    </pre>      
+      <!-- ==================== INTRO ==================== -->
+      <h5>The classic button we have:</h5>
+      <div class="button-example">
+        <button type="button" class="button">Button</button>
+      </div>
 
-    <div class="btn-intro section">
-      <h5>We can use the button class on:</h5>
-      <ul>
+      <!-- Code example -->
+      <pre>
+        <code class="language-html" data-lang="html">
+          &lt;button type="button" class="button"&gt;Button&lt;/button&gt;
+        </code>
+      </pre>      
+
+      <div class="btn-intro section">
+        <h5>We can use the button class on:</h5>
+        <ul>
           <li><span class="blue italic">&lt;button&gt; </span>form buttons</li>
           <li><span class="blue italic">&lt;input type="button"&gt; </span>button inputs</li>
           <li><span class="blue italic">&lt;input type="submit"&gt; </span>submit input</li>
           <li><span class="blue italic">&lt;input type="reset"&gt; </span>reset input</li>  
-      </ul>
-      <br>
-
-      <div class="button-example">
+        </ul>
+        <br>
+      
+        <div class="button-example">
           <button type="button" class="button">Button</button>
           <input class="button" type="button" value="Button input">
           <input class="button" type="submit" value="Submit input">
           <input class="button" type="reset" value="Reset input">
+        </div>
+
+        <pre>
+          <code class="language-html" data-lang="html">
+            &lt;button type=&quot;button&quot; class=&quot;button&quot;&gt;Button&lt;/button&gt;
+            &lt;input class=&quot;button&quot; type=&quot;button&quot; value=&quot;Button input&quot;&gt;
+            &lt;input class=&quot;button&quot; type=&quot;submit&quot; value=&quot;Submit input&quot;&gt;
+            &lt;input class=&quot;button&quot; type=&quot;reset&quot; value=&quot;Reset input&quot;&gt;
+          </code>
+        </pre>  
       </div>
+      <hr>
+      <!-- ==================== SIZE ==================== -->
+      <div class="btn-size section">
+        <h5 class="fw-semi-bold">Size:</h5>
+        <h6>We have 4 different sizes for buttons:</h6>
 
-      <pre>
-        <code class="language-html" data-lang="html">
-          &lt;button type=&quot;button&quot; class=&quot;button&quot;&gt;Button&lt;/button&gt;
-          &lt;input class=&quot;button&quot; type=&quot;button&quot; value=&quot;Button input&quot;&gt;
-          &lt;input class=&quot;button&quot; type=&quot;submit&quot; value=&quot;Submit input&quot;&gt;
-          &lt;input class=&quot;button&quot; type=&quot;reset&quot; value=&quot;Reset input&quot;&gt;
-        </code>
-      </pre>  
-    </div>
-  <hr>
-  <!-- ==================== SIZE ==================== -->
-    <div class="btn-size section">
-      <h5 class="fw-semi-bold">Size:</h5>
-      <h6>We have 4 different sizes for buttons:</h6>
-      <ul>
-        <li>extra small: <span class="blue italic">.xsm-btn</span></li>
-        <li>small: <span class="blue italic">.sm-btn</span></li>
-        <li>medium: <span class="blue italic">.md-btn</span></li>
-        <li>large: <span class="blue italic">.lg-btn</span></li>
-      </ul>
-      <div class="button-example">
-        <button type="button" class="button xsm-btn">Extra Small</button>
-        <button type="button" class="button sm-btn">Small</button>
-        <button type="button" class="button md-btn">Medium</button>
-        <button type="button" class="button lg-btn">Large</button>
+        <ul>
+          <li>extra small: <span class="blue italic">.xsm-btn</span></li>
+          <li>small: <span class="blue italic">.sm-btn</span></li>
+          <li>medium: <span class="blue italic">.md-btn</span></li>
+          <li>large: <span class="blue italic">.lg-btn</span></li>
+        </ul>
+        <div class="button-example">
+          <button type="button" class="button xsm-btn">Extra Small</button>
+          <button type="button" class="button sm-btn">Small</button>
+          <button type="button" class="button md-btn">Medium</button>
+          <button type="button" class="button lg-btn">Large</button>
+        </div>
+
+        <p>*Small-sized button is the default button size</p>
+
+        <!-- Code example -->
+        <pre>
+          <code class="language-html" data-lang="html">
+            ----- EXTRA-SMALL BUTTON -----
+            &lt;button type=&quot;button&quot; class=&quot;button xsm-btn&quot;&gt;Extra Small&lt;/button&gt;
+
+            ---- SMALL BUTTON -----
+            &lt;button type=&quot;button&quot; class=&quot;button sm-btn&quot;&gt;Small&lt;/button&gt;
+
+            ----- MEDIUM BUTTON -----
+            &lt;button type=&quot;button&quot; class=&quot;button md-btn&quot;&gt;Medium&lt;/button&gt;
+
+            ----- LARGE BUTTON -----
+            &lt;button type=&quot;button&quot; class=&quot;button lg-btn&quot;&gt;Large&lt;/button&gt;
+          </code>
+        </pre>  
       </div>
+      <hr>
+      <!-- ==================== DISPLAY ==================== -->
+      <div class="btn-display section">
+        <h5 class="fw-semi-bold">Display:</h5>
+        <h6>We can also display a full-width button:</h6>
 
-      <p>*Small-sized button is the default button size</p>
+        <div class="button-example">
+          <button type="button" class="button xsm-btn btn-fullwidth">Extra small</button>  
+          <button type="button" class="button sm-btn btn-fullwidth">Small</button> 
+          <button type="button" class="button md-btn btn-fullwidth">Medium</button> 
+          <button type="button" class="button lg-btn btn-fullwidth">Large</button> 
+        </div>
 
-      <!-- Code example -->
-      <pre>
-        <code class="language-html" data-lang="html">
-          ----- EXTRA-SMALL BUTTON -----
-          &lt;button type=&quot;button&quot; class=&quot;button xsm-btn&quot;&gt;Extra Small&lt;/button&gt;
+        <!-- Code example -->
+        <pre>
+          <code class="language-html" data-lang="html">
+            ----- EXTRA-SMALL BUTTON FULL-WIDTH -----
+            &lt;button type=&quot;button&quot; class=&quot;button xsm-btn btn-fullwidth&quot;&gt;Extra small&lt;/button&gt;
+          
+            ----- SMALL BUTTON FULL-WIDTH -----
+            &lt;button type=&quot;button&quot; class=&quot;button sm-btn btn-fullwidth&quot;&gt;Small&lt;/button&gt;
+          
+            ----- MEDIUM BUTTON FULL-WIDTH -----
+            &lt;button type=&quot;button&quot; class=&quot;button md-btn btn-fullwidth&quot;&gt;Medium&lt;/button&gt; 
 
-          ----- SMALL BUTTON -----
-          &lt;button type=&quot;button&quot; class=&quot;button sm-btn&quot;&gt;Small&lt;/button&gt;
+            ----- LARGE BUTTON FULL-WIDTH -----
+            &lt;button type=&quot;button&quot; class=&quot;button lg-btn btn-fullwidth&quot;&gt;Large&lt;/button&gt; 
+          </code>
+        </pre>      
+      </div>   
+      <hr> 
+      <!-- ==================== COLOR ==================== -->    
+      <div class="btn-color section">
+        <h5 class="fw-semi-bold">Color:</h5>
+        <h6>Here are some built-in buttons we have:</h6>
 
-          ----- MEDIUM BUTTON -----
-          &lt;button type=&quot;button&quot; class=&quot;button md-btn&quot;&gt;Medium&lt;/button&gt;
+        <!-- submit & reset -->
+        <h6>Submit / Reset / Disabled</h6>
+        <div class="button-example">
+          <button type="button" class="button submit-btn">Submit <i class="fa-solid fa-arrow-right"></i></button>
+          <button type="button" class="button reset-btn">Reset</button>
+          <button type="button" class="button disabled-btn">Disabled</button>
+        </div>
 
-          ----- LARGE BUTTON -----
-          &lt;button type=&quot;button&quot; class=&quot;button lg-btn&quot;&gt;Large&lt;/button&gt;
-        </code>
-      </pre>  
-    </div>
+        <!-- Code example -->
+        <pre>
+          <code class="language-html" data-lang="html">
+            ----- SUBMIT BUTTON -----
+            &lt;button type=&quot;button&quot; class=&quot;button submit-btn&quot;&gt;Submit&lt;i class=&quot;fa-solid fa-arrow-right&quot;>&lt;/i&gt;&lt;/button&gt;
+
+            ----- RESET BUTTON -----
+            &lt;button type=&quot;button&quot; class=&quot;button reset-btn&quot;&gt;Reset&lt;/button&gt;
+
+            ----- DISABLED BUTTON -----
+            &lt;button type=&quot;button&quot; class=&quot;button disabled-btn&quot;&gt;Disabled&lt;/button&gt;
+          </code>
+        </pre>
+        <br> <br>
+      
+        <!-- black & white -->
+        <h6>White, light, dark, black versions</h6>
+        <div class="button-example">
+          <button type="button" class="button btn-white">White</button>
+          <button type="button" class="button btn-light">Light</button>
+          <button type="button" class="button btn-dark">Dark</button>
+          <button type="button" class="button btn-black">Black</button>
+        </div>
+
+        <!-- Code example -->
+        <pre>
+          <code class="language-html" data-lang="html">
+            -----  BUTTON - WHITE -----
+            &lt;button type=&quot;button&quot; class=&quot;button btn-white&quot;&gt;White&lt;/button&gt;
+
+            -----  BUTTON - LIGHT -----
+            &lt;button type=&quot;button&quot; class=&quot;button btn-light&quot;&gt;Light&lt;/button&gt;
+
+            -----  BUTTON - DARK -----
+            &lt;button type=&quot;button&quot; class=&quot;button btn-dark&quot;&gt;Dark&lt;/button&gt;
+
+            -----  BUTTON - BLACK -----
+            &lt;button type=&quot;button&quot; class=&quot;button btn-black&quot;&gt;Black&lt;/button&gt;
+          </code>
+        </pre>  
+        <br><br>
+        <!-- color background -->
+        <h6>Color background versions</h6>
+        <div class="button-example">
+          <button type="button" class="button btn-primary btn-color-bg">Primary</button>
+          <button type="button" class="button btn-info btn-color-bg">Info</button>
+          <button type="button" class="button btn-success btn-color-bg">Success</button>
+          <button type="button" class="button btn-warning btn-color-bg">Warning</button>
+          <button type="button" class="button btn-danger btn-color-bg">Danger</button>
+        </div>
+
+        <!-- Code example -->
+        <pre>
+          <code class="language-html" data-lang="html">
+            -----  PRIMARY BUTTON - COLOR BACKGROUND -----
+            &lt;button type=&quot;button&quot; class=&quot;button btn-primary btn-color-bg&quot;&gt;Primary&lt;/button&gt;
+
+            -----  INFO BUTTON - COLOR BACKGROUND -----
+            &lt;button type=&quot;button&quot; class=&quot;button btn-info btn-color-bg&quot;&gt;Info&lt;/button&gt;
+
+            -----  SUCCESS BUTTON - COLOR BACKGROUND -----
+            &lt;button type=&quot;button&quot; class=&quot;button btn-success btn-color-bg&quot;&gt;Success&lt;/button&gt;
+
+            -----  WARNING BUTTON - COLOR BACKGROUND -----
+            &lt;button type=&quot;button&quot; class=&quot;button btn-warning btn-color-bg&quot;&gt;Warning&lt;/button&gt;
+
+            -----  DANGER BUTTON - COLOR BACKGROUND -----
+            &lt;button type=&quot;button&quot; class=&quot;button btn-danger btn-color-bg&quot;&gt;Danger&lt;/button&gt;
+          </code>
+        </pre>     
+        <br><br>
+        <!-- light-color background -->
+        <h6>Light color background versions</h6>
+        <div class="button-example">
+          <button type="button" class="button btn-primary btn-light-bg">Primary</button>
+          <button type="button" class="button btn-info btn-light-bg">Info</button>
+          <button type="button" class="button btn-success btn-light-bg">Success</button>
+          <button type="button" class="button btn-warning btn-light-bg">Warning</button>
+          <button type="button" class="button btn-danger btn-light-bg">Danger</button>
+        </div>
+
+        <!-- Code example -->
+        <pre>
+          <code class="language-html" data-lang="html">
+            -----  PRIMARY BUTTON - LIGHT BACKGROUND -----
+            &lt;button type=&quot;button&quot; class=&quot;button btn-primary btn-light-bg&quot;&gt;Primary&lt;/button&gt;
+
+            -----  INFO BUTTON - LIGHT BACKGROUND -----
+            &lt;button type=&quot;button&quot; class=&quot;button btn-info btn-light-bg&quot;&gt;Info&lt;/button>
+
+            -----  SUCCESS BUTTON - LIGHT BACKGROUND -----
+            &lt;button type=&quot;button&quot; class=&quot;button btn-success btn-light-bg&quot;&gt;Success&lt;/button&gt;
+
+            -----  WARNING BUTTON - LIGHT BACKGROUND -----
+            &lt;button type=&quot;button&quot; class=&quot;button btn-warning btn-light-bg&quot;&gt;Warning&lt;/button&gt;
+
+            -----  DANGER BUTTON - LIGHT BACKGROUND -----
+            &lt;button type=&quot;button&quot; class=&quot;button btn-danger btn-light-bg&quot;&gt;Danger&lt;/button&gt;
+          </code>
+        </pre>
+        <br><br>
+        <h6>More than that, the button is available in all the different colors which are defined in our color library, for background and text color. You can always style them with the color you want.</h6>
+        <div class="button-example">
+          <button type="button" class="button blue bg-p-blue">Button</button>
+          <button type="button" class="button green bg-p-green">Button</button>
+          <button type="button" class="button purple bg-p-purple">Button</button>
+          <button type="button" class="button orange bg-p-orange">Button</button>
+          <button type="button" class="button pink bg-p-pink">Button</button>
+        </div>
+
+        <!-- Code example -->
+        <pre>
+          <code class="language-html" data-lang="html">
+            &lt;button type=&quot;button&quot; class=&quot;button blue bg-p-blue&quot;&gt;Button&lt;/button&gt;
+            &lt;button type=&quot;button&quot; class=&quot;button green bg-p-green&quot;&gt;Button&lt;/button&gt;
+            &lt;button type=&quot;button&quot; class=&quot;button purple bg-p-purple&quot;&gt;Button&lt;/button&gt;
+            &lt;button type=&quot;button&quot; class=&quot;button orange bg-p-orange&quot;&gt;Button&lt;/button&gt;
+            &lt;button type=&quot;button&quot; class=&quot;button pink dark bg-p-pink&quot;&gt;Button&lt;/button&gt;
+          </code>
+        </pre>
+      </div>   
+      <br><br>
+    </section>
     <hr>
-   <!-- ==================== DISPLAY ==================== -->
-    <div class="btn-display section">
-      <h5 class="fw-semi-bold">Display:</h5>
-      <h6>We can also display a full-width button:</h6>
-      <div class="button-example">
-        <button type="button" class="button xsm-btn btn-fullwidth">Extra small</button>  
-        <button type="button" class="button sm-btn btn-fullwidth">Small</button> 
-        <button type="button" class="button md-btn btn-fullwidth">Medium</button> 
-        <button type="button" class="button lg-btn btn-fullwidth">Large</button> 
+    <!-- Images
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <section id="images">
+      <h2>Images</h2>
+      <p>Images are automatically made responsive.</p>
+    </section>
+
+    <!-- Helpers
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <section id="helpers">
+      <h2>Helpers</h2>
+
+
+    </section>
+
+    <!-- No Print
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <section id="no-print">
+      <h2>No Print</h2>
+
+    </section>
+
+    <!-- Components
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <h2>Components</h2>
+    <hr>
+    <!-- 
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <!-- CSS TEXT EFFECT component -->
+    <!--<h3>CSS Text Effects</h3> -->
+
+    <section id="text-effect">
+      <div class="text-ef">
+        <div class="row">
+          <div id="txt-container">
+            <h1>CSS Text Effects</h1>
+            <div id="bg-img-clip">
+              <h1 id="csst1">Sign up today!</h1>
+            </div>
+            <div id="bg-animate">
+              <h1 id="csst2">Catch attention!</h1>
+            </div>
+          </div>
+        </div>
       </div>
-
-      <!-- Code example -->
+      <!-- TEXT EFFECTS CODE-->
+   
+      <h4>Text effects code</h4>
+      <p>There are 2 types to choose from shown here. </p>
       <pre>
-        <code class="language-html" data-lang="html">
-          ----- EXTRA-SMALL BUTTON FULL-WIDTH -----
-          &lt;button type=&quot;button&quot; class=&quot;button xsm-btn btn-fullwidth&quot;&gt;Extra small&lt;/button&gt;
+        <code>
+          &lt;section id="text-effect"&gt;
+            &lt;div class="text-ef"&gt;
+              &lt;div class="row"&gt;
+                &lt;div id="txt-container"&gt;
+                  &lt;h1&gt;CSS Text Effects&lt;/h1&gt;
           
-          ----- SMALL BUTTON FULL-WIDTH -----
-          &lt;button type=&quot;button&quot; class=&quot;button sm-btn btn-fullwidth&quot;&gt;Small&lt;/button&gt;
-          
-          ----- MEDIUM BUTTON FULL-WIDTH -----
-          &lt;button type=&quot;button&quot; class=&quot;button md-btn btn-fullwidth&quot;&gt;Medium&lt;/button&gt; 
+                  &lt;div id="bg-img-clip"&gt;
+                    &lt;h1 id="csst1"&gt;Sign up today!&lt;/h1&gt;
+                  &lt;/div&gt;
 
-          ----- LARGE BUTTON FULL-WIDTH -----
-          &lt;button type=&quot;button&quot; class=&quot;button lg-btn btn-fullwidth&quot;&gt;Large&lt;/button&gt; 
-        </code>
-      </pre>      
-    </div>   
-    <hr> 
-   <!-- ==================== COLOR ==================== -->    
-    <div class="btn-color section">
-      <h5 class="fw-semi-bold">Color:</h5>
-      <h6>Here are some built-in buttons we have:</h6>
-
-      <!-- submit & reset -->
-      <h6>Submit / Reset / Disabled</h6>
-      <div class="button-example">
-        <button type="button" class="button submit-btn">Submit <i class="fa-solid fa-arrow-right"></i></button>
-        <button type="button" class="button reset-btn">Reset</button>
-        <button type="button" class="button disabled-btn">Disabled</button>
-      </div>
-
-      <!-- Code example -->
-      <pre>
-        <code class="language-html" data-lang="html">
-          ----- SUBMIT BUTTON -----
-          &lt;button type=&quot;button&quot; class=&quot;button submit-btn&quot;&gt;Submit&lt;i class=&quot;fa-solid fa-arrow-right&quot;>&lt;/i&gt;&lt;/button&gt;
-
-          ----- RESET BUTTON -----
-          &lt;button type=&quot;button&quot; class=&quot;button reset-btn&quot;&gt;Reset&lt;/button&gt;
-
-          ----- DISABLED BUTTON -----
-          &lt;button type=&quot;button&quot; class=&quot;button disabled-btn&quot;&gt;Disabled&lt;/button&gt;
+                  &lt;div id="bg-animate"&gt;
+                    &lt;h1 id="csst2"&gt;Catch attention!&lt;/h1&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/section&gt;
         </code>
       </pre>
-      <br> <br>
-      
-      <!-- black & white -->
-      <h6>White, light, dark, black versions</h6>
-      <div class="button-example">
-        <button type="button" class="button btn-white">White</button>
-        <button type="button" class="button btn-light">Light</button>
-        <button type="button" class="button btn-dark">Dark</button>
-        <button type="button" class="button btn-black">Black</button>
+    </section>
+    <hr>
+
+    <!-- BACKGROUND ANIMATION CSS component -->
+    <section id="animate-bg">
+      <h3>Background Animation</h3>
+      <div id="hero-animate">
+        <div class="hero__title">Background Animation</div>
+        <div class="cube"></div>
+        <div class="cube"></div>
+        <div class="cube"></div>
+        <div class="cube"></div>
+        <div class="cube"></div>
+        <div class="cube"></div>
       </div>
+    </section>
+    <!-- BACKGROUND ANIMATION CODE-->
+    <h4>Background Animation Code</h4>
+    <pre>
+      <code>
+        &lt;section id="animate-bg"&gt;
+          &lt;h3&gt;Background Animation&lt;/h3&gt;
+          &lt;div id="hero-animate"&gt; 
+            &lt;div class="hero__title"&gt;Background Animation&lt;/div&gt;
+            &lt;div class="cube"&gt;&lt;/div&gt;
+            &lt;div class="cube"&gt;&lt;/div&gt;
+            &lt;div class="cube"&gt;&lt;/div&gt;
+            &lt;div class="cube"&gt;&lt;/div&gt;
+            &lt;div class="cube"&gt;&lt;/div&gt;
+            &lt;div class="cube"&gt;&lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/section&gt;
+      </code>
+    </pre>
+    <hr>
+
+    <!-- HERO component -->
+    <h3>Hero Component</h3>
+    <section id="hero-page">
+      <div class="hero">
+        <div class="hero-inner">
+          <h2>Your catchy message</h2>
+          <h3>Say something here to interest your visitor</h3>
+          <a href="#" class="btn">Find out more</a>
+        </div>
+      </div>
+    
+      <div class="hero-page-content">
+        <h3>A hero page for you to use</h3>
+        <p>A hero image is a large or oversized web banner image that usually extends full-width. It is part of the header section of a webpage, usually at the top of the page. Because of its prominent place "above the fold" on the website, the hero header is the first thing users see when arriving on a website. It establishes the visual hierarchy because it is so predominant.</p>
+
+        <p>Your hero should include a call to action (CTA) that prompts your visitor to click, scroll, or interact with your site in some way. You always want to incorporate a call to action in your hero. The call to action, or CTA, is the most important conversion action you want your visitor to take on your site.</p>
+        <h4>Another Heading followed by sample</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum illo adipisci explicabo, saepe quos dignissimos, exercitationem quae veritatis neque recusandae sit aliquam tempora laboriosam quod sapiente eius magnam eaque? Perspiciatis!</p>
+        <p>Aperiam doloribus deserunt sapiente fugiat inventore nostrum at dolorum impedit iure saepe, earum placeat. Voluptatem, fuga optio. Fugit natus velit ipsam numquam! Ad, eius libero! Magnam esse animi fuga error?</p>
+      </div>
+    </section>
+    <!-- HERO PAGE CODE-->
+    <h4>Hero page code</h4>
+    <pre>
+      <code>
+        &lt;h3&gt;Hero Component&lt;/h3&gt;
+        &lt;section id="hero-page"&gt;
+          &lt;section class="hero"&gt;
+            &lt;div class="hero-inner"&gt;
+              &lt;h1&gt;Your catchy message&lt;/h1&gt;
+              &lt;h2&gt;Say something here to interest your visitor&lt;/h2&gt;
+              &lt;a href="#" class="btn"&gt;Find out more&lt;/a&gt;
+            &lt;/div&gt;
+          &lt;/section&gt;
+          &lt;div class="hero-page-content"&gt;
+            &lt;h3&gt;A hero page for you to use&lt;/h3&gt;
+            &lt;p&gt;Hero image: web banner image that usually extends full-width. &lt;/p&gt;
+
+            &lt;p&gt;Include a call to action (CTA) message here.&lt;/p&gt;
+            &lt;h4&gt;Another Heading followed by sample&lt;/h4&gt;
+            &lt;p&gt;Your text here!&lt;/p&gt;
+            &lt;p&gt;More text if you want?&lt;/p&gt;   
+          &lt;/div&gt;
+        &lt;/section&gt;
+      </code>
+    </pre>
+    <hr>
+
+    <!-- ACCORDION COMPONENT -->
+    <section id="my-accordion">
+      <h1>Accordion Component</h1>
+      <section class="aContainer">
+        <div class="accordion">
+          <header class="aHeader">
+            <h2>
+              <button>Item 1
+                <i class="fa-solid fa-plus"></i>
+                <i class="fa-solid fa-minus"></i>
+              </button>
+            </h2>
+          </header>
+          <article class="aContent">
+            <img src="images/a1.jpg" alt="image example">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti voluptas eaque voluptatibus. Suscipit nulla aperiam in consectetur nemo ad aut debitis delectus eveniet?</p>
+            <p>Ratione neque sequi nihil, est saepe qui. Mollitia sint ratione praesentium obcaecati, nobis deleniti autem tempore ipsam temporibus accusamus, voluptatem quo nulla laboriosam dolorum ducimus odio! Laudantium ratione ipsa vel.</p>
+          </article>
+        </div>
+        <div class="accordion">
+          <header class="aHeader">
+            <h2>
+              <button>Item 2
+                <i class="fa-solid fa-plus"></i>
+                <i class="fa-solid fa-minus"></i>
+              </button>
+            </h2>
+          </header>
+          <article class="aContent">
+            <img src="images/a2.jpg" alt="image example">
+            <p>Lorem ipsum dolor sit amet. Magni, nisi ut et vero non quisquam eos recusandae iure omnis esse officia, distinctio, facilis saepe! Sint animi quisquam soluta magni quas!</p>
+            <p>Tenetur quod quia sunt distinctio ex quisquam libero natus totam harum adipisci optio exercitationem modi soluta nemo inventore consequatur obcaecati nihil cumque. Corrupti, voluptatum possimus. Nulla!</p>
+          </article>
+        </div>
+        <div class="accordion">
+          <header class="aHeader">
+            <h2>
+              <button>Item 3
+                <i class="fa-solid fa-plus"></i>
+                <i class="fa-solid fa-minus"></i>
+              </button>
+            </h2>
+          </header>
+          <article class="aContent">
+            <img src="images/a3.jpg" alt="image example">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius recusandae option fuga maxime repellat ea et reiciendis dolor nesciunt dicta veritatis, eveniet expedita suscipit laboriosam iure.</p>
+            <p>Assumenda accusamus magnam a pariatur. Atque dolores minus et explicabo omnis, sint illum magni excepturi eveniet quasi unde consectetur dolor. Assumenda, laboriosam.</p>
+          </article>
+        </div>
+        <div class="accordion">
+          <header class="aHeader">
+            <h2>
+              <button>Item 4
+                <i class="fa-solid fa-plus"></i>
+                <i class="fa-solid fa-minus"></i>
+              </button>
+            </h2>
+          </header>
+          <article class="aContent">
+            <img src="images/a4.jpg" alt="image example">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam magnam optio cumque voluptatem magni, temporibus beatae possimus architecto fuga adipisci oeius. Explicabo amet recusandae consequatur eaque!</p>
+            <p>Saepe ex exercitationem rerum repudiandae quas tenetur necessitatibus et reiciendis magnam earum! Harum mollitia. Itaque eligendi impedit voluptatem provident voluptas vel optio, blanditiis dolore doloremque asperiores eius?</p>
+          </article>
+        </div>
+      </section>
+    </section>
+    <!-- ACCORDION CODE-->
+    <h4>Accordion code</h4>
+    <pre>
+      <code> 
+        &lt;section id="my-accordion"&gt;
+          &lt;h1&gt;Accordion Component&lt;/h1&gt;
+          &lt;section class="aContainer"&gt;
+            &lt;div class="accordion"&gt;
+              &lt;header class="aHeader"&gt;
+                &lt;h2&gt;
+                  &lt;button&gt;Item 1
+                    &lt;i class="fa-solid fa-plus"&gt;&lt;/i&gt;
+                    &lt;i class="fa-solid fa-minus"&gt;&lt;/i&gt;
+                  &lt;/button&gt;
+                &lt;/h2&gt;
+              &lt;/header&gt;
+              &lt;article class="aContent"&gt;
+                &lt;img src="images/a1.jpg" alt="image example"&gt;
+                &lt;p&gt;Your text goes here&lt;/p&gt;
+              &lt;/article&gt;
+            &lt;/div&gt;
+            &lt;div class="accordion"&gt;
+              &lt;header class="aHeader"&gt;
+                &lt;h2&gt;
+                  &lt;button&gt;Item 2
+                    &lt;i class="fa-solid fa-plus"&gt;&lt;/i&gt;
+                    &lt;i class="fa-solid fa-minus"&gt;&lt;/i&gt;
+                  &lt;/button&gt;
+                &lt;/h2&gt;
+              &lt;/header&gt;
+              &lt;article class="aContent"&gt;
+                &lt;img src="images/a2.jpg" alt="image example"&gt;
+                &lt;p&gt;Your text goes here&lt;/p&gt;
+              &lt;/article&gt;
+            &lt;/div&gt;
+            &lt;div class="accordion"&gt;
+              &lt;header class="aHeader"&gt;
+                &lt;h2&gt;
+                  &lt;button&gt;Item 3
+                    &lt;i class="fa-solid fa-plus"&gt;&lt;/i&gt;
+                    &lt;i class="fa-solid fa-minus"&gt;&lt;/i&gt;
+                  &lt;/button&gt;
+                &lt;/h2&gt;
+              &lt;/header&gt;
+              &lt;article class="aContent"&gt;
+                &lt;img src="images/a3.jpg" alt="image example"&gt;
+                &lt;p&gt;Your text goes here&lt;/p&gt;
+              &lt;/article&gt;
+            &lt;/div&gt;
+            &lt;div class="accordion"&gt;
+              &lt;header class="aHeader"&gt;
+                &lt;h2&gt;
+                  &lt;button&gt;Item 4
+                    &lt;i class="fa-solid fa-plus"&gt;&lt;/i&gt;
+                    &lt;i class="fa-solid fa-minus"&gt;&lt;/i&gt;
+                  &lt;/button&gt;
+                &lt;/h2&gt;
+              &lt;/header&gt;
+              &lt;article class="aContent"&gt;
+                &lt;img src="images/a4.jpg" alt="image example"&gt;
+                &lt;p&gt;Your text goes here&lt;/p&gt;
+              &lt;/article&gt;
+            &lt;/div&gt;
+          &lt;/section&gt;
+        &lt;/section&gt;
+      </code>
+    </pre>
+    <hr>
+    <!-- END ACCORDION  -->
+
+    <!-- Example Navigation
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <section id="navigation">
+      <h2>Navigation</h2>
+
+      <p>A simple responsive navbar we have, has the fixed position, which appears on top of the page, has dark background and lighe text.</p>
+      <img src="images/navbar-large.png" alt="Large-navbar">
+      <div class="smNavbar-example">
+        <img src="images/navbar-small.png" alt="Small-navbar">
+        <img src="images/hamburger-menu.png" alt="pop-up menu">
+      </div>
+      <p>Here is what a complete basic navbar looks like:</p>
 
       <!-- Code example -->
       <pre>
         <code class="language-html" data-lang="html">
-          -----  BUTTON - WHITE -----
-          &lt;button type=&quot;button&quot; class=&quot;button btn-white&quot;&gt;White&lt;/button&gt;
+          &lt;nav class=&quot;navbar&quot;&gt;
+            &lt;div class=&quot;navbar-container&quot;&gt;
+              &lt;div class=&quot;navbar-logo&quot;&gt;
+                &lt;a href=&quot;#&quot; class=&quot;navbar-item&quot;&gt;LOGO&lt;/a&gt;
+              &lt;/div&gt;
+              &lt;div class=&quot;navbar-menu-container&quot;&gt;
+                &lt;div class=&quot;navbar-menu&quot;&gt;
+                  &lt;div class=&quot;navbar-close&quot;&gt;
+                    &lt;i class=&quot;fa-sharp fa-solid fa-xmark close-icon&quot;&gt;&lt;/i&gt;
+                  &lt;/div&gt;
+                  &lt;a href=&quot;#&quot; class=&quot;navbar-item active&quot;&gt;Home&lt;/a&gt;
+                  &lt;a href=&quot;#&quot; class=&quot;navbar-item&quot;&gt;About&lt;/a&gt;
+                  &lt;a href=&quot;#&quot; class=&quot;navbar-item&quot;&gt;Work&lt;/a&gt;
+                  &lt;a href=&quot;#&quot; class=&quot;navbar-item&quot;&gt;Contact&lt;/a&gt;
+                &lt;/div&gt;    
+              &lt;/div&gt;
+              &lt;div class=&quot;navbar-toggle&quot;&gt;
+                &lt;i class=&quot;fa-solid fa-bars menu-toggle-icon&quot;&gt;&lt;/i&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/nav&gt;
+        </code>
+      </pre>
 
-          -----  BUTTON - LIGHT -----
-          &lt;button type=&quot;button&quot; class=&quot;button btn-light&quot;&gt;Light&lt;/button&gt;
+      <div class="navbar-example">
+       <ul>
+          <li><span class="blue fw-semi-bold">navbar</span> is the main container.</li>
+          <li><span class="blue fw-semi-bold">navbar-container</span> includes the logo and the navigation.</li>
+          <li><span class="blue fw-semi-bold">navbar-logo</span> is for the logo brand. It always appears on the left side of the navbar.</li>
+          <li><span class="blue fw-semi-bold">navbar-menu-container</span> is the container for navbar menu. It works as a modal window for navbar menu on mobile devices.</li>
+          <li><span class="blue fw-semi-bold">navbar-menu</span> is the container for the navigation items. It appears on the right side, hidden on mobile devices, visible on tablets and desktop.</li>
+          <li><span class="blue fw-semi-bold">navbar-close</span> is the button to close the navigation menu. It is on the top right of the menu, visible on mobile devices, hidden on tablets and desktop.</li>
+          <li><span class="blue fw-semi-bold">navbar-items</span> is the single item of the navbar.</li>
+          <li><span class="blue fw-semi-bold">navbar-toggle</span> is the hamburger icon, which toggles the navbar menu on mobile devices.</li>
+          <li>You can add <span class="blue fw-semi-bold">active</span> to any class of <span class="blue fw-semi-bold">navbar-item</span> for the active menu item, so it can look different than other items and let you know which page you are on.</li>
+        </ul>
+      </div>   
+    </section>
+    <hr>
 
-          -----  BUTTON - DARK -----
-          &lt;button type=&quot;button&quot; class=&quot;button btn-dark&quot;&gt;Dark&lt;/button&gt;
+    <!-- Forms
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <section id="forms">
+      <h2>Forms</h2>
+      <p>Our framework supports the following native HTML form element: <span class="blue italic">&lt;form&gt;</span>, <span class="blue italic">&lt;button&gt;</span>, <span class="blue italic">&lt;input&gt; </span>, <span class="blue italic">&lt;textarera&gt;</span>, and <span class="blue italic">&lt;label&gt;.</span></p>
+      <p>The following CSS classes are supported:</p>
+      <div class="forms-intro">
+        <ul>
+          <li>label</li>
+          <li>input</li>
+          <li>textarea</li>
+          <li>select</li>
+          <li>checkbox</li>
+          <li>radio</li>
+          <li>button</li>
+        </ul>
+      </div>
+      <h5>Complete form example:</h5>
+      <!--========== COMPLETE FORM ==========-->
+      <form action="" id="form-example">
+        <fieldset class="form-field">
+          <label class="label">Name</label>
+          <div class="form-control">
+            <input class="input" type="text" placeholder="Your name">
+          </div>
+        </fieldset>
 
-          -----  BUTTON - BLACK -----
-          &lt;button type=&quot;button&quot; class=&quot;button btn-black&quot;&gt;Black&lt;/button&gt;
+        <fieldset class="form-field">
+          <label class="label">Email</label>
+          <div class="form-control has-icon">
+            <input class="input" type="email" placeholder="Your email">
+            <span class="icon">
+              <i class="fa-solid fa-envelope"></i>
+            </span>
+          </div>
+        </fieldset> 
+
+        <fieldset class="form-field">
+          <label class="label">Subject</label>
+          <div class="form-control">
+            <div class="select">
+              <select>
+                <option>Please choose one</option>
+                <option>Option 1</option>
+                <option>Option 2</option>
+                <option>Option 2</option>
+              </select>
+            </div>
+          </div>
+        </fieldset>
+
+        <fieldset class="form-field">
+          <label class="label">Message</label>
+          <div class="form-control">
+            <textarea class="text-area" placeholder="Type your message here..."></textarea>
+          </div>
+        </fieldset> 
+
+        <fieldset class="form-field">
+          <label class="label">Multiple choices - checkbox</label>
+          <div class="form-control">
+            <label class="checkbox">
+              <input type="checkbox" checked>Option 1
+            </label>
+            <label class="checkbox">
+              <input type="checkbox">Option 2
+            </label>
+            <label class="checkbox">
+              <input type="checkbox">Option 3
+            </label>
+          </div>
+        </fieldset>
+
+        <fieldset class="form-field">
+          <label class="label">Just one right choice - radio button</label>
+          <div class="form-control">
+            <label class="radio-btn">
+              <input type="radio" name="question">Yes
+            </label>
+            <label class="radio-btn">
+              <input type="radio" name="question">No
+            </label>
+          </div>
+        </fieldset>
+
+        <fieldset class="form-field group-btn">
+          <div class="form-control">
+            <button class="button submit-btn">Submit <i class="fa-solid fa-arrow-right"></i></button>
+          </div>
+          <div class="form-control">
+            <button class="button reset-btn">Cancel</button>
+          </div>  
+        </fieldset> 
+      </form>
+
+      <!-- Code example -->
+      <pre>
+        <code class="language-html" data-lang="html">
+          ----- BASIC INPUT -----
+          &lt;fieldset class=&quot;form-field&quot;&gt;
+            &lt;label class=&quot;label&quot; for=&quot;name&quot;&gt;Name&lt;/label&gt;
+            &lt;div class=&quot;form-control&quot;&gt;
+              &lt;input class=&quot;input&quot; type=&quot;text&quot; placeholder=&quot;Your name&quot; id=&quot;name&quot;&gt;
+            &lt;/div&gt;
+          &lt;/fieldset&gt;
+      
+          ----- INPUT WITH ICON AND TEXT -----
+          &lt;fieldset class=&quot;form-field&quot;&gt;
+            &lt;label class=&quot;label&quot;&gt;Email&lt;/label&gt;
+            &lt;div class=&quot;form-control has-icon&quot;&gt;
+              &lt;input class=&quot;input&quot; type=&quot;email&quot; placeholder=&quot;Your email&quot;&gt;
+              &lt;span class=&quot;icon&quot;&gt;
+                &lt;i class=&quot;fa-solid fa-envelope&quot;&gt;&lt;/i&gt;
+              &lt;/span&gt;
+            &lt;/div&gt;
+          &lt;/fieldset&gt;
+      
+          ----- SELECT DROPDOWN -----
+          &lt;fieldset class=&quot;form-field&quot;&gt;
+            &lt;label class=&quot;label&quot;&gt;Subject&lt;/label&gt;
+            &lt;div class=&quot;form-control&quot;&gt;
+              &lt;div class=&quot;select&quot;&gt;
+                &lt;select&gt;
+                  &lt;option&gt;Please choose one&lt;/option&gt;
+                  &lt;option&gt;Option 1&lt;/option&gt;
+                  &lt;option&gt;Option 2&lt;/option&gt;
+                  &lt;option&gt;Option 2&lt;/option&gt;
+                &lt;/select&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/fieldset&gt;
+
+          ----- TEXTAREA -----
+          &lt;fieldset class=&quot;form-field&quot;&gt;
+            &lt;label class=&quot;label&quot;&gt;Message&lt;/label&gt;
+            &lt;div class=&quot;form-control&quot;&gt;
+              &lt;textarea class=&quot;text-area&quot; placeholder=&quot;Type your message here...&quot;&gt;&lt;/textarea&gt;
+            &lt;/div&gt;
+          &lt;/fieldset&gt; 
+
+          ----- INPUT CHECKBOX -----
+          &lt;fieldset class=&quot;form-field&quot;&gt;
+            &lt;label class=&quot;label&quot;&gt;Multiple choices - checkbox&lt;/label&gt;
+            &lt;div class=&quot;form-control&quot;&gt;
+              &lt;label class=&quot;checkbox&quot;&gt;
+                &lt;input type=&quot;checkbox&quot; checked&gt;Option 1
+              &lt;/label&gt;
+              &lt;label class=&quot;checkbox&quot;&gt;
+                &lt;input type=&quot;checkbox&quot;&gt;Option 2
+              &lt;/label&gt;
+              &lt;label class=&quot;checkbox&quot;&gt;
+                &lt;input type=&quot;checkbox&quot;&gt;Option 3
+              &lt;/label&gt;
+            &lt;/div&gt;
+          &lt;/fieldset&gt;
+
+          ----- RADIO BUTTON -----
+          &lt;fieldset class=&quot;form-field&quot;&gt;
+           &lt;label class=&quot;label&quot;&gt;Just one right choice - radio button&lt;/label&gt;
+            &lt;div class=&quot;form-control&quot;&gt;
+              &lt;label class=&quot;radio-btn&quot;&gt;
+               &lt;input type=&quot;radio&quot; name=&quot;question&quot;&gt;Yes
+              &lt;/label&gt;
+              &lt;label class=&quot;radio-btn&quot;&gt;
+                &lt;input type=&quot;radio&quot; name=&quot;question&quot;&gt;No
+              &lt;/label&gt;
+            &lt;/div&gt;
+          &lt;/fieldset&gt;
+
+          ----- GROUP BUTTON -----
+          &lt;fieldset class=&quot;form-field group-btn&quot;&gt;
+            &lt;div class=&quot;form-control&quot;&gt;
+              &lt;button class=&quot;button submit-btn&quot;&gt;Submit &lt;i class=&quot;fa-solid fa-arrow-right&quot;&gt;&lt;/i&gt;&lt;/button&gt;
+          &lt;/div&gt;
+            &lt;div class=&quot;form-control&quot;&gt;
+              &lt;button class=&quot;button reset-btn&quot;&gt;Cancel&lt;/button&gt;
+            &lt;/div&gt;  
+          &lt;/fieldset&gt;
+        </code>
+      </pre>
+
+      <p>*When combining several controls in a <span class="red">form</span>, use the <span class="red">form-field class</span> as a container, to keep the spacing consistent.</p>
+
+      <br><hr>
+      <!--========== FORM-FIELD ==========-->
+      <h5>Form-field</h5>
+      <p>The <span class="red">form-field</span> container is a container for:</p>
+      <div class="forms-intro">
+        <ul>
+          <li>label</li>
+          <li>form-control</li>
+        </ul>
+      </div>
+      <br><hr>
+
+      <!--========== LABEL ==========-->
+      <h5>Label</h5>
+      <fieldset class="form-field">
+        <label class="label" for="name">Label</label>
+        <div class="form-control">
+          <input class="input" type="text" placeholder="Text input..." id="name">
+        </div>
+      </fieldset>
+
+      <!-- Code example -->
+      <pre>
+        <code class="language-html" data-lang="html">
+          &lt;fieldset class=&quot;form-field&quot;&gt;
+            &lt;label class=&quot;label&quot; for=&quot;name&quot;>Label&lt;/label&gt;
+            &lt;div class=&quot;form-control&quot;&gt;
+              &lt;input class=&quot;input&quot; type=&quot;text&quot; placeholder=&quot;Text input...&quot; id=&quot;name&quot;&gt;
+            &lt;/div&gt;
+          &lt;/fieldset&gt;
         </code>
       </pre>  
 
-      <br><br>
-      <!-- color background -->
-      <h6>Color background versions</h6>
-      <div class="button-example">
-        <button type="button" class="button btn-primary btn-color-bg">Primary</button>
-        <button type="button" class="button btn-info btn-color-bg">Info</button>
-        <button type="button" class="button btn-success btn-color-bg">Success</button>
-        <button type="button" class="button btn-warning btn-color-bg">Warning</button>
-        <button type="button" class="button btn-danger btn-color-bg">Danger</button>
+      <p>*This container allows form-field to be spaced consistently.</p>
+      <br><hr>
+
+      <!--========== FORM-CONTROL ==========-->
+      <h5>Form-control</h5>
+      <p>The <span class="red">form-control</span> is the container of the following elements:</p>
+      <div class="forms-intro">
+        <ul>
+          <li>input</li>
+          <li>select</li>
+          <li>button</li>
+          <li>icon</li>
+        </ul>
       </div>
 
-      <!-- Code example -->
-      <pre>
-        <code class="language-html" data-lang="html">
-          -----  PRIMARY BUTTON - COLOR BACKGROUND -----
-          &lt;button type=&quot;button&quot; class=&quot;button btn-primary btn-color-bg&quot;&gt;Primary&lt;/button&gt;
-
-          -----  INFO BUTTON - COLOR BACKGROUND -----
-          &lt;button type=&quot;button&quot; class=&quot;button btn-info btn-color-bg&quot;&gt;Info&lt;/button&gt;
-
-          -----  SUCCESS BUTTON - COLOR BACKGROUND -----
-          &lt;button type=&quot;button&quot; class=&quot;button btn-success btn-color-bg&quot;&gt;Success&lt;/button&gt;
-
-          -----  WARNING BUTTON - COLOR BACKGROUND -----
-          &lt;button type=&quot;button&quot; class=&quot;button btn-warning btn-color-bg&quot;&gt;Warning&lt;/button&gt;
-
-          -----  DANGER BUTTON - COLOR BACKGROUND -----
-          &lt;button type=&quot;button&quot; class=&quot;button btn-danger btn-color-bg&quot;&gt;Danger&lt;/button&gt;
-        </code>
-      </pre>     
-
-      <br><br>
-      <!-- light-color background -->
-      <h6>Light color background versions</h6>
-      <div class="button-example">
-        <button type="button" class="button btn-primary btn-light-bg">Primary</button>
-        <button type="button" class="button btn-info btn-light-bg">Info</button>
-        <button type="button" class="button btn-success btn-light-bg">Success</button>
-        <button type="button" class="button btn-warning btn-light-bg">Warning</button>
-        <button type="button" class="button btn-danger btn-light-bg">Danger</button>
-      </div>
-
-      <!-- Code example -->
-      <pre>
-        <code class="language-html" data-lang="html">
-          -----  PRIMARY BUTTON - LIGHT BACKGROUND -----
-          &lt;button type=&quot;button&quot; class=&quot;button btn-primary btn-light-bg&quot;&gt;Primary&lt;/button&gt;
-
-          -----  INFO BUTTON - LIGHT BACKGROUND -----
-          &lt;button type=&quot;button&quot; class=&quot;button btn-info btn-light-bg&quot;&gt;Info&lt;/button>
-
-          -----  SUCCESS BUTTON - LIGHT BACKGROUND -----
-          &lt;button type=&quot;button&quot; class=&quot;button btn-success btn-light-bg&quot;&gt;Success&lt;/button&gt;
-
-          -----  WARNING BUTTON - LIGHT BACKGROUND -----
-          &lt;button type=&quot;button&quot; class=&quot;button btn-warning btn-light-bg&quot;&gt;Warning&lt;/button&gt;
-
-          -----  DANGER BUTTON - LIGHT BACKGROUND -----
-          &lt;button type=&quot;button&quot; class=&quot;button btn-danger btn-light-bg&quot;&gt;Danger&lt;/button&gt;
-        </code>
-      </pre>
-      
-      <br><br>
-      <h6>More than that, the button is available in all the different colors which are defined in our color library, for background and text color. You can always style them with the color you want.</h6>
-      <div class="button-example">
-        <button type="button" class="button blue bg-p-blue">Button</button>
-        <button type="button" class="button green bg-p-green">Button</button>
-        <button type="button" class="button purple bg-p-purple">Button</button>
-        <button type="button" class="button orange bg-p-orange">Button</button>
-        <button type="button" class="button pink bg-p-pink">Button</button>
-      </div>
-
-      <!-- Code example -->
-      <pre>
-        <code class="language-html" data-lang="html">
-          &lt;button type=&quot;button&quot; class=&quot;button blue bg-p-blue&quot;&gt;Button&lt;/button&gt;
-          &lt;button type=&quot;button&quot; class=&quot;button green bg-p-green&quot;&gt;Button&lt;/button&gt;
-          &lt;button type=&quot;button&quot; class=&quot;button purple bg-p-purple&quot;&gt;Button&lt;/button&gt;
-          &lt;button type=&quot;button&quot; class=&quot;button orange bg-p-orange&quot;&gt;Button&lt;/button&gt;
-          &lt;button type=&quot;button&quot; class=&quot;button pink dark bg-p-pink&quot;&gt;Button&lt;/button&gt;
-        </code>
-      </pre>
-    </div>   
-    <br><br>
-  </section>
-
-<!-- Components
-–––––––––––––––––––––––––––––––––––––––––––––––––– -->
-<h2>Components</h2>
-<!-- 
-–––––––––––––––––––––––––––––––––––––––––––––––––– -->
-<!-- CSS TEXT EFFECT component -->
-<!-- <h3>CSS Text Effects</h3> -->
-<section id="text-effect">
-  <div class="text-ef">
-    <div class="row">
-      <div id="txt-container">
-        <h1>CSS Text Effects</h1>
-        <div id="bg-img-clip">
-          <h1 id="csst1">Sign up today!</h1>
-        </div>
-        <div id="bg-animate">
-          <h1 id="csst2">Catch attention!</h1>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- BACKGROUND ANIMATION CSS component -->
-<section id="animate-bg">
-  <h3>Background Animation</h3>
-  <div id="hero-animate">
-    <div class="hero__title">Background Animation</div>
-    <div class="cube"></div>
-    <div class="cube"></div>
-    <div class="cube"></div>
-    <div class="cube"></div>
-    <div class="cube"></div>
-    <div class="cube"></div>
-  </div>
-</section>
-
-<!-- HERO component -->
-<h3>Hero Component</h3>
-<section id="hero-page">
-  <section class="hero">
-    <div class="hero-inner">
-      <h2>Your catchy message</h2>
-      <h3>Say something here to interest your visitor</h3>
-      <a href="#" class="btn">Find out more</a>
-    </div>
-  </section>
-  <div class="hero-page-content">
-    <h3>A hero page for you to use</h3>
-    <p>A hero image is a large or oversized web banner image that usually extends full-width. It is part of the header section of a webpage, usually at the top of the page. Because of its prominent place "above the fold" on the website, the hero header is the first thing users see when arriving on a website. It establishes the visual hierarchy because it is so predominant.</p>
-
-    <p>Your hero should include a call to action (CTA) that prompts your visitor to click, scroll, or interact with your site in some way. You always want to incorporate a call to action in your hero. The call to action, or CTA, is the most important conversion action you want your visitor to take on your site.</p>
-    <h4>Another Heading followed by sample</h4>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum illo adipisci explicabo, saepe quos dignissimos, exercitationem quae veritatis neque recusandae sit aliquam tempora laboriosam quod sapiente eius magnam eaque? Perspiciatis!</p>
-    <p>Aperiam doloribus deserunt sapiente fugiat inventore nostrum at dolorum impedit iure saepe, earum placeat. Voluptatem, fuga optio. Fugit natus velit ipsam numquam! Ad, eius libero! Magnam esse animi fuga error?</p>
-  </div>
-</section>
-
-<!-- ACCORDION COMPONENT -->
-<section id="my-accordion">
-  <h1>Accordion Component</h1>
-  <section class="aContainer">
-    <div class="accordion">
-      <header class="aHeader">
-        <h2><button>Item 1
-            <i class="fa-solid fa-plus"></i>
-            <i class="fa-solid fa-minus"></i>
-          </button>
-        </h2>
-      </header>
-      <article class="aContent">
-        <img src="images/a1.jpg" alt="image example">
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti voluptas eaque voluptatibus. Suscipit nulla aperiam in consectetur nemo ad aut debitis delectus eveniet?</p>
-        <p>Ratione neque sequi nihil, est saepe qui. Mollitia sint ratione praesentium obcaecati, nobis deleniti autem tempore ipsam temporibus accusamus, voluptatem quo nulla laboriosam dolorum ducimus odio! Laudantium ratione ipsa vel.</p>
-      </article>
-    </div>
-    <div class="accordion">
-      <header class="aHeader">
-        <h2><button>Item 2
-            <i class="fa-solid fa-plus"></i>
-            <i class="fa-solid fa-minus"></i>
-          </button>
-        </h2>
-      </header>
-      <article class="aContent">
-        <img src="images/a2.jpg" alt="image example">
-        <p>Lorem ipsum dolor sit amet. Magni, nisi ut et vero non quisquam eos recusandae iure omnis esse officia, distinctio, facilis saepe! Sint animi quisquam soluta magni quas!</p>
-        <p>Tenetur quod quia sunt distinctio ex quisquam libero natus totam harum adipisci optio exercitationem modi soluta nemo inventore consequatur obcaecati nihil cumque. Corrupti, voluptatum possimus. Nulla!</p>
-      </article>
-    </div>
-    <div class="accordion">
-      <header class="aHeader">
-        <h2><button>Item 3
-            <i class="fa-solid fa-plus"></i>
-            <i class="fa-solid fa-minus"></i>
-          </button>
-        </h2>
-      </header>
-      <article class="aContent">
-        <img src="images/a3.jpg" alt="image example">
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius recusandae option fuga maxime repellat ea et reiciendis dolor nesciunt dicta veritatis, eveniet expedita suscipit laboriosam iure.</p>
-        <p>Assumenda accusamus magnam a pariatur. Atque dolores minus et explicabo omnis, sint illum magni excepturi eveniet quasi unde consectetur dolor. Assumenda, laboriosam.</p>
-      </article>
-    </div>
-    <div class="accordion">
-      <header class="aHeader">
-        <h2><button>Item 4
-            <i class="fa-solid fa-plus"></i>
-            <i class="fa-solid fa-minus"></i>
-          </button>
-        </h2>
-      </header>
-      <article class="aContent">
-        <img src="images/a4.jpg" alt="image example">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam magnam optio cumque voluptatem magni, temporibus beatae possimus architecto fuga adipisci oeius. Explicabo amet recusandae consequatur eaque!</p>
-        <p>Saepe ex exercitationem rerum repudiandae quas tenetur necessitatibus et reiciendis magnam earum! Harum mollitia. Itaque eligendi impedit voluptatem provident voluptas vel optio, blanditiis dolore doloremque asperiores eius?</p>
-      </article>
-    </div>
-  </section>
-</section>
-<!-- END ACCORDION  -->
-
-<!-- Code for using Components added 053123 1:15pm by Trish
-–––––––––––––––––––––––––––––––––––––––––––––––––– -->
-<!-- TEXT EFFECTS -->
-<h4>Text effects code</h4>
-<p>There are 2 types to choose from shown here. </p>
-<pre>
-<code>
-&lt;section id="text-effect"&gt;
-&lt;div class="text-ef"&gt;
-  &lt;div class="row"&gt;
-      &lt;div id="txt-container"&gt;
-          &lt;h1&gt;CSS Text Effects&lt;/h1&gt;
-          
-          &lt;div id="bg-img-clip"&gt;
-              &lt;h1 id="csst1"&gt;Sign up today!&lt;/h1&gt;
-          &lt;/div&gt;
-
-          &lt;div id="bg-animate"&gt;
-              &lt;h1 id="csst2"&gt;Catch attention!&lt;/h1&gt;
-          &lt;/div&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/section&gt;
-</code>
-</pre>
-<hr>
-<h4>Background animation code</h4>
-<pre>
-<code>
-&lt;section id="animate-bg"&gt;
-&lt;h3&gt;Background Animation&lt;/h3&gt;
-  &lt;div id="hero-animate"&gt; 
-    &lt;div class="hero__title"&gt;Background Animation&lt;/div&gt;
-    &lt;div class="cube"&gt;&lt;/div&gt;
-    &lt;div class="cube"&gt;&lt;/div&gt;
-    &lt;div class="cube"&gt;&lt;/div&gt;
-    &lt;div class="cube"&gt;&lt;/div&gt;
-    &lt;div class="cube"&gt;&lt;/div&gt;
-    &lt;div class="cube"&gt;&lt;/div&gt;
-  &lt;/div&gt;
-&lt;/section&gt;
-</code>
-</pre>
-<hr>
-<h4>Hero page code</h4>
-<pre>
-<code>
-&lt;h3&gt;Hero Component&lt;/h3&gt;
-&lt;section id="hero-page"&gt;
-&lt;section class="hero"&gt;
-  &lt;div class="hero-inner"&gt;
-      &lt;h1&gt;Your catchy message&lt;/h1&gt;
-      &lt;h2&gt;Say something here to interest your visitor&lt;/h2&gt;
-      &lt;a href="#" class="btn"&gt;Find out more&lt;/a&gt;
-  &lt;/div&gt;
-&lt;/section&gt;
-&lt;div class="hero-page-content"&gt;
-  &lt;h3&gt;A hero page for you to use&lt;/h3&gt;
-  &lt;p&gt;Hero image: web banner image that usually extends full-width. &lt;/p&gt;
-
-  &lt;p&gt;Include a call to action (CTA) message here.&lt;/p&gt;
-  &lt;h4&gt;Another Heading followed by sample&lt;/h4&gt;
-  &lt;p&gt;Your text here!&lt;/p&gt;
-  &lt;p&gt;More text if you want?&lt;/p&gt;   
-&lt;/div&gt;
-&lt;/section&gt;
-</code>
-</pre>
-<hr>
-<h4>Accordion code</h4>
-<pre>
-<code> 
-&lt;section id="my-accordion"&gt;
-  &lt;h1&gt;Accordion Component&lt;/h1&gt;
-  &lt;section class="aContainer"&gt;
-      &lt;div class="accordion"&gt;
-          &lt;header class="aHeader"&gt;
-              &lt;h2&gt;&lt;button&gt;Item 1
-                  &lt;i class="fa-solid fa-plus"&gt;&lt;/i&gt;
-                  &lt;i class="fa-solid fa-minus"&gt;&lt;/i&gt;
-                  &lt;/button&gt;
-              &lt;/h2&gt;
-          &lt;/header&gt;
-          &lt;article class="aContent"&gt;
-              &lt;img src="images/a1.jpg" alt="image example"&gt;
-              &lt;p&gt;Your text goes here&lt;/p&gt;
-          &lt;/article&gt;
-      &lt;/div&gt;
-      &lt;div class="accordion"&gt;
-          &lt;header class="aHeader"&gt;
-              &lt;h2&gt;&lt;button&gt;Item 2
-                  &lt;i class="fa-solid fa-plus"&gt;&lt;/i&gt;
-                  &lt;i class="fa-solid fa-minus"&gt;&lt;/i&gt;
-                  &lt;/button&gt;
-              &lt;/h2&gt;
-          &lt;/header&gt;
-          &lt;article class="aContent"&gt;
-              &lt;img src="images/a2.jpg" alt="image example"&gt;
-              &lt;p&gt;Your text goes here&lt;/p&gt;
-          &lt;/article&gt;
-      &lt;/div&gt;
-      &lt;div class="accordion"&gt;
-          &lt;header class="aHeader"&gt;
-              &lt;h2&gt;&lt;button&gt;Item 3
-                  &lt;i class="fa-solid fa-plus"&gt;&lt;/i&gt;
-                  &lt;i class="fa-solid fa-minus"&gt;&lt;/i&gt;
-                  &lt;/button&gt;
-              &lt;/h2&gt;
-          &lt;/header&gt;
-          &lt;article class="aContent"&gt;
-              &lt;img src="images/a3.jpg" alt="image example"&gt;
-              &lt;p&gt;Your text goes here&lt;/p&gt;
-          &lt;/article&gt;
-      &lt;/div&gt;
-      &lt;div class="accordion"&gt;
-          &lt;header class="aHeader"&gt;
-              &lt;h2&gt;&lt;button&gt;Item 4
-                  &lt;i class="fa-solid fa-plus"&gt;&lt;/i&gt;
-                  &lt;i class="fa-solid fa-minus"&gt;&lt;/i&gt;
-                  &lt;/button&gt;
-              &lt;/h2&gt;
-          &lt;/header&gt;
-          &lt;article class="aContent"&gt;
-              &lt;img src="images/a4.jpg" alt="image example"&gt;
-              &lt;p&gt;Your text goes here&lt;/p&gt;
-          &lt;/article&gt;
-      &lt;/div&gt;
-</code>
-</pre>
-
-
-
-
-
-<!-- Example Navigation
-–––––––––––––––––––––––––––––––––––––––––––––––––– -->
-<section id="navigation">
-  <h2>Navigation</h2>
-  <p>A simple responsive navbar we have, has the fixed position, which appears on top of the page, has dark background and lighe text.</p>
-  <img src="images/navbar-large.png" alt="Large-navbar">
-  <div class="smNavbar-example">
-    <img src="images/navbar-small.png" alt="Small-navbar">
-    <img src="images/hamburger-menu.png" alt="pop-up menu">
-  </div>
-  <p>Here is what a complete basic navbar looks like:</p>
-
-  <!-- Code example -->
-  <pre>
-    <code class="language-html" data-lang="html">
-      &lt;nav class=&quot;navbar&quot;&gt;
-        &lt;div class=&quot;navbar-container&quot;&gt;
-          &lt;div class=&quot;navbar-logo&quot;&gt;
-            &lt;a href=&quot;#&quot; class=&quot;navbar-item&quot;&gt;LOGO&lt;/a&gt;
-          &lt;/div&gt;
-          &lt;div class=&quot;navbar-menu-container&quot;&gt;
-            &lt;div class=&quot;navbar-menu&quot;&gt;
-              &lt;div class=&quot;navbar-close&quot;&gt;
-                &lt;i class=&quot;fa-sharp fa-solid fa-xmark close-icon&quot;&gt;&lt;/i&gt;
-              &lt;/div&gt;
-              &lt;a href=&quot;#&quot; class=&quot;navbar-item active&quot;&gt;Home&lt;/a&gt;
-              &lt;a href=&quot;#&quot; class=&quot;navbar-item&quot;&gt;About&lt;/a&gt;
-              &lt;a href=&quot;#&quot; class=&quot;navbar-item&quot;&gt;Work&lt;/a&gt;
-              &lt;a href=&quot;#&quot; class=&quot;navbar-item&quot;&gt;Contact&lt;/a&gt;
-            &lt;/div&gt;    
-          &lt;/div&gt;
-          &lt;div class=&quot;navbar-toggle&quot;&gt;
-            &lt;i class=&quot;fa-solid fa-bars menu-toggle-icon&quot;&gt;&lt;/i&gt;
-          &lt;/div&gt;
-        &lt;/div&gt;
-      &lt;/nav&gt;
-    </code>
-  </pre>
-
-  <div class="navbar-example">
-    <ul>
-      <li><span class="blue fw-semi-bold">navbar</span> is the main container.</li>
-      <li><span class="blue fw-semi-bold">navbar-container</span> includes the logo and the navigation.</li>
-      <li><span class="blue fw-semi-bold">navbar-logo</span> is for the logo brand. It always appears on the left side of the navbar.</li>
-      <li><span class="blue fw-semi-bold">navbar-menu-container</span> is the container for navbar menu. It works as a modal window for navbar menu on mobile devices.</li>
-      <li><span class="blue fw-semi-bold">navbar-menu</span> is the container for the navigation items. It appears on the right side, hidden on mobile devices, visible on tablets and desktop.</li>
-      <li><span class="blue fw-semi-bold">navbar-close</span> is the button to close the navigation menu. It is on the top right of the menu, visible on mobile devices, hidden on tablets and desktop.</li>
-      <li><span class="blue fw-semi-bold">navbar-items</span> is the single item of the navbar.</li>
-      <li><span class="blue fw-semi-bold">navbar-toggle</span> is the hamburger icon, which toggles the navbar menu on mobile devices.</li>
-      <li>You can add <span class="blue fw-semi-bold">active</span> to any class of <span class="blue fw-semi-bold">navbar-item</span> for the active menu item, so it can look different than other items and let you know which page you are on.</li>
-    </ul>
-  </div>   
-</section>
-
-
-<!-- Forms
-–––––––––––––––––––––––––––––––––––––––––––––––––– -->
-<section id="forms">
-  <h2>Forms</h2>
-  <p>Our framework supports the following native HTML form element: <span class="blue italic">&lt;form&gt;</span>, <span class="blue italic">&lt;button&gt;</span>, <span class="blue italic">&lt;input&gt; </span>, <span class="blue italic">&lt;textarera&gt;</span>, and <span class="blue italic">&lt;label&gt;.</span></p>
-  <p>The following CSS classes are supported:</p>
-  <div class="forms-intro">
-    <ul>
-      <li>label</li>
-      <li>input</li>
-      <li>textarea</li>
-      <li>select</li>
-      <li>checkbox</li>
-      <li>radio</li>
-      <li>button</li>
-    </ul>
-  </div>
-  <h5>Complete form example:</h5>
-  <!--========== COMPLETE FORM ==========-->
-  <form action="" id="form-example">
-    <fieldset class="form-field">
-      <label class="label">Name</label>
+      <!-- text input -->
+      <h6>Text input</h6>
       <div class="form-control">
-        <input class="input" type="text" placeholder="Your name">
+        <input class="input" type="text" placeholder="Text input">
       </div>
-    </fieldset>
 
-    <fieldset class="form-field">
-      <label class="label">Email</label>
-      <div class="form-control has-icon">
-        <input class="input" type="email" placeholder="Your email">
-        <span class="icon">
-          <i class="fa-solid fa-envelope"></i>
-        </span>
-      </div>
-    </fieldset> 
+      <pre>
+        <code class="language-html" data-lang="html">
+          &lt;div class=&quot;form-control&quot;&gt;
+            &lt;input class=&quot;input&quot; type=&quot;text&quot; placeholder=&quot;Text input&quot;&gt;
+          &lt;/div&gt;
+        </code>
+      </pre>
 
-    <fieldset class="form-field">
-      <label class="label">Subject</label>
+      <!-- dropdown menu -->
+      <h6>Select dropdown</h6>
       <div class="form-control">
         <div class="select">
           <select>
-            <option>Please choose one</option>
+            <option>Select dropdown</option>
             <option>Option 1</option>
-            <option>Option 2</option>
-            <option>Option 2</option>
+            <option>Option 1</option>
           </select>
         </div>
       </div>
-    </fieldset>
 
-    <fieldset class="form-field">
-      <label class="label">Message</label>
-      <div class="form-control">
-        <textarea class="text-area" placeholder="Type your message here..."></textarea>
-      </div>
-    </fieldset> 
-
-    <fieldset class="form-field">
-      <label class="label">Multiple choices - checkbox</label>
-      <div class="form-control">
-        <label class="checkbox">
-          <input type="checkbox" checked>Option 1
-        </label>
-        <label class="checkbox">
-          <input type="checkbox">Option 2
-        </label>
-        <label class="checkbox">
-          <input type="checkbox">Option 3
-        </label>
-      </div>
-    </fieldset>
-
-    <fieldset class="form-field">
-      <label class="label">Just one right choice - radio button</label>
-      <div class="form-control">
-        <label class="radio-btn">
-          <input type="radio" name="question">Yes
-        </label>
-        <label class="radio-btn">
-          <input type="radio" name="question">No
-        </label>
-      </div>
-    </fieldset>
-
-    <fieldset class="form-field group-btn">
-      <div class="form-control">
-        <button class="button submit-btn">Submit <i class="fa-solid fa-arrow-right"></i></button>
-      </div>
-      <div class="form-control">
-        <button class="button reset-btn">Cancel</button>
-      </div>  
-    </fieldset> 
-  </form>
-
-  <!-- Code example -->
-  <pre>
-    <code class="language-html" data-lang="html">
-      ----- BASIC INPUT -----
-      &lt;fieldset class=&quot;form-field&quot;&gt;
-        &lt;label class=&quot;label&quot; for=&quot;name&quot;&gt;Name&lt;/label&gt;
-        &lt;div class=&quot;form-control&quot;&gt;
-          &lt;input class=&quot;input&quot; type=&quot;text&quot; placeholder=&quot;Your name&quot; id=&quot;name&quot;&gt;
-        &lt;/div&gt;
-      &lt;/fieldset&gt;
-      
-      ----- INPUT WITH ICON AND TEXT -----
-      &lt;fieldset class=&quot;form-field&quot;&gt;
-        &lt;label class=&quot;label&quot;&gt;Email&lt;/label&gt;
-        &lt;div class=&quot;form-control has-icon&quot;&gt;
-          &lt;input class=&quot;input&quot; type=&quot;email&quot; placeholder=&quot;Your email&quot;&gt;
-          &lt;span class=&quot;icon&quot;&gt;
-            &lt;i class=&quot;fa-solid fa-envelope&quot;&gt;&lt;/i&gt;
-          &lt;/span&gt;
-        &lt;/div&gt;
-      &lt;/fieldset&gt;
-      
-      ----- SELECT DROPDOWN -----
-      &lt;fieldset class=&quot;form-field&quot;&gt;
-        &lt;label class=&quot;label&quot;&gt;Subject&lt;/label&gt;
-        &lt;div class=&quot;form-control&quot;&gt;
-          &lt;div class=&quot;select&quot;&gt;
-            &lt;select&gt;
-              &lt;option&gt;Please choose one&lt;/option&gt;
-              &lt;option&gt;Option 1&lt;/option&gt;
-              &lt;option&gt;Option 2&lt;/option&gt;
-              &lt;option&gt;Option 2&lt;/option&gt;
-            &lt;/select&gt;
+      <!-- Code example -->
+      <pre>
+        <code class="language-html" data-lang="html">
+          &lt;div class=&quot;form-control&quot;&gt;
+            &lt;div class=&quot;select&quot;&gt;
+              &lt;select&gt;
+                &lt;option&gt;Select dropdown&lt;/option&gt;
+                &lt;option&gt;Option 1&lt;/option&gt;
+                &lt;option&gt;Option 1&lt;/option&gt;
+              &lt;/select&gt;
+            &lt;/div&gt;
           &lt;/div&gt;
-        &lt;/div&gt;
-      &lt;/fieldset&gt;
+        </code>
+      </pre>
 
-      ----- TEXTAREA -----
-      &lt;fieldset class=&quot;form-field&quot;&gt;
-        &lt;label class=&quot;label&quot;&gt;Message&lt;/label&gt;
-        &lt;div class=&quot;form-control&quot;&gt;
-          &lt;textarea class=&quot;text-area&quot; placeholder=&quot;Type your message here...&quot;&gt;&lt;/textarea&gt;
-        &lt;/div&gt;
-      &lt;/fieldset&gt; 
-
-      ----- INPUT CHECKBOX -----
-      &lt;fieldset class=&quot;form-field&quot;&gt;
-        &lt;label class=&quot;label&quot;&gt;Multiple choices - checkbox&lt;/label&gt;
-        &lt;div class=&quot;form-control&quot;&gt;
-          &lt;label class=&quot;checkbox&quot;&gt;
-            &lt;input type=&quot;checkbox&quot; checked&gt;Option 1
-          &lt;/label&gt;
-          &lt;label class=&quot;checkbox&quot;&gt;
-            &lt;input type=&quot;checkbox&quot;&gt;Option 2
-          &lt;/label&gt;
-          &lt;label class=&quot;checkbox&quot;&gt;
-            &lt;input type=&quot;checkbox&quot;&gt;Option 3
-          &lt;/label&gt;
-        &lt;/div&gt;
-      &lt;/fieldset&gt;
-
-      ----- RADIO BUTTON -----
-      &lt;fieldset class=&quot;form-field&quot;&gt;
-        &lt;label class=&quot;label&quot;&gt;Just one right choice - radio button&lt;/label&gt;
-        &lt;div class=&quot;form-control&quot;&gt;
-          &lt;label class=&quot;radio-btn&quot;&gt;
-            &lt;input type=&quot;radio&quot; name=&quot;question&quot;&gt;Yes
-          &lt;/label&gt;
-          &lt;label class=&quot;radio-btn&quot;&gt;
-            &lt;input type=&quot;radio&quot; name=&quot;question&quot;&gt;No
-          &lt;/label&gt;
-        &lt;/div&gt;
-      &lt;/fieldset&gt;
-
-      ----- GROUP BUTTON -----
-      &lt;fieldset class=&quot;form-field group-btn&quot;&gt;
-        &lt;div class=&quot;form-control&quot;&gt;
-          &lt;button class=&quot;button submit-btn&quot;&gt;Submit &lt;i class=&quot;fa-solid fa-arrow-right&quot;&gt;&lt;/i&gt;&lt;/button&gt;
-        &lt;/div&gt;
-        &lt;div class=&quot;form-control&quot;&gt;
-          &lt;button class=&quot;button reset-btn&quot;&gt;Cancel&lt;/button&gt;
-        &lt;/div&gt;  
-      &lt;/fieldset&gt;
-    </code>
-  </pre>
-
-  <p>*When combining several controls in a <span class="red">form</span>, use the <span class="red">form-field class</span> as a container, to keep the spacing consistent.</p>
-
-  <br><Hr>
-  <!--========== FORM-FIELD ==========-->
-  <h5>Form-field</h5>
-  <p>The <span class="red">form-field</span> container is a container for:</p>
-  <div class="forms-intro">
-    <ul>
-      <li>label</li>
-      <li>form-control</li>
-    </ul>
-  </div>
-  <br><hr>
-
-  <!--========== LABEL ==========-->
-  <h5>Label</h5>
-  <fieldset class="form-field">
-    <label class="label" for="name">Label</label>
-    <div class="form-control">
-      <input class="input" type="text" placeholder="Text input..." id="name">
-    </div>
-  </fieldset>
-
-  <!-- Code example -->
-  <pre>
-    <code class="language-html" data-lang="html">
-      &lt;fieldset class=&quot;form-field&quot;&gt;
-        &lt;label class=&quot;label&quot; for=&quot;name&quot;>Label&lt;/label&gt;
-        &lt;div class=&quot;form-control&quot;&gt;
-          &lt;input class=&quot;input&quot; type=&quot;text&quot; placeholder=&quot;Text input...&quot; id=&quot;name&quot;&gt;
-        &lt;/div&gt;
-      &lt;/fieldset&gt;
-    </code>
-  </pre>  
-
-  <p>*This container allows form-field to be spaced consistently.</p>
-  <br><hr>
-
-  <!--========== FORM-CONTROL ==========-->
-  <h5>Form-control</h5>
-  <p>The <span class="red">form-control</span> is the container of the following elements:</p>
-  <div class="forms-intro">
-    <ul>
-      <li>input</li>
-      <li>select</li>
-      <li>button</li>
-      <li>icon</li>
-    </ul>
-  </div>
-
-  <!-- text input -->
-  <h6>Text input</h6>
-  <div class="form-control">
-    <input class="input" type="text" placeholder="Text input">
-  </div>
-
-  <pre>
-    <code class="language-html" data-lang="html">
-      &lt;div class=&quot;form-control&quot;&gt;
-        &lt;input class=&quot;input&quot; type=&quot;text&quot; placeholder=&quot;Text input&quot;&gt;
-      &lt;/div&gt;
-    </code>
-  </pre>
-
-  <!-- dropdown menu -->
-  <h6>Select dropdown</h6>
-  <div class="form-control">
-    <div class="select">
-      <select>
-        <option>Select dropdown</option>
-        <option>Option 1</option>
-        <option>Option 1</option>
-      </select>
-    </div>
-  </div>
-
-  <!-- Code example -->
-  <pre>
-    <code class="language-html" data-lang="html">
-      &lt;div class=&quot;form-control&quot;&gt;
-        &lt;div class=&quot;select&quot;&gt;
-          &lt;select&gt;
-            &lt;option&gt;Select dropdown&lt;/option&gt;
-            &lt;option&gt;Option 1&lt;/option&gt;
-            &lt;option&gt;Option 1&lt;/option&gt;
-          &lt;/select&gt;
-        &lt;/div&gt;
-      &lt;/div&gt;
-    </code>
-  </pre>
-
-  <!-- button -->
-  <h6>Button</h6>
-  <div class="control">
-    <button class="button btn-info btn-color-bg">Submit</button>
-  </div>
-
-  <!-- Code example -->
-  <pre>
-    <code class="language-html" data-lang="html">
-      &lt;div class=&quot;control&quot;&gt;
-        &lt;button class=&quot;button btn-info btn-color-bg&quot;&gt;Submit&lt;/button&gt;
-      &lt;/div&gt;
-    </code>
-  </pre>  
-
-  <h6>Icons</h6>
-  <fieldset class="form-field">
-    <label class="label">Email</label>
-    <div class="form-control has-icon">
-      <input class="input" type="email" placeholder="Your email">
-      <span class="icon">
-        <i class="fa-solid fa-envelope"></i>
-      </span>
-    </div>
-  </fieldset> 
-
-  <!-- Code example -->
-  <pre>
-    <code class="language-html" data-lang="html">
-      &lt;fieldset class=&quot;form-field&quot;&gt;
-        &lt;label class=&quot;label&quot;&gt;Email&lt;/label&gt;
-        &lt;div class=&quot;form-control has-icon&quot;&gt;
-          &lt;input class=&quot;input&quot; type=&quot;email&quot; placeholder=&quot;Your email&quot;&gt;
-          &lt;span class=&quot;icon&quot;&gt;
-            &lt;i class=&quot;fa-solid fa-envelope&quot;&gt;&lt;/i&gt;
-          &lt;/span&gt;
-        &lt;/div&gt;
-      &lt;/fieldset&gt;
-    </code>
-  </pre>
-  <hr>
-
-  <!--========== INPUT ==========-->
-  <h5>Input</h5>
-  <p>We have three sizes for each of <span class="blue">input text</span>, <span class="blue">input text with icon</span> and <span class="blue">select dropdown</span>, which are <span class="red">small</span>, <span class="red">medium/ default</span> and <span class="red">large</span>.</p>
-  <br>
-  <h6>Input Text</h6>
-  <fieldset class="form-field">
-    <label class="label is-small">Small label + input</label>
-    <div class="form-control">
-      <input class="input is-small" type="text" placeholder="Small size">
-    </div>
-  </fieldset>
-
-  <fieldset class="form-field">
-    <label class="label">Default label + input</label>
-    <div class="form-control">
-      <input class="input" type="text" placeholder="Default size">
-    </div>
-  </fieldset>
-
-  <fieldset class="form-field">
-    <label class="label is-large">Large label + input</label>
-    <div class="form-control">
-      <input class="input is-large" type="text" placeholder="Large size">
-    </div>
-  </fieldset>
-
-  <!-- Code example -->    
-  <pre>
-    <code class="language-html" data-lang="html">
-      ----- SMALL LABEL AND INPUT -----
-      &lt;fieldset class=&quot;form-field&quot;>
-        &lt;label class=&quot;label is-small&quot;&gt;Small label + input&lt;/label&gt;
-        &lt;div class=&quot;form-control&quot;&gt;
-          &lt;input class=&quot;input is-small&quot; type=&quot;text&quot; placeholder=&quot;Small size&quot;&gt;
-        &lt;/div&gt;
-      &lt;/fieldset&gt;
-
-      ----- DEFAULT LABEL AND INPUT -----
-      &lt;fieldset class=&quot;form-field&quot;&gt;
-        &lt;label class=&quot;label&quot;&gt;Default label + input&lt;/label&gt;
-        &lt;div class=&quot;form-control&quot;&gt;
-          &lt;input class=&quot;input&quot; type=&quot;text&quot; placeholder=&quot;Default size&quot;&gt;
-        &lt;/div&gt;
-      &lt;/fieldset&gt;
-  
-      ----- LARGE LABEL AND INPUT -----
-      &lt;fieldset class=&quot;form-field&quot;&gt;
-        &lt;label class=&quot;label is-large&quot;&gt;Large label + input&lt;/label&gt;
-        &lt;div class=&quot;form-control&quot;&gt;
-          &lt;input class=&quot;input is-large&quot; type=&quot;text&quot; placeholder=&quot;Large size&quot;&gt;
-        &lt;/div&gt;
-      &lt;/fieldset&gt;
-    </code>
-  </pre>
-
-  <h6>Input text with icon</h6>
-  <fieldset class="form-field">
-    <label class="label is-small">Small label + input + icon</label>
-    <div class="form-control has-icon">
-      <input class="input is-small" type="email" placeholder="Small size">
-      <span class="icon is-small">
-        <i class="fa-solid fa-envelope"></i>
-      </span>
-    </div>
-  </fieldset> 
-
-  <fieldset class="form-field">
-    <label class="label">Default label + input + icon</label>
-    <div class="form-control has-icon">
-      <input class="input" type="email" placeholder="Default size">
-      <span class="icon">
-        <i class="fa-solid fa-envelope"></i>
-      </span>
-    </div>
-  </fieldset> 
-
-  <fieldset class="form-field">
-    <label class="label is-large">Large label + input + icon</label>
-    <div class="form-control has-icon">
-      <input class="input is-large" type="email" placeholder="Large size">
-      <span class="icon is-large">
-        <i class="fa-solid fa-envelope"></i>
-      </span>
-    </div>
-  </fieldset> 
-
-  <!-- Code example -->    
-  <pre>
-    <code class="language-html" data-lang="html">
-      ----- SMALL LABEL - INPUT - ICON -----
-      &lt;fieldset class=&quot;form-field&quot;&gt;
-        &lt;label class=&quot;label is-small&quot;>Small label + input + icon&lt;/label&gt;
-        &lt;div class=&quot;form-control has-icon&quot;&gt;
-          &lt;input class=&quot;input is-small&quot; type=&quot;email&quot; placeholder=&quot;Small size&quot;&gt;
-          &lt;span class=&quot;icon is-small&quot;&gt;
-            &lt;i class=&quot;fa-solid fa-envelope&quot;&gt;&lt;/i&gt;
-          &lt;/span&gt;
-        &lt;/div&gt;
-      &lt;/fieldset&gt; 
-  
-      ----- DEFAULT LABEL - INPUT - ICON -----
-      &lt;fieldset class=&quot;form-field&quot;&gt;
-        &lt;label class=&quot;label&quot;&gt;Default label + input + icon&lt;/label&gt;
-        &lt;div class=&quot;form-control has-icon&quot;&gt;
-          &lt;input class=&quot;input&quot; type=&quot;email&quot; placeholder=&quot;Default size&quot;&gt;
-          &lt;span class=&quot;icon&quot;&gt;
-            &lt;i class=&quot;fa-solid fa-envelope&quot;&gt;&lt;/i&gt;
-          &lt;/span&gt;
-        &lt;/div&gt;
-      &lt;/fieldset&gt; 
-  
-      ----- LARGE LABEL - INPUT - ICON -----
-      &lt;fieldset class=&quot;form-field&quot;&gt;
-        &lt;label class=&quot;label is-large&quot;&gt;Large label + input + icon&lt;/label&gt;
-        &lt;div class=&quot;form-control has-icon&quot;&gt;
-          &lt;input class=&quot;input is-large&quot; type=&quot;email&quot; placeholder=&quot;Large size&quot;&gt;
-          &lt;span class=&quot;icon is-large&quot;&gt;
-            &lt;i class=&quot;fa-solid fa-envelope&quot;&gt;&lt;/i&gt;
-          &lt;/span&gt;
-        &lt;/div&gt;
-      &lt;/fieldset&gt; 
-    </code>
-  </pre>
-
-  <!-- ======== SELECT DROPDOWN ======== -->
-  <h6>Select dropdown</h6>
-  <fieldset class="form-field">
-    <label class="label is-small">Small select dropdown</label>
-    <div class="form-control">
-      <div class="select is-small">
-        <select class="is-small">
-          <option>Please choose one</option>
-          <option>Option 1</option>
-          <option>Option 2</option>
-          <option>Option 2</option>
-        </select>
+      <!-- button -->
+      <h6>Button</h6>
+      <div class="control">
+        <button class="button btn-info btn-color-bg">Submit</button>
       </div>
-    </div>
-  </fieldset>
 
-  <fieldset class="form-field">
-    <label class="label">Default select dropdown</label>
-    <div class="form-control">
-      <div class="select">
-        <select>
-          <option>Please choose one</option>
-          <option>Option 1</option>
-          <option>Option 2</option>
-          <option>Option 2</option>
-        </select>
-      </div>
-    </div>
-  </fieldset>
-
-  <fieldset class="form-field">
-    <label class="label is-large">Large select dropdown</label>
-    <div class="form-control">
-      <div class="select is-large">
-        <select class="is-large">
-          <option>Please choose one</option>
-          <option>Option 1</option>
-          <option>Option 2</option>
-          <option>Option 2</option>
-        </select>
-      </div>
-    </div>
-  </fieldset>
-
-  <!-- Code example -->    
-  <pre>
-    <code class="language-html" data-lang="html">
-      ----- SMALL SELECT DROPDOWN -----
-      &lt;fieldset class=&quot;form-field&quot;&gt;
-        &lt;label class=&quot;label is-small&quot;&gt;Small select dropdown&lt;/label&gt;
-        &lt;div class=&quot;form-control&quot;&gt;
-          &lt;div class=&quot;select is-small&quot;&gt;
-            &lt;select class=&quot;is-small&quot;&gt;
-              &lt;option&gt;Please choose one&lt;/option&gt;
-              &lt;option&gt;Option 1&lt;/option&gt;
-              &lt;option&gt;Option 2&lt;/option&gt;
-              &lt;option&gt;Option 2&lt;/option&gt;
-            &lt;/select&gt;
+      <!-- Code example -->
+      <pre>
+        <code class="language-html" data-lang="html">
+          &lt;div class=&quot;control&quot;&gt;
+            &lt;button class=&quot;button btn-info btn-color-bg&quot;&gt;Submit&lt;/button&gt;
           &lt;/div&gt;
-        &lt;/div&gt;
-      &lt;/fieldset&gt;
+        </code>
+      </pre>  
+
+      <h6>Icons</h6>
+      <fieldset class="form-field">
+        <label class="label">Email</label>
+        <div class="form-control has-icon">
+          <input class="input" type="email" placeholder="Your email">
+          <span class="icon">
+            <i class="fa-solid fa-envelope"></i>
+          </span>
+        </div>
+      </fieldset> 
+
+      <!-- Code example -->
+      <pre>
+        <code class="language-html" data-lang="html">
+          &lt;fieldset class=&quot;form-field&quot;&gt;
+            &lt;label class=&quot;label&quot;&gt;Email&lt;/label&gt;
+            &lt;div class=&quot;form-control has-icon&quot;&gt;
+              &lt;input class=&quot;input&quot; type=&quot;email&quot; placeholder=&quot;Your email&quot;&gt;
+              &lt;span class=&quot;icon&quot;&gt;
+                &lt;i class=&quot;fa-solid fa-envelope&quot;&gt;&lt;/i&gt;
+              &lt;/span&gt;
+            &lt;/div&gt;
+          &lt;/fieldset&gt;
+        </code>
+      </pre>
+      <hr>
+
+      <!--========== INPUT ==========-->
+      <h5>Input</h5>
+      <p>We have three sizes for each of <span class="blue">input text</span>, <span class="blue">input text with icon</span> and <span class="blue">select dropdown</span>, which are <span class="red">small</span>, <span class="red">medium/ default</span> and <span class="red">large</span>.</p>
+      <br>
+      <h6>Input Text</h6>
+      <fieldset class="form-field">
+        <label class="label is-small">Small label + input</label>
+        <div class="form-control">
+          <input class="input is-small" type="text" placeholder="Small size">
+        </div>
+      </fieldset>
+
+      <fieldset class="form-field">
+        <label class="label">Default label + input</label>
+        <div class="form-control">
+          <input class="input" type="text" placeholder="Default size">
+        </div>
+      </fieldset>
+
+      <fieldset class="form-field">
+        <label class="label is-large">Large label + input</label>
+        <div class="form-control">
+          <input class="input is-large" type="text" placeholder="Large size">
+        </div>
+      </fieldset>
+
+     <!-- Code example -->    
+      <pre>
+        <code class="language-html" data-lang="html">
+          ----- SMALL LABEL AND INPUT -----
+          &lt;fieldset class=&quot;form-field&quot;>
+           &lt;label class=&quot;label is-small&quot;&gt;Small label + input&lt;/label&gt;
+            &lt;div class=&quot;form-control&quot;&gt;
+              &lt;input class=&quot;input is-small&quot; type=&quot;text&quot; placeholder=&quot;Small size&quot;&gt;
+            &lt;/div&gt;
+          &lt;/fieldset&gt;
+
+          ----- DEFAULT LABEL AND INPUT -----
+          &lt;fieldset class=&quot;form-field&quot;&gt;
+            &lt;label class=&quot;label&quot;&gt;Default label + input&lt;/label&gt;
+            &lt;div class=&quot;form-control&quot;&gt;
+              &lt;input class=&quot;input&quot; type=&quot;text&quot; placeholder=&quot;Default size&quot;&gt;
+            &lt;/div&gt;
+          &lt;/fieldset&gt;
   
-      ----- DEFAULT SELECT DROPDOWN -----
-      &lt;fieldset class=&quot;form-field&quot;&gt;
-        &lt;label class=&quot;label&quot;&gt;Default select dropdown&lt;/label&gt;
-        &lt;div class=&quot;form-control&quot;&gt;
-          &lt;div class=&quot;select&quot;&gt;
-            &lt;select&gt;
-              &lt;option&gt;Please choose one&lt;/option&gt;
-              &lt;option&gt;Option 1&lt;/option&gt;
-              &lt;option&gt;Option 2&lt;/option&gt;
-              &lt;option&gt;Option 2&lt;/option&gt;
-            &lt;/select&gt;
-          &lt;/div&gt;
-        &lt;/div&gt;
-      &lt;/fieldset&gt;
+          ----- LARGE LABEL AND INPUT -----
+          &lt;fieldset class=&quot;form-field&quot;&gt;
+            &lt;label class=&quot;label is-large&quot;&gt;Large label + input&lt;/label&gt;
+            &lt;div class=&quot;form-control&quot;&gt;
+              &lt;input class=&quot;input is-large&quot; type=&quot;text&quot; placeholder=&quot;Large size&quot;&gt;
+            &lt;/div&gt;
+          &lt;/fieldset&gt;
+        </code>
+      </pre>
+
+      <h6>Input text with icon</h6>
+      <fieldset class="form-field">
+        <label class="label is-small">Small label + input + icon</label>
+        <div class="form-control has-icon">
+          <input class="input is-small" type="email" placeholder="Small size">
+          <span class="icon is-small">
+            <i class="fa-solid fa-envelope"></i>
+          </span>
+        </div>
+      </fieldset> 
+
+      <fieldset class="form-field">
+        <label class="label">Default label + input + icon</label>
+        <div class="form-control has-icon">
+          <input class="input" type="email" placeholder="Default size">
+          <span class="icon">
+            <i class="fa-solid fa-envelope"></i>
+          </span>
+        </div>
+      </fieldset> 
+
+      <fieldset class="form-field">
+        <label class="label is-large">Large label + input + icon</label>
+        <div class="form-control has-icon">
+          <input class="input is-large" type="email" placeholder="Large size">
+          <span class="icon is-large">
+            <i class="fa-solid fa-envelope"></i>
+          </span>
+        </div>
+      </fieldset> 
+
+      <!-- Code example -->    
+      <pre>
+        <code class="language-html" data-lang="html">
+          ----- SMALL LABEL - INPUT - ICON -----
+          &lt;fieldset class=&quot;form-field&quot;&gt;
+            &lt;label class=&quot;label is-small&quot;>Small label + input + icon&lt;/label&gt;
+            &lt;div class=&quot;form-control has-icon&quot;&gt;
+              &lt;input class=&quot;input is-small&quot; type=&quot;email&quot; placeholder=&quot;Small size&quot;&gt;
+              &lt;span class=&quot;icon is-small&quot;&gt;
+                &lt;i class=&quot;fa-solid fa-envelope&quot;&gt;&lt;/i&gt;
+              &lt;/span&gt;
+            &lt;/div&gt;
+          &lt;/fieldset&gt; 
   
-      ----- LARGE SELECT DROPDOWN -----
-      &lt;fieldset class=&quot;form-field&quot;&gt;
-        &lt;label class=&quot;label is-large&quot;&gt;Large select dropdown&lt;/label&gt;
-        &lt;div class=&quot;form-control&quot;&gt;
-          &lt;div class=&quot;select is-large&quot;&gt;
-            &lt;select class=&quot;is-large&quot;&gt;
-              &lt;option&gt;Please choose one&lt;/option&gt;
-              &lt;option&gt;Option 1&lt;/option&gt;
-              &lt;option&gt;Option 2&lt;/option&gt;
-              &lt;option&gt;Option 2&lt;/option&gt;
-            &lt;/select&gt;
-          &lt;/div&gt;
-        &lt;/div&gt;
-      &lt;/fieldset&gt;
-    </code>
-  </pre>  
-
-  <!-- ======== TEXTAREA ======== -->
-  <h6>Textarea</h6>
-  <p>We also have three sizes of <span class="blue">textarea</span>, which are <span class="red">small</span>, <span class="red">medium/ default</span> and <span class="red">large</span>.</p>
-
-  <fieldset class="form-field">
-    <label class="label is-small">Small Textarea</label>
-    <div class="form-control">
-      <textarea class="text-area is-small" placeholder="Type your message here..."></textarea>
-    </div>
-  </fieldset> 
-
-  <fieldset class="form-field">
-    <label class="label">Default Textarea</label>
-    <div class="form-control">
-      <textarea class="text-area" placeholder="Type your message here..."></textarea>
-    </div>
-  </fieldset> 
-
-  <fieldset class="form-field">
-    <label class="label is-large">Large Textarea</label>
-    <div class="form-control">
-      <textarea class="text-area is-large" placeholder="Type your message here..."></textarea>
-    </div>
-  </fieldset> 
-
-  <!-- Code example -->    
-  <pre>
-    <code class="language-html" data-lang="html">
-      ----- SMALL TEXTAREA -----
-      &lt;fieldset class=&quot;form-field&quot;&gt;
-        &lt;label class=&quot;label is-small&quot;&gt;Small Textarea&lt;/label&gt;
-        &lt;div class=&quot;form-control&quot;&gt;
-          &lt;textarea class=&quot;text-area is-small&quot; placeholder=&quot;Type your message here...&quot;&gt;&lt;/textarea&gt;
-        &lt;/div&gt;
-      &lt;/fieldset&gt; 
+          ----- DEFAULT LABEL - INPUT - ICON -----
+          &lt;fieldset class=&quot;form-field&quot;&gt;
+            &lt;label class=&quot;label&quot;&gt;Default label + input + icon&lt;/label&gt;
+            &lt;div class=&quot;form-control has-icon&quot;&gt;
+              &lt;input class=&quot;input&quot; type=&quot;email&quot; placeholder=&quot;Default size&quot;&gt;
+              &lt;span class=&quot;icon&quot;&gt;
+                &lt;i class=&quot;fa-solid fa-envelope&quot;&gt;&lt;/i&gt;
+              &lt;/span&gt;
+            &lt;/div&gt;
+          &lt;/fieldset&gt; 
   
-      ----- DEFAULT TEXTAREA -----
-      &lt;fieldset class=&quot;form-field&quot;&gt;
-        &lt;label class=&quot;label&quot;&gt;Default Textarea&lt;/label&gt;
-        &lt;div class=&quot;form-control&quot;&gt;
-          &lt;textarea class=&quot;text-area&quot; placeholder=&quot;Type your message here...&quot;&gt;&lt;/textarea&gt;
-        &lt;/div&gt;
-      &lt;/fieldset&gt;
+          ----- LARGE LABEL - INPUT - ICON -----
+          &lt;fieldset class=&quot;form-field&quot;&gt;
+            &lt;label class=&quot;label is-large&quot;&gt;Large label + input + icon&lt;/label&gt;
+            &lt;div class=&quot;form-control has-icon&quot;&gt;
+              &lt;input class=&quot;input is-large&quot; type=&quot;email&quot; placeholder=&quot;Large size&quot;&gt;
+              &lt;span class=&quot;icon is-large&quot;&gt;
+                &lt;i class=&quot;fa-solid fa-envelope&quot;&gt;&lt;/i&gt;
+              &lt;/span&gt;
+            &lt;/div&gt;
+          &lt;/fieldset&gt; 
+        </code>
+      </pre>
 
-      ----- LARGE TEXTAREA -----
-      &lt;fieldset class=&quot;form-field&quot;&gt;
-        &lt;label class=&quot;label is-large&quot;&gt;Large Textarea&lt;/label&gt;
-        &lt;div class=&quot;form-control&quot;&gt;
-          &lt;textarea class=&quot;text-area is-large&quot; placeholder=&quot;Type your message here...&quot;&gt;&lt;/textarea&gt;
-        &lt;/div&gt;
-      &lt;/fieldset&gt;
-    </code>
-  </pre>      
+      <!-- ======== SELECT DROPDOWN ======== -->
+      <h6>Select dropdown</h6>
+      <fieldset class="form-field">
+        <label class="label is-small">Small select dropdown</label>
+        <div class="form-control">
+          <div class="select is-small">
+            <select class="is-small">
+              <option>Please choose one</option>
+              <option>Option 1</option>
+              <option>Option 2</option>
+              <option>Option 2</option>
+            </select>
+          </div>
+        </div>
+      </fieldset>
 
-  <br>
+      <fieldset class="form-field">
+        <label class="label">Default select dropdown</label>
+        <div class="form-control">
+          <div class="select">
+            <select>
+              <option>Please choose one</option>
+              <option>Option 1</option>
+              <option>Option 2</option>
+              <option>Option 2</option>
+            </select>
+          </div>
+        </div>
+      </fieldset>
 
-  <!--========== RADIO BUTTON ==========-->
-  <h6>Radio Button</h6>
-  <p>The <span class="red">radio-btn</span> class wraps around <span class="red">&lt;input type="radio"&gt;</span>. Make sure the linked radio buttons have the same value for their <span class="red">name</span> attribute.</p>
+      <fieldset class="form-field">
+        <label class="label is-large">Large select dropdown</label>
+        <div class="form-control">
+          <div class="select is-large">
+            <select class="is-large">
+              <option>Please choose one</option>
+              <option>Option 1</option>
+              <option>Option 2</option>
+              <option>Option 2</option>
+            </select>
+          </div>
+        </div>
+      </fieldset>
 
-  <fieldset class="form-field">
-    <label class="label is-small">Small radio button</label>
-    <div class="form-control">
-      <label class="radio-btn is-small">
-        <input type="radio" name="question">Yes
-      </label>
-      <label class="radio-btn is-small">
-        <input type="radio" name="question">No
-      </label>
-    </div>
-  </fieldset>
-
-  <fieldset class="form-field">
-    <label class="label">Default radio button</label>
-    <div class="form-control">
-      <label class="radio-btn">
-        <input type="radio" name="question">Yes
-      </label>
-      <label class="radio-btn">
-        <input type="radio" name="question">No
-      </label>
-    </div>
-  </fieldset>
-
-  <fieldset class="form-field">
-    <label class="label is-large">Large radio button</label>
-    <div class="form-control">
-      <label class="radio-btn is-large">
-        <input type="radio" name="question">Yes
-      </label>
-      <label class="radio-btn is-large">
-        <input type="radio" name="question">No
-      </label>
-    </div>
-  </fieldset>
-
-  <!-- Code example -->    
-  <pre>
-    <code class="language-html" data-lang="html">
-      ----- SMALL RADIO BUTTON -----
-      &lt;fieldset class=&quot;form-field&quot;&gt;
-        &lt;label class=&quot;label is-small&quot;&gt;Small radio button&lt;/label&gt;
-        &lt;div class=&quot;form-control&quot;&gt;
-          &lt;label class=&quot;radio-btn is-small&quot;&gt;
-            &lt;input type=&quot;radio&quot; name=&quot;question&quot;&gt;Yes
-          &lt;/label&gt;
-          &lt;label class=&quot;radio-btn is-small&quot;&gt;
-            &lt;input type=&quot;radio&quot; name=&quot;question&quot;&gt;No
-          &lt;/label&gt;
-        &lt;/div&gt;
-      &lt;/fieldset&gt;
+      <!-- Code example -->    
+      <pre>
+        <code class="language-html" data-lang="html">
+          ----- SMALL SELECT DROPDOWN -----
+          &lt;fieldset class=&quot;form-field&quot;&gt;
+            &lt;label class=&quot;label is-small&quot;&gt;Small select dropdown&lt;/label&gt;
+            &lt;div class=&quot;form-control&quot;&gt;
+              &lt;div class=&quot;select is-small&quot;&gt;
+                &lt;select class=&quot;is-small&quot;&gt;
+                  &lt;option&gt;Please choose one&lt;/option&gt;
+                  &lt;option&gt;Option 1&lt;/option&gt;
+                  &lt;option&gt;Option 2&lt;/option&gt;
+                  &lt;option&gt;Option 2&lt;/option&gt;
+                &lt;/select&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/fieldset&gt;
   
-      ----- DEFAULT RADIO BUTTON -----
-      &lt;fieldset class=&quot;form-field&quot;&gt;
-        &lt;label class=&quot;label&quot;&gt;Default radio button&lt;/label&gt;
-        &lt;div class=&quot;form-control&quot;&gt;
-          &lt;label class=&quot;radio-btn&quot;&gt;
-            &lt;input type=&quot;radio&quot; name=&quot;question&quot;&gt;Yes
-          &lt;/label&gt;
-          &lt;label class=&quot;radio-btn&quot;&gt;
-            &lt;input type=&quot;radio&quot; name=&quot;question&quot;&gt;No
-          &lt;/label&gt;
-        &lt;/div&gt;
-      &lt;/fieldset&gt;
-
-      ----- LARGE RADIO BUTTON -----
-      &lt;fieldset class=&quot;form-field&quot;&gt;
-        &lt;label class=&quot;label is-large&quot;&gt;Large radio button&lt;/label&gt;
-        &lt;div class=&quot;form-control&quot;&gt;
-          &lt;label class=&quot;radio-btn is-large&quot;&gt;
-            &lt;input type=&quot;radio&quot; name=&quot;question&quot;&gt;Yes
-          &lt;/label&gt;
-          &lt;label class=&quot;radio-btn is-large&quot;&gt;
-            &lt;input type=&quot;radio&quot; name=&quot;question&quot;&gt;No
-          &lt;/label&gt;
-        &lt;/div&gt;
-      &lt;/fieldset&gt;
-    </code>
-  </pre>  
-  <br>
-
-  <!--========== CHECKBOX ==========-->
-  <h2>Checkbox</h2>
-  <p>The <span class="red">checkbox</span> class wraps around <span class="red">&lt;input type="checkbox"&gt;</span>.
-
-  <fieldset class="form-field">
-    <label class="label is-small">Small checkbox</label>
-    <div class="form-control">
-      <label class="checkbox is-small">
-        <input type="checkbox" checked>Option 1
-      </label>
-      <label class="checkbox is-small">
-        <input type="checkbox">Option 2
-      </label>
-      <label class="checkbox is-small">
-        <input type="checkbox">Option 3
-      </label>
-    </div>
-  </fieldset>  
-
-  <fieldset class="form-field">
-    <label class="label">Default checkbox</label>
-    <div class="form-control">
-      <label class="checkbox">
-        <input type="checkbox" checked>Option 1
-      </label>
-      <label class="checkbox">
-        <input type="checkbox">Option 2
-      </label>
-      <label class="checkbox">
-        <input type="checkbox">Option 3
-      </label>
-    </div>
-  </fieldset>  
-
-  <fieldset class="form-field">
-    <label class="label is-large">Large checkbox</label>
-    <div class="form-control">
-      <label class="checkbox is-large">
-        <input type="checkbox" checked>Option 1
-      </label>
-      <label class="checkbox is-large">
-        <input type="checkbox">Option 2
-      </label>
-      <label class="checkbox is-large">
-        <input type="checkbox">Option 3
-      </label>
-    </div>
-  </fieldset>  
-
-  <!-- Code example -->
-  <pre>
-    <code class="language-html" data-lang="html">
-      ----- SMALL CHECKBOX -----
-      &lt;fieldset class=&quot;form-field&quot;&gt;
-        &lt;label class=&quot;label is-small&quot;>Small checkbox&lt;/label&gt;
-        &lt;div class=&quot;form-control&quot;&gt;
-          &lt;label class=&quot;checkbox is-small&quot;&gt;
-            &lt;input type=&quot;checkbox&quot; checked&gt;Option 1
-          &lt;/label&gt;
-          &lt;label class=&quot;checkbox is-small&quot;&gt;
-            &lt;input type=&quot;checkbox&quot;&gt;Option 2
-          &lt;/label&gt;
-          &lt;label class=&quot;checkbox is-small&quot;&gt;
-            &lt;input type=&quot;checkbox&quot;&gt;Option 3
-          &lt;/label&gt;
-        &lt;/div&gt;
-      &lt;/fieldset&gt;  
+          ----- DEFAULT SELECT DROPDOWN -----
+          &lt;fieldset class=&quot;form-field&quot;&gt;
+            &lt;label class=&quot;label&quot;&gt;Default select dropdown&lt;/label&gt;
+            &lt;div class=&quot;form-control&quot;&gt;
+              &lt;div class=&quot;select&quot;&gt;
+                &lt;select&gt;
+                  &lt;option&gt;Please choose one&lt;/option&gt;
+                  &lt;option&gt;Option 1&lt;/option&gt;
+                  &lt;option&gt;Option 2&lt;/option&gt;
+                  &lt;option&gt;Option 2&lt;/option&gt;
+                &lt;/select&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/fieldset&gt;
   
-      ----- DEFAULT CHECKBOX -----
-      &lt;fieldset class=&quot;form-field&quot;&gt;
-        &lt;label class=&quot;label&quot;&gt;Default checkbox&lt;/label&gt;
-        &lt;div class=&quot;form-control&quot;&gt;
-          &lt;label class=&quot;checkbox&quot;&gt;
-            &lt;input type=&quot;checkbox&quot; checked&gt;Option 1
-          &lt;/label&gt;
-          &lt;label class=&quot;checkbox&quot;&gt;
-            &lt;input type=&quot;checkbox&quot;&gt;Option 2
-          &lt;/label&gt;
-          &lt;label class=&quot;checkbox&quot;&gt;
-            &lt;input type=&quot;checkbox&quot;&gt;Option 3
-          &lt;/label&gt;
-        &lt;/div&gt;
-      &lt;/fieldset&gt;  
+          ----- LARGE SELECT DROPDOWN -----
+          &lt;fieldset class=&quot;form-field&quot;&gt;
+            &lt;label class=&quot;label is-large&quot;&gt;Large select dropdown&lt;/label&gt;
+            &lt;div class=&quot;form-control&quot;&gt;
+              &lt;div class=&quot;select is-large&quot;&gt;
+                &lt;select class=&quot;is-large&quot;&gt;
+                  &lt;option&gt;Please choose one&lt;/option&gt;
+                  &lt;option&gt;Option 1&lt;/option&gt;
+                  &lt;option&gt;Option 2&lt;/option&gt;
+                  &lt;option&gt;Option 2&lt;/option&gt;
+                &lt;/select&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/fieldset&gt;
+        </code>
+      </pre>  
+
+      <!-- ======== TEXTAREA ======== -->
+      <h6>Textarea</h6>
+      <p>We also have three sizes of <span class="blue">textarea</span>, which are <span class="red">small</span>, <span class="red">medium/ default</span> and <span class="red">large</span>.</p>
+
+      <fieldset class="form-field">
+        <label class="label is-small">Small Textarea</label>
+        <div class="form-control">
+          <textarea class="text-area is-small" placeholder="Type your message here..."></textarea>
+        </div>
+      </fieldset> 
+
+      <fieldset class="form-field">
+        <label class="label">Default Textarea</label>
+        <div class="form-control">
+          <textarea class="text-area" placeholder="Type your message here..."></textarea>
+        </div>
+      </fieldset> 
+
+      <fieldset class="form-field">
+        <label class="label is-large">Large Textarea</label>
+        <div class="form-control">
+          <textarea class="text-area is-large" placeholder="Type your message here..."></textarea>
+        </div>
+      </fieldset> 
+
+      <!-- Code example -->    
+      <pre>
+        <code class="language-html" data-lang="html">
+          ----- SMALL TEXTAREA -----
+          &lt;fieldset class=&quot;form-field&quot;&gt;
+            &lt;label class=&quot;label is-small&quot;&gt;Small Textarea&lt;/label&gt;
+            &lt;div class=&quot;form-control&quot;&gt;
+              &lt;textarea class=&quot;text-area is-small&quot; placeholder=&quot;Type your message here...&quot;&gt;&lt;/textarea&gt;
+            &lt;/div&gt;
+          &lt;/fieldset&gt; 
   
-      ----- LARGE CHECKBOX -----
-      &lt;fieldset class=&quot;form-field&quot;&gt;
-        &lt;label class=&quot;label is-large&quot;&gt;Large checkbox&lt;/label&gt;
-        &lt;div class=&quot;form-control&quot;&gt;
-          &lt;label class=&quot;checkbox is-large&quot;&gt;
-            &lt;input type=&quot;checkbox&quot; checked&gt;Option 1
-          &lt;/label&gt;
-          &lt;label class=&quot;checkbox is-large&quot;&gt;
-            &lt;input type=&quot;checkbox&quot;&gt;Option 2
-          &lt;/label&gt;
-          &lt;label class=&quot;checkbox is-large&quot;&gt;
-            &lt;input type=&quot;checkbox&quot;&gt;Option 3
-          &lt;/label&gt;
-        &lt;/div&gt;
-      &lt;/fieldset&gt;
-    </code>
-  </pre>  
-  <br>
+          ----- DEFAULT TEXTAREA -----
+          &lt;fieldset class=&quot;form-field&quot;&gt;
+            &lt;label class=&quot;label&quot;&gt;Default Textarea&lt;/label&gt;
+            &lt;div class=&quot;form-control&quot;&gt;
+              &lt;textarea class=&quot;text-area&quot; placeholder=&quot;Type your message here...&quot;&gt;&lt;/textarea&gt;
+            &lt;/div&gt;
+          &lt;/fieldset&gt;
 
-  <!--========== BUTTON ==========-->
-  <h6>Button</h6>
-  <p>A <span class="red">form-control</span> can wrap a single <span class="red">button</span>, or if you want to group two <span class="red">form-control(s)</span> for two single <span class="red">button</span>, you can do that by adding the class <span class="red">group-btn</span> on the <span class="red">form-field</span>  container.</p>
-  <p>You can also adjust the position of group of buttons. The default position is on the left side, you can position them to center by adding <span class="red">group-center</span> class, together with <span class="red">form-field</span> and <span class="red">group-btn</span> class on <span class="red">form-field</span> container.</p>
-  <br>
+          ----- LARGE TEXTAREA -----
+          &lt;fieldset class=&quot;form-field&quot;&gt;
+            &lt;label class=&quot;label is-large&quot;&gt;Large Textarea&lt;/label&gt;
+            &lt;div class=&quot;form-control&quot;&gt;
+              &lt;textarea class=&quot;text-area is-large&quot; placeholder=&quot;Type your message here...&quot;&gt;&lt;/textarea&gt;
+            &lt;/div&gt;
+          &lt;/fieldset&gt;
+        </code>
+      </pre>      
+      <br>
 
-  <fieldset class="form-field">
-    <div class="form-control">
-      <button class="button btn-warning btn-color-bg">Single button</button>
-    </div>
-  </fieldset>
+      <!--========== RADIO BUTTON ==========-->
+      <h6>Radio Button</h6>
+      <p>The <span class="red">radio-btn</span> class wraps around <span class="red">&lt;input type="radio"&gt;</span>. Make sure the linked radio buttons have the same value for their <span class="red">name</span> attribute.</p>
 
-  <fieldset class="form-field group-btn">
-    <div class="form-control">
-      <button class="button submit-btn">Default</button>
-    </div>
-    <div class="form-control">
-      <button class="button reset-btn">Default</button>
-    </div>  
-  </fieldset> 
+      <fieldset class="form-field">
+        <label class="label is-small">Small radio button</label>
+        <div class="form-control">
+          <label class="radio-btn is-small">
+            <input type="radio" name="question">Yes
+          </label>
+          <label class="radio-btn is-small">
+            <input type="radio" name="question">No
+          </label>
+        </div>
+      </fieldset>
 
-  <fieldset class="form-field group-btn group-center">
-    <div class="form-control">
-      <button class="button submit-btn">Center</button>
-    </div>
-    <div class="form-control">
-      <button class="button reset-btn">Center</button>
-    </div>  
-  </fieldset> 
+      <fieldset class="form-field">
+        <label class="label">Default radio button</label>
+        <div class="form-control">
+          <label class="radio-btn">
+            <input type="radio" name="question">Yes
+          </label>
+          <label class="radio-btn">
+            <input type="radio" name="question">No
+          </label>
+        </div>
+      </fieldset>
 
-  <!-- Code example -->
-  <pre>
-    <code class="language-html" data-lang="html">
-      ----- SINGLE BUTTON -----
-      &lt;fieldset class=&quot;form-field&quot;&gt;
-        &lt;div class=&quot;form-control&quot;&gt;
-          &lt;button class=&quot;button btn-warning btn-color-bg&quot;&gt;Single button&lt;/button&gt;
-        &lt;/div&gt;
-      &lt;/fieldset&gt;
+      <fieldset class="form-field">
+        <label class="label is-large">Large radio button</label>
+        <div class="form-control">
+          <label class="radio-btn is-large">
+            <input type="radio" name="question">Yes
+          </label>
+          <label class="radio-btn is-large">
+            <input type="radio" name="question">No
+          </label>
+        </div>
+      </fieldset>
+
+      <!-- Code example -->    
+      <pre>
+        <code class="language-html" data-lang="html">
+        ----- SMALL RADIO BUTTON -----
+          &lt;fieldset class=&quot;form-field&quot;&gt;
+            &lt;label class=&quot;label is-small&quot;&gt;Small radio button&lt;/label&gt;
+            &lt;div class=&quot;form-control&quot;&gt;
+              &lt;label class=&quot;radio-btn is-small&quot;&gt;
+                &lt;input type=&quot;radio&quot; name=&quot;question&quot;&gt;Yes
+              &lt;/label&gt;
+              &lt;label class=&quot;radio-btn is-small&quot;&gt;
+                &lt;input type=&quot;radio&quot; name=&quot;question&quot;&gt;No
+              &lt;/label&gt;
+            &lt;/div&gt;
+          &lt;/fieldset&gt;
   
-      ----- GROUP OF BUTTON - DEFAULT POSITION -----
-      &lt;fieldset class=&quot;form-field group-btn&quot;&gt;
-        &lt;div class=&quot;form-control&quot;&gt;
-          &lt;button class=&quot;button submit-btn&quot;&gt;Default&lt;/button&gt;
-        &lt;/div&gt;
-        &lt;div class=&quot;form-control&quot;&gt;
-          &lt;button class=&quot;button reset-btn&quot;&gt;Default&lt;/button&gt;
-        &lt;/div&gt;            
-      &lt;/fieldset&gt; 
-  
-      -----  GROUP OF BUTTON - CENTER POSITION -----
-      &lt;fieldset class=&quot;form-field group-btn group-center&quot;&gt;
-        &lt;div class=&quot;form-control&quot;&gt;
-          &lt;button class=&quot;button submit-btn&quot;&gt;Center&lt;/button&gt;
-        &lt;/div&gt;
-        &lt;div class=&quot;form-control&quot;&gt;
-          &lt;button class=&quot;button reset-btn&quot;&gt;Center&lt;/button&gt;
-        &lt;/div&gt;             
-      &lt;/fieldset&gt;
-    </code>
-  </pre>  
-</section>
+          ----- DEFAULT RADIO BUTTON -----
+          &lt;fieldset class=&quot;form-field&quot;&gt;
+            &lt;label class=&quot;label&quot;&gt;Default radio button&lt;/label&gt;
+            &lt;div class=&quot;form-control&quot;&gt;
+              &lt;label class=&quot;radio-btn&quot;&gt;
+                &lt;input type=&quot;radio&quot; name=&quot;question&quot;&gt;Yes
+              &lt;/label&gt;
+              &lt;label class=&quot;radio-btn&quot;&gt;
+                &lt;input type=&quot;radio&quot; name=&quot;question&quot;&gt;No
+              &lt;/label&gt;
+            &lt;/div&gt;
+          &lt;/fieldset&gt;
 
-</main>
+          ----- LARGE RADIO BUTTON -----
+          &lt;fieldset class=&quot;form-field&quot;&gt;
+            &lt;label class=&quot;label is-large&quot;&gt;Large radio button&lt;/label&gt;
+            &lt;div class=&quot;form-control&quot;&gt;
+              &lt;label class=&quot;radio-btn is-large&quot;&gt;
+                &lt;input type=&quot;radio&quot; name=&quot;question&quot;&gt;Yes
+              &lt;/label&gt;
+              &lt;label class=&quot;radio-btn is-large&quot;&gt;
+                &lt;input type=&quot;radio&quot; name=&quot;question&quot;&gt;No
+              &lt;/label&gt;
+            &lt;/div&gt;
+          &lt;/fieldset&gt;
+        </code>
+      </pre>  
+      <br>
+
+      <!--========== CHECKBOX ==========-->
+      <h2>Checkbox</h2>
+      <p>The <span class="red">checkbox</span> class wraps around <span class="red">&lt;input type="checkbox"&gt;</span>.
+
+      <fieldset class="form-field">
+        <label class="label is-small">Small checkbox</label>
+        <div class="form-control">
+          <label class="checkbox is-small">
+            <input type="checkbox" checked>Option 1
+          </label>
+          <label class="checkbox is-small">
+            <input type="checkbox">Option 2
+          </label>
+          <label class="checkbox is-small">
+            <input type="checkbox">Option 3
+          </label>
+        </div>
+      </fieldset>  
+
+      <fieldset class="form-field">
+        <label class="label">Default checkbox</label>
+        <div class="form-control">
+          <label class="checkbox">
+            <input type="checkbox" checked>Option 1
+          </label>
+          <label class="checkbox">
+            <input type="checkbox">Option 2
+          </label>
+          <label class="checkbox">
+            <input type="checkbox">Option 3
+          </label>
+        </div>
+      </fieldset>  
+
+      <fieldset class="form-field">
+        <label class="label is-large">Large checkbox</label>
+        <div class="form-control">
+          <label class="checkbox is-large">
+            <input type="checkbox" checked>Option 1
+          </label>
+          <label class="checkbox is-large">
+            <input type="checkbox">Option 2
+          </label>
+          <label class="checkbox is-large">
+            <input type="checkbox">Option 3
+          </label>
+        </div>
+      </fieldset>  
+
+      <!-- Code example -->
+      <pre>
+        <code class="language-html" data-lang="html">
+          ----- SMALL CHECKBOX -----
+          &lt;fieldset class=&quot;form-field&quot;&gt;
+            &lt;label class=&quot;label is-small&quot;>Small checkbox&lt;/label&gt;
+            &lt;div class=&quot;form-control&quot;&gt;
+              &lt;label class=&quot;checkbox is-small&quot;&gt;
+                &lt;input type=&quot;checkbox&quot; checked&gt;Option 1
+              &lt;/label&gt;
+              &lt;label class=&quot;checkbox is-small&quot;&gt;
+                &lt;input type=&quot;checkbox&quot;&gt;Option 2
+              &lt;/label&gt;
+              &lt;label class=&quot;checkbox is-small&quot;&gt;
+                &lt;input type=&quot;checkbox&quot;&gt;Option 3
+              &lt;/label&gt;
+            &lt;/div&gt;
+          &lt;/fieldset&gt;  
+  
+          ---- DEFAULT CHECKBOX -----
+          &lt;fieldset class=&quot;form-field&quot;&gt;
+            &lt;label class=&quot;label&quot;&gt;Default checkbox&lt;/label&gt;
+            &lt;div class=&quot;form-control&quot;&gt;
+              &lt;label class=&quot;checkbox&quot;&gt;
+                &lt;input type=&quot;checkbox&quot; checked&gt;Option 1
+              &lt;/label&gt;
+              &lt;label class=&quot;checkbox&quot;&gt;
+                &lt;input type=&quot;checkbox&quot;&gt;Option 2
+              &lt;/label&gt;
+              &lt;label class=&quot;checkbox&quot;&gt;
+                &lt;input type=&quot;checkbox&quot;&gt;Option 3
+              &lt;/label&gt;
+            &lt;/div&gt;
+          &lt;/fieldset&gt;  
+  
+          ----- LARGE CHECKBOX -----
+          &lt;fieldset class=&quot;form-field&quot;&gt;
+            &lt;label class=&quot;label is-large&quot;&gt;Large checkbox&lt;/label&gt;
+            &lt;div class=&quot;form-control&quot;&gt;
+              &lt;label class=&quot;checkbox is-large&quot;&gt;
+                &lt;input type=&quot;checkbox&quot; checked&gt;Option 1
+              &lt;/label&gt;
+              &lt;label class=&quot;checkbox is-large&quot;&gt;
+                &lt;input type=&quot;checkbox&quot;&gt;Option 2
+              &lt;/label&gt;
+              &lt;label class=&quot;checkbox is-large&quot;&gt;
+                &lt;input type=&quot;checkbox&quot;&gt;Option 3
+              &lt;/label&gt;
+            &lt;/div&gt;
+          &lt;/fieldset&gt;
+        </code>
+      </pre>  
+      <br>
+
+      <!--========== BUTTON ==========-->
+      <h6>Button</h6>
+      <p>A <span class="red">form-control</span> can wrap a single <span class="red">button</span>, or if you want to group two <span class="red">form-control(s)</span> for two single <span class="red">button</span>, you can do that by adding the class <span class="red">group-btn</span> on the <span class="red">form-field</span>  container.</p>
+      <p>You can also adjust the position of group of buttons. The default position is on the left side, you can position them to center by adding <span class="red">group-center</span> class, together with <span class="red">form-field</span> and <span class="red">group-btn</span> class on <span class="red">form-field</span> container.</p>
+      <br>
+
+      <fieldset class="form-field">
+        <div class="form-control">
+          <button class="button btn-warning btn-color-bg">Single button</button>
+        </div>
+      </fieldset>
+
+      <fieldset class="form-field group-btn">
+        <div class="form-control">
+          <button class="button submit-btn">Default</button>
+        </div>
+        <div class="form-control">
+          <button class="button reset-btn">Default</button>
+        </div>  
+      </fieldset> 
+
+      <fieldset class="form-field group-btn group-center">
+        <div class="form-control">
+          <button class="button submit-btn">Center</button>
+        </div>
+        <div class="form-control">
+          <button class="button reset-btn">Center</button>
+        </div>  
+      </fieldset> 
+
+      <!-- Code example -->
+      <pre>
+        <code class="language-html" data-lang="html">
+          ----- SINGLE BUTTON -----
+          &lt;fieldset class=&quot;form-field&quot;&gt;
+            &lt;div class=&quot;form-control&quot;&gt;
+              &lt;button class=&quot;button btn-warning btn-color-bg&quot;&gt;Single button&lt;/button&gt;
+            &lt;/div&gt;
+          &lt;/fieldset&gt;
+  
+          ----- GROUP OF BUTTON - DEFAULT POSITION -----
+          &lt;fieldset class=&quot;form-field group-btn&quot;&gt;
+            &lt;div class=&quot;form-control&quot;&gt;
+              &lt;button class=&quot;button submit-btn&quot;&gt;Default&lt;/button&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;form-control&quot;&gt;
+              &lt;button class=&quot;button reset-btn&quot;&gt;Default&lt;/button&gt;
+            &lt;/div&gt;            
+          &lt;/fieldset&gt; 
+  
+          -----  GROUP OF BUTTON - CENTER POSITION -----
+          &lt;fieldset class=&quot;form-field group-btn group-center&quot;&gt;
+            &lt;div class=&quot;form-control&quot;&gt;
+              &lt;button class=&quot;button submit-btn&quot;&gt;Center&lt;/button&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;form-control&quot;&gt;
+              &lt;button class=&quot;button reset-btn&quot;&gt;Center&lt;/button&gt;
+            &lt;/div&gt;             
+          &lt;/fieldset&gt;
+        </code>
+      </pre>  
+    </section>
+    <hr>
+
+  </main>
+  <footer class="bg-dark">
+    <section id="footer">
+      <p class="light p5 t-center">&copy; Breakroom Framework 2023</p>
+    </section>
+  </footer>
 
   <!-- JavaScript
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -2607,5 +2635,4 @@
 
 </html>
 
-<!-- TRISH REMOVED CODE FOR SLIDESHOW MOVED CARDS CODE ADDED SCREENSHOTS OF COMPONENT CODE  
-NOTE - THESE CHANGES GOT OVERRIDDEN LAST TIME - PLEASE BE SURE TO START WITH THIS CODE BEFORE MAKING ANY CHANGES -->
+<!-- CODE CLEANED UP ON JUNE 2ND -->

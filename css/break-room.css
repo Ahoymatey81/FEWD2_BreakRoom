@@ -34,8 +34,8 @@
 --------------------------------------------
     Author: Group 3
     Project: 644 Final Project
-    Ver: 1.0
-    Last Updated: 5/24/2023
+    Ver: 1.1
+    Last Updated: 6/02/2023
 ********************************************/
 
 /********************************************
@@ -109,19 +109,20 @@ html {
 }
 
 /* Heading styles */
+  /* Decrease font size - added mtop */
 h1, h2, h3, h4, h5, h6 {
-    margin-top: 0;
+    margin-top: .5;
     margin-bottom: 2rem;
     font-weight: 300; }
-  h1 { font-family: 'Merriweather', serif; font-size: 4.0rem; line-height: 1.2;  letter-spacing: -.1rem; }
-  h2 { font-family: 'Merriweather', serif; font-size: 3.5rem; line-height: 1.25; letter-spacing: -.1rem; }
-  h3 { font-family: 'Merriweather', serif; font-size: 3.0rem; line-height: 1.3;  letter-spacing: -.1rem; }
-  h4 { font-family: 'Merriweather', serif; font-size: 2.4rem; line-height: 1.35; letter-spacing: -.08rem; }
-  h5 { font-family: 'Merriweather', serif; font-size: 1.8rem; line-height: 1.5;  letter-spacing: -.05rem; }
-  h6 { font-family: 'Merriweather', serif; font-size: 1.5rem; line-height: 1.6;  letter-spacing: 0; }
+  h1 { font-family: 'Merriweather', serif; font-size: 3.5rem; line-height: 1.2;  letter-spacing: -.1rem; }
+  h2 { font-family: 'Merriweather', serif; font-size: 3.0rem; line-height: 1.25; letter-spacing: -.1rem; }
+  h3 { font-family: 'Merriweather', serif; font-size: 2.5rem; line-height: 1.3;  letter-spacing: -.1rem; }
+  h4 { font-family: 'Merriweather', serif; font-size: 2rem; line-height: 1.35; letter-spacing: -.08rem; }
+  h5 { font-family: 'Merriweather', serif; font-size: 1.5rem; line-height: 1.5;  letter-spacing: -.05rem; }
+  h6 { font-family: 'Merriweather', serif; font-size: 1.1rem; line-height: 1.6;  letter-spacing: 0; }
 
-  /* Increase font size for larger screens */
- @media (min-width: 550px) {
+  /* Increase font size for larger screens - changed min width to large screen size */
+ @media (min-width: 1500px) {
     h1 { font-size: 5.0rem; }
     h2 { font-size: 4.2rem; }
     h3 { font-size: 3.6rem; }
@@ -585,20 +586,6 @@ div.button-example {
     transform: translateY(0);
 }
 
-.example {
-    text-align: left;
-    max-width: 700px;
-    background-color: #fefefe;
-    border: solid 1px #333;
-    margin: 1em;
-}
-
-xmp {
-    white-space:pre-line;
-    font-size: 1.2em;
-}
-
-
 /* Grid System
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
@@ -1036,7 +1023,7 @@ div.forms-intro {
 /* Images
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
-.img-fluid {
+img {
     max-width: 100%;
     height: auto;
 }
@@ -1511,8 +1498,8 @@ CSS COMPONENT TEXT EFFECTS STARTS HERE
 .hero {
     margin: 0;
     font-family: sans-serif;
-    /* Sizing */
-    max-width: 960px;
+    /* Sizing changed from 960px for framework not needed 6-2-23 Trish */
+    width: 100%; 
     height: 100vh;
     
     /* Flexbox */
@@ -1575,13 +1562,13 @@ CSS COMPONENT TEXT EFFECTS STARTS HERE
 *****************************************/
 
  /****************************************
-Trish changed 053123 220pm #my-accordion min height from 100 to 50vh
+Trish changed 06-01-2023 6pm
 
  START ACCORDION CSS 
 *****************************************/
 #my-accordion {
     font-family: sans-serif;
-    min-height: 50vh;
+    max-height: 800px;  /* changed from 50vh modified from sample code */
     padding: 3em;
 }
 #my-accordion h1 {
