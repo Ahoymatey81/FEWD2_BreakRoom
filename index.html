@@ -1450,8 +1450,34 @@
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <section id="helpers">
       <h3>Helpers</h3>
-
-
+      <h3 class="content-title">The Float Property</h3>  
+      <p>The float property uses positioning and formatting content like images and text, etc. to float left or right to the text in a container.</p>
+      <p>The float property can have one of the following values:</p>
+      <ul class="floatsUL">
+          <li>Left - The element floats to the left of its container.</li>
+          <li>Right - The element floats to the right of its container.</li>
+          <li>None - The element does not float.</li>
+      </ul>
+      <div class="floatExamples">   
+          <div class="floatLeft"><strong>Float to the left</strong></div><br>
+          <div class="floatRight"><strong>Float to the right</strong></div><br>
+          <div class="floatNone"><strong>Do not float</strong></div>
+      </div> 
+      <h3 class="content-title">Clearfix</h3>
+      <p>Clearfix is a hack needed when an element is taller than the element containing it. And, when you float it, it will overflow outside of the container. Then we can apply overflow: auto; to the containing element to correct the problem:</p>
+      <p><span class="floatsTags">.clearfix</span> { <span class="floatsAttribute">overflow:</span> <span class="floatsQuotes">auto;</span> }</p>
+      <p>However, the modern version clearfix hack is safer to use, and the following code is used for most webpages:</p>
+      <pre>
+      <span class="floatsTags">.clearfix::after</span> {
+          <span class="floatsAttribute">content:</span> <span class="floatsQuotes">""</span>;
+          <span class="floatsAttribute">clear:</span> <span class="floatsQuotes">both</span>;
+          <span class="floatsAttribute">display:</span> <span class="floatsQuotes">table</span>;
+      }
+      </pre>
+      <div class="clearfix">
+        <img class="floatRight" src="https://placehold.jp/150x150.png" alt="blank image" width="150" height="150">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora iusto rem rerum numquam voluptatibus.!</p> 
+      </div>
     </section>
     <hr>
 
@@ -1459,7 +1485,17 @@
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <section id="no-print">
       <h3>No Print</h3>
-
+      <p>If you need to print your website, there maybe certain elements that do not need to be printed, for example, certian images, buttons, etc. But, in order to remove them from the print mode, this CSS class can easily hide those elements temporarily.</p>   
+      <p>Here is the CSS code for "no-print":</p>
+      <pre>
+      .no-print {
+          visibility: hidden;
+          display: none;
+      }
+      </pre>        
+      <p>The <em>display:none;</em> is needed because without it, print mode leave a blank space where that element was removed.</p>
+      <p>Here is an example on how to add the "no-print" class to a &lt;div&gt;:</p>
+      <p>&lt;div class="no-print"&gt;</p>
     </section>
     <hr>
 
