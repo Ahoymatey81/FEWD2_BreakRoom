@@ -880,7 +880,7 @@
             </h3>
             <p class="m2b">Your card text would go here.</p>
             <div class="t-right">
-              <button type="button" class="button xsm-btn light bg-blue m2t">Read more</button>
+              <button type="button" class="button light bg-blue m2t">Read more</button>
             </div>
           </div>
         </div>
@@ -891,7 +891,7 @@
             </h3>
             <p class="m2b">Your card text would go here.</p>
             <div class="t-right">
-              <button type="button" class="button xsm-btn light bg-red m2t">Read more</button>
+              <button type="button" class="button light bg-red m2t">Read more</button>
             </div>
           </div>
         </div>
@@ -902,7 +902,7 @@
             </h3>
             <p class="m2b">Your card text would go here.</p>
             <div class="t-right">
-              <button type="button" class="button xsm-btn light bg-green m2t">Read more</button>
+              <button type="button" class="button light bg-green m2t">Read more</button>
             </div>
           </div>
         </div>
@@ -916,7 +916,7 @@
         </h3>
         <p class="m2b">Your card text would go here.</p>
         <div class="t-right">
-          <button type="button" class="button btn-black m2t">Read more</button>
+          <button type="button" class="button md-btn btn-black m2t">Read more</button>
         </div>
       </div>
     </section>
@@ -928,7 +928,7 @@
       <h3>Icons</h3>
 
       <p>Icons serve a very similar function to text in a page. In Semantic icons receive a special tag <span>&lt;i&gt;</span> which allow for an abbreviated markup when sitting along-side text.</p> 
-      <p>We use some icons from Font Awesome for our icon library. Here is the list of icon we have:</p>
+      <p>We use some icons from Font Awesome for our icon library. Here is the list of icons we have:</p>
   
       <div class="icon-grid">
           <div class="icon-list">
@@ -1103,44 +1103,10 @@
         &lt;/span&gt;
         </code>
       </pre>
-      <!-- ======== ICON SIZES ========= -->
-      <h5>Icon Sizes:</h5>
 
-      <p>We provide 3 sizes for the icons: small, medium and large. The default size for the icons is small.</p>
-      <span class="icon">
-        <i class="fa-solid fa-user"></i>
-      </span>
-  
-      <span class="icon is-medium">
-        <i class="fa-solid fa-user"></i>
-      </span>
-  
-      <span class="icon is-large">
-        <i class="fa-solid fa-user"></i>
-      </span>
-  
-      <!-- Code example -->
-      <pre>
-        <code class="language-html" data-lang="html">
-        ----- SMALL SIZE/ DEFAULT -----  
-          &lt;span class=&quot;icon&quot;&gt;
-            &lt;i class=&quot;fa-solid fa-user&quot;&gt;&lt;/i&gt;
-          &lt;/span&gt;
-  
-        ----- MEDIUM SIZE -----
-          &lt;span class=&quot;icon is-medium&quot;&gt;
-            &lt;i class=&quot;fa-solid fa-user&quot;&gt;&lt;/i&gt;
-          &lt;/span&gt;
-  
-        ----- LARGE SIZE -----
-          &lt;span class=&quot;icon is-large&quot;&gt;
-            &lt;i class=&quot;fa-solid fa-user&quot;&gt;&lt;/i&gt;
-          &lt;/span&gt;
-        </code>
-      </pre>  
-  
+      <hr>
       <!-- ======== ICON WITH TEXT ========= -->
-      <h5>Icon with text:</h5>
+      <h4>Icon with text:</h4>
       <p>You can combine an icon with text, using the icon-text wrapper, as long as all text inside is wrapped in its own span element:</p>
       <div class="icon-text">
           <span class="icon">
@@ -1192,6 +1158,7 @@
         </code>
       </pre>      
     </section>
+    <hr>
 
     <!-- Buttons
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -1240,18 +1207,17 @@
       <hr>
       <!-- ==================== SIZE ==================== -->
       <div class="btn-size section">
-        <h5 class="fw-semi-bold">Size:</h5>
-        <h6>We have 4 different sizes for buttons:</h6>
+        <h4 class="fw-semi-bold">Size:</h4>
+        <h5>We have 3 different sizes for buttons:</h5>
 
         <ul>
-          <li>extra small: <span class="blue italic">.xsm-btn</span></li>
-          <li>small: <span class="blue italic">.sm-btn</span></li>
+          <li>small: <span class="blue italic">.btn</span></li>
           <li>medium: <span class="blue italic">.md-btn</span></li>
-          <li>large: <span class="blue italic">.lg-btn</span></li>
+          <li>medium: <span class="blue italic">.lg-btn</span></li>
         </ul>
+
         <div class="button-example">
-          <button type="button" class="button xsm-btn">Extra Small</button>
-          <button type="button" class="button sm-btn">Small</button>
+          <button type="button" class="button">Small</button>
           <button type="button" class="button md-btn">Medium</button>
           <button type="button" class="button lg-btn">Large</button>
         </div>
@@ -1261,11 +1227,8 @@
         <!-- Code example -->
         <pre>
           <code class="language-html" data-lang="html">
-            ----- EXTRA-SMALL BUTTON -----
-            &lt;button type=&quot;button&quot; class=&quot;button xsm-btn&quot;&gt;Extra Small&lt;/button&gt;
-
             ---- SMALL BUTTON -----
-            &lt;button type=&quot;button&quot; class=&quot;button sm-btn&quot;&gt;Small&lt;/button&gt;
+            &lt;button type=&quot;button&quot; class=&quot;button&quot;&gt;Small&lt;/button&gt;
 
             ----- MEDIUM BUTTON -----
             &lt;button type=&quot;button&quot; class=&quot;button md-btn&quot;&gt;Medium&lt;/button&gt;
@@ -1278,12 +1241,11 @@
       <hr>
       <!-- ==================== DISPLAY ==================== -->
       <div class="btn-display section">
-        <h5 class="fw-semi-bold">Display:</h5>
-        <h6>We can also display a full-width button:</h6>
+        <h4 class="fw-semi-bold">Display:</h4>
+        <h5>We can also display a full-width button:</h5>
 
         <div class="button-example">
-          <button type="button" class="button xsm-btn btn-fullwidth">Extra small</button>  
-          <button type="button" class="button sm-btn btn-fullwidth">Small</button> 
+          <button type="button" class="button btn-fullwidth">Small</button> 
           <button type="button" class="button md-btn btn-fullwidth">Medium</button> 
           <button type="button" class="button lg-btn btn-fullwidth">Large</button> 
         </div>
@@ -1291,11 +1253,8 @@
         <!-- Code example -->
         <pre>
           <code class="language-html" data-lang="html">
-            ----- EXTRA-SMALL BUTTON FULL-WIDTH -----
-            &lt;button type=&quot;button&quot; class=&quot;button xsm-btn btn-fullwidth&quot;&gt;Extra small&lt;/button&gt;
-          
             ----- SMALL BUTTON FULL-WIDTH -----
-            &lt;button type=&quot;button&quot; class=&quot;button sm-btn btn-fullwidth&quot;&gt;Small&lt;/button&gt;
+            &lt;button type=&quot;button&quot; class=&quot;button btn-fullwidth&quot;&gt;Small&lt;/button&gt;
           
             ----- MEDIUM BUTTON FULL-WIDTH -----
             &lt;button type=&quot;button&quot; class=&quot;button md-btn btn-fullwidth&quot;&gt;Medium&lt;/button&gt; 
@@ -1308,8 +1267,8 @@
       <hr> 
       <!-- ==================== COLOR ==================== -->    
       <div class="btn-color section">
-        <h5 class="fw-semi-bold">Color:</h5>
-        <h6>Here are some built-in buttons we have:</h6>
+        <h4 class="fw-semi-bold">Color:</h4>
+        <h5>Here are some built-in buttons we have:</h5>
 
         <!-- submit & reset -->
         <h6>Submit / Reset / Disabled</h6>
@@ -2006,7 +1965,7 @@
 
       <br><hr>
       <!--========== FORM-FIELD ==========-->
-      <h5>Form-field</h5>
+      <h4>Form-field</h4>
       <p>The <span class="red">form-field</span> container is a container for:</p>
       <div class="forms-intro">
         <ul>
@@ -2017,7 +1976,7 @@
       <br><hr>
 
       <!--========== LABEL ==========-->
-      <h5>Label</h5>
+      <h4>Label</h4>
       <fieldset class="form-field">
         <label class="label" for="name">Label</label>
         <div class="form-control">
@@ -2041,7 +2000,7 @@
       <br><hr>
 
       <!--========== FORM-CONTROL ==========-->
-      <h5>Form-control</h5>
+      <h4>Form-control</h4>
       <p>The <span class="red">form-control</span> is the container of the following elements:</p>
       <div class="forms-intro">
         <ul>
@@ -2053,7 +2012,7 @@
       </div>
 
       <!-- text input -->
-      <h6>Text input</h6>
+      <h5>Text input</h5>
       <div class="form-control">
         <input class="input" type="text" placeholder="Text input">
       </div>
@@ -2067,7 +2026,7 @@
       </pre>
 
       <!-- dropdown menu -->
-      <h6>Select dropdown</h6>
+      <h5>Select dropdown</h5>
       <div class="form-control">
         <div class="select">
           <select>
@@ -2094,7 +2053,7 @@
       </pre>
 
       <!-- button -->
-      <h6>Button</h6>
+      <h5>Button</h5>
       <div class="control">
         <button class="button btn-info btn-color-bg">Submit</button>
       </div>
@@ -2108,7 +2067,7 @@
         </code>
       </pre>  
 
-      <h6>Icons</h6>
+      <h5>Icons</h5>
       <fieldset class="form-field">
         <label class="label">Email</label>
         <div class="form-control has-icon">
@@ -2136,42 +2095,18 @@
       <hr>
 
       <!--========== INPUT ==========-->
-      <h5>Input</h5>
-      <p>We have three sizes for each of <span class="blue">input text</span>, <span class="blue">input text with icon</span> and <span class="blue">select dropdown</span>, which are <span class="red">small</span>, <span class="red">medium/ default</span> and <span class="red">large</span>.</p>
-      <br>
-      <h6>Input Text</h6>
+      <h4>Input</h4>
+      <h5>Input Text</h5>
       <fieldset class="form-field">
-        <label class="label is-small">Small label + input</label>
-        <div class="form-control">
-          <input class="input is-small" type="text" placeholder="Small size">
-        </div>
-      </fieldset>
-
-      <fieldset class="form-field">
-        <label class="label">Default label + input</label>
+        <label class="label">Label + Input</label>
         <div class="form-control">
           <input class="input" type="text" placeholder="Default size">
-        </div>
-      </fieldset>
-
-      <fieldset class="form-field">
-        <label class="label is-large">Large label + input</label>
-        <div class="form-control">
-          <input class="input is-large" type="text" placeholder="Large size">
         </div>
       </fieldset>
 
      <!-- Code example -->    
       <pre>
         <code class="language-html" data-lang="html">
-          ----- SMALL LABEL AND INPUT -----
-          &lt;fieldset class=&quot;form-field&quot;>
-           &lt;label class=&quot;label is-small&quot;&gt;Small label + input&lt;/label&gt;
-            &lt;div class=&quot;form-control&quot;&gt;
-              &lt;input class=&quot;input is-small&quot; type=&quot;text&quot; placeholder=&quot;Small size&quot;&gt;
-            &lt;/div&gt;
-          &lt;/fieldset&gt;
-
           ----- DEFAULT LABEL AND INPUT -----
           &lt;fieldset class=&quot;form-field&quot;&gt;
             &lt;label class=&quot;label&quot;&gt;Default label + input&lt;/label&gt;
@@ -2179,28 +2114,10 @@
               &lt;input class=&quot;input&quot; type=&quot;text&quot; placeholder=&quot;Default size&quot;&gt;
             &lt;/div&gt;
           &lt;/fieldset&gt;
-  
-          ----- LARGE LABEL AND INPUT -----
-          &lt;fieldset class=&quot;form-field&quot;&gt;
-            &lt;label class=&quot;label is-large&quot;&gt;Large label + input&lt;/label&gt;
-            &lt;div class=&quot;form-control&quot;&gt;
-              &lt;input class=&quot;input is-large&quot; type=&quot;text&quot; placeholder=&quot;Large size&quot;&gt;
-            &lt;/div&gt;
-          &lt;/fieldset&gt;
         </code>
       </pre>
 
-      <h6>Input text with icon</h6>
-      <fieldset class="form-field">
-        <label class="label is-small">Small label + input + icon</label>
-        <div class="form-control has-icon">
-          <input class="input is-small" type="email" placeholder="Small size">
-          <span class="icon is-small">
-            <i class="fa-solid fa-envelope"></i>
-          </span>
-        </div>
-      </fieldset> 
-
+      <h5>Input text with icon</h5>
       <fieldset class="form-field">
         <label class="label">Default label + input + icon</label>
         <div class="form-control has-icon">
@@ -2211,29 +2128,9 @@
         </div>
       </fieldset> 
 
-      <fieldset class="form-field">
-        <label class="label is-large">Large label + input + icon</label>
-        <div class="form-control has-icon">
-          <input class="input is-large" type="email" placeholder="Large size">
-          <span class="icon is-large">
-            <i class="fa-solid fa-envelope"></i>
-          </span>
-        </div>
-      </fieldset> 
-
       <!-- Code example -->    
       <pre>
         <code class="language-html" data-lang="html">
-          ----- SMALL LABEL - INPUT - ICON -----
-          &lt;fieldset class=&quot;form-field&quot;&gt;
-            &lt;label class=&quot;label is-small&quot;>Small label + input + icon&lt;/label&gt;
-            &lt;div class=&quot;form-control has-icon&quot;&gt;
-              &lt;input class=&quot;input is-small&quot; type=&quot;email&quot; placeholder=&quot;Small size&quot;&gt;
-              &lt;span class=&quot;icon is-small&quot;&gt;
-                &lt;i class=&quot;fa-solid fa-envelope&quot;&gt;&lt;/i&gt;
-              &lt;/span&gt;
-            &lt;/div&gt;
-          &lt;/fieldset&gt; 
   
           ----- DEFAULT LABEL - INPUT - ICON -----
           &lt;fieldset class=&quot;form-field&quot;&gt;
@@ -2245,35 +2142,12 @@
               &lt;/span&gt;
             &lt;/div&gt;
           &lt;/fieldset&gt; 
-  
-          ----- LARGE LABEL - INPUT - ICON -----
-          &lt;fieldset class=&quot;form-field&quot;&gt;
-            &lt;label class=&quot;label is-large&quot;&gt;Large label + input + icon&lt;/label&gt;
-            &lt;div class=&quot;form-control has-icon&quot;&gt;
-              &lt;input class=&quot;input is-large&quot; type=&quot;email&quot; placeholder=&quot;Large size&quot;&gt;
-              &lt;span class=&quot;icon is-large&quot;&gt;
-                &lt;i class=&quot;fa-solid fa-envelope&quot;&gt;&lt;/i&gt;
-              &lt;/span&gt;
-            &lt;/div&gt;
-          &lt;/fieldset&gt; 
+
         </code>
       </pre>
-
+      <hr>
       <!-- ======== SELECT DROPDOWN ======== -->
-      <h6>Select dropdown</h6>
-      <fieldset class="form-field">
-        <label class="label is-small">Small select dropdown</label>
-        <div class="form-control">
-          <div class="select is-small">
-            <select class="is-small">
-              <option>Please choose one</option>
-              <option>Option 1</option>
-              <option>Option 2</option>
-              <option>Option 2</option>
-            </select>
-          </div>
-        </div>
-      </fieldset>
+      <h4>Select dropdown</h4>
 
       <fieldset class="form-field">
         <label class="label">Default select dropdown</label>
@@ -2289,38 +2163,9 @@
         </div>
       </fieldset>
 
-      <fieldset class="form-field">
-        <label class="label is-large">Large select dropdown</label>
-        <div class="form-control">
-          <div class="select is-large">
-            <select class="is-large">
-              <option>Please choose one</option>
-              <option>Option 1</option>
-              <option>Option 2</option>
-              <option>Option 2</option>
-            </select>
-          </div>
-        </div>
-      </fieldset>
-
       <!-- Code example -->    
       <pre>
         <code class="language-html" data-lang="html">
-          ----- SMALL SELECT DROPDOWN -----
-          &lt;fieldset class=&quot;form-field&quot;&gt;
-            &lt;label class=&quot;label is-small&quot;&gt;Small select dropdown&lt;/label&gt;
-            &lt;div class=&quot;form-control&quot;&gt;
-              &lt;div class=&quot;select is-small&quot;&gt;
-                &lt;select class=&quot;is-small&quot;&gt;
-                  &lt;option&gt;Please choose one&lt;/option&gt;
-                  &lt;option&gt;Option 1&lt;/option&gt;
-                  &lt;option&gt;Option 2&lt;/option&gt;
-                  &lt;option&gt;Option 2&lt;/option&gt;
-                &lt;/select&gt;
-              &lt;/div&gt;
-            &lt;/div&gt;
-          &lt;/fieldset&gt;
-  
           ----- DEFAULT SELECT DROPDOWN -----
           &lt;fieldset class=&quot;form-field&quot;&gt;
             &lt;label class=&quot;label&quot;&gt;Default select dropdown&lt;/label&gt;
@@ -2335,34 +2180,11 @@
               &lt;/div&gt;
             &lt;/div&gt;
           &lt;/fieldset&gt;
-  
-          ----- LARGE SELECT DROPDOWN -----
-          &lt;fieldset class=&quot;form-field&quot;&gt;
-            &lt;label class=&quot;label is-large&quot;&gt;Large select dropdown&lt;/label&gt;
-            &lt;div class=&quot;form-control&quot;&gt;
-              &lt;div class=&quot;select is-large&quot;&gt;
-                &lt;select class=&quot;is-large&quot;&gt;
-                  &lt;option&gt;Please choose one&lt;/option&gt;
-                  &lt;option&gt;Option 1&lt;/option&gt;
-                  &lt;option&gt;Option 2&lt;/option&gt;
-                  &lt;option&gt;Option 2&lt;/option&gt;
-                &lt;/select&gt;
-              &lt;/div&gt;
-            &lt;/div&gt;
-          &lt;/fieldset&gt;
         </code>
-      </pre>  
-
+      </pre> 
+      <hr>   
       <!-- ======== TEXTAREA ======== -->
-      <h6>Textarea</h6>
-      <p>We also have three sizes of <span class="blue">textarea</span>, which are <span class="red">small</span>, <span class="red">medium/ default</span> and <span class="red">large</span>.</p>
-
-      <fieldset class="form-field">
-        <label class="label is-small">Small Textarea</label>
-        <div class="form-control">
-          <textarea class="text-area is-small" placeholder="Type your message here..."></textarea>
-        </div>
-      </fieldset> 
+      <h4>Textarea</h4>
 
       <fieldset class="form-field">
         <label class="label">Default Textarea</label>
@@ -2371,24 +2193,9 @@
         </div>
       </fieldset> 
 
-      <fieldset class="form-field">
-        <label class="label is-large">Large Textarea</label>
-        <div class="form-control">
-          <textarea class="text-area is-large" placeholder="Type your message here..."></textarea>
-        </div>
-      </fieldset> 
-
       <!-- Code example -->    
       <pre>
-        <code class="language-html" data-lang="html">
-          ----- SMALL TEXTAREA -----
-          &lt;fieldset class=&quot;form-field&quot;&gt;
-            &lt;label class=&quot;label is-small&quot;&gt;Small Textarea&lt;/label&gt;
-            &lt;div class=&quot;form-control&quot;&gt;
-              &lt;textarea class=&quot;text-area is-small&quot; placeholder=&quot;Type your message here...&quot;&gt;&lt;/textarea&gt;
-            &lt;/div&gt;
-          &lt;/fieldset&gt; 
-  
+        <code class="language-html" data-lang="html"> 
           ----- DEFAULT TEXTAREA -----
           &lt;fieldset class=&quot;form-field&quot;&gt;
             &lt;label class=&quot;label&quot;&gt;Default Textarea&lt;/label&gt;
@@ -2396,33 +2203,13 @@
               &lt;textarea class=&quot;text-area&quot; placeholder=&quot;Type your message here...&quot;&gt;&lt;/textarea&gt;
             &lt;/div&gt;
           &lt;/fieldset&gt;
-
-          ----- LARGE TEXTAREA -----
-          &lt;fieldset class=&quot;form-field&quot;&gt;
-            &lt;label class=&quot;label is-large&quot;&gt;Large Textarea&lt;/label&gt;
-            &lt;div class=&quot;form-control&quot;&gt;
-              &lt;textarea class=&quot;text-area is-large&quot; placeholder=&quot;Type your message here...&quot;&gt;&lt;/textarea&gt;
-            &lt;/div&gt;
-          &lt;/fieldset&gt;
         </code>
       </pre>      
-      <br>
+      <hr>
 
       <!--========== RADIO BUTTON ==========-->
-      <h6>Radio Button</h6>
+      <h4>Radio Button</h4>
       <p>The <span class="red">radio-btn</span> class wraps around <span class="red">&lt;input type="radio"&gt;</span>. Make sure the linked radio buttons have the same value for their <span class="red">name</span> attribute.</p>
-
-      <fieldset class="form-field">
-        <label class="label is-small">Small radio button</label>
-        <div class="form-control">
-          <label class="radio-btn is-small">
-            <input type="radio" name="question">Yes
-          </label>
-          <label class="radio-btn is-small">
-            <input type="radio" name="question">No
-          </label>
-        </div>
-      </fieldset>
 
       <fieldset class="form-field">
         <label class="label">Default radio button</label>
@@ -2436,34 +2223,9 @@
         </div>
       </fieldset>
 
-      <fieldset class="form-field">
-        <label class="label is-large">Large radio button</label>
-        <div class="form-control">
-          <label class="radio-btn is-large">
-            <input type="radio" name="question">Yes
-          </label>
-          <label class="radio-btn is-large">
-            <input type="radio" name="question">No
-          </label>
-        </div>
-      </fieldset>
-
       <!-- Code example -->    
       <pre>
-        <code class="language-html" data-lang="html">
-        ----- SMALL RADIO BUTTON -----
-          &lt;fieldset class=&quot;form-field&quot;&gt;
-            &lt;label class=&quot;label is-small&quot;&gt;Small radio button&lt;/label&gt;
-            &lt;div class=&quot;form-control&quot;&gt;
-              &lt;label class=&quot;radio-btn is-small&quot;&gt;
-                &lt;input type=&quot;radio&quot; name=&quot;question&quot;&gt;Yes
-              &lt;/label&gt;
-              &lt;label class=&quot;radio-btn is-small&quot;&gt;
-                &lt;input type=&quot;radio&quot; name=&quot;question&quot;&gt;No
-              &lt;/label&gt;
-            &lt;/div&gt;
-          &lt;/fieldset&gt;
-  
+        <code class="language-html" data-lang="html">  
           ----- DEFAULT RADIO BUTTON -----
           &lt;fieldset class=&quot;form-field&quot;&gt;
             &lt;label class=&quot;label&quot;&gt;Default radio button&lt;/label&gt;
@@ -2476,41 +2238,13 @@
               &lt;/label&gt;
             &lt;/div&gt;
           &lt;/fieldset&gt;
-
-          ----- LARGE RADIO BUTTON -----
-          &lt;fieldset class=&quot;form-field&quot;&gt;
-            &lt;label class=&quot;label is-large&quot;&gt;Large radio button&lt;/label&gt;
-            &lt;div class=&quot;form-control&quot;&gt;
-              &lt;label class=&quot;radio-btn is-large&quot;&gt;
-                &lt;input type=&quot;radio&quot; name=&quot;question&quot;&gt;Yes
-              &lt;/label&gt;
-              &lt;label class=&quot;radio-btn is-large&quot;&gt;
-                &lt;input type=&quot;radio&quot; name=&quot;question&quot;&gt;No
-              &lt;/label&gt;
-            &lt;/div&gt;
-          &lt;/fieldset&gt;
         </code>
       </pre>  
-      <br>
+      <hr>
 
       <!--========== CHECKBOX ==========-->
-      <h3>Checkbox</h3>
+      <h4>Checkbox</h4>
       <p>The <span class="red">checkbox</span> class wraps around <span class="red">&lt;input type="checkbox"&gt;</span>.
-
-      <fieldset class="form-field">
-        <label class="label is-small">Small checkbox</label>
-        <div class="form-control">
-          <label class="checkbox is-small">
-            <input type="checkbox" checked>Option 1
-          </label>
-          <label class="checkbox is-small">
-            <input type="checkbox">Option 2
-          </label>
-          <label class="checkbox is-small">
-            <input type="checkbox">Option 3
-          </label>
-        </div>
-      </fieldset>  
 
       <fieldset class="form-field">
         <label class="label">Default checkbox</label>
@@ -2527,40 +2261,9 @@
         </div>
       </fieldset>  
 
-      <fieldset class="form-field">
-        <label class="label is-large">Large checkbox</label>
-        <div class="form-control">
-          <label class="checkbox is-large">
-            <input type="checkbox" checked>Option 1
-          </label>
-          <label class="checkbox is-large">
-            <input type="checkbox">Option 2
-          </label>
-          <label class="checkbox is-large">
-            <input type="checkbox">Option 3
-          </label>
-        </div>
-      </fieldset>  
-
       <!-- Code example -->
       <pre>
-        <code class="language-html" data-lang="html">
-          ----- SMALL CHECKBOX -----
-          &lt;fieldset class=&quot;form-field&quot;&gt;
-            &lt;label class=&quot;label is-small&quot;>Small checkbox&lt;/label&gt;
-            &lt;div class=&quot;form-control&quot;&gt;
-              &lt;label class=&quot;checkbox is-small&quot;&gt;
-                &lt;input type=&quot;checkbox&quot; checked&gt;Option 1
-              &lt;/label&gt;
-              &lt;label class=&quot;checkbox is-small&quot;&gt;
-                &lt;input type=&quot;checkbox&quot;&gt;Option 2
-              &lt;/label&gt;
-              &lt;label class=&quot;checkbox is-small&quot;&gt;
-                &lt;input type=&quot;checkbox&quot;&gt;Option 3
-              &lt;/label&gt;
-            &lt;/div&gt;
-          &lt;/fieldset&gt;  
-  
+        <code class="language-html" data-lang="html">  
           ---- DEFAULT CHECKBOX -----
           &lt;fieldset class=&quot;form-field&quot;&gt;
             &lt;label class=&quot;label&quot;&gt;Default checkbox&lt;/label&gt;
@@ -2576,28 +2279,12 @@
               &lt;/label&gt;
             &lt;/div&gt;
           &lt;/fieldset&gt;  
-  
-          ----- LARGE CHECKBOX -----
-          &lt;fieldset class=&quot;form-field&quot;&gt;
-            &lt;label class=&quot;label is-large&quot;&gt;Large checkbox&lt;/label&gt;
-            &lt;div class=&quot;form-control&quot;&gt;
-              &lt;label class=&quot;checkbox is-large&quot;&gt;
-                &lt;input type=&quot;checkbox&quot; checked&gt;Option 1
-              &lt;/label&gt;
-              &lt;label class=&quot;checkbox is-large&quot;&gt;
-                &lt;input type=&quot;checkbox&quot;&gt;Option 2
-              &lt;/label&gt;
-              &lt;label class=&quot;checkbox is-large&quot;&gt;
-                &lt;input type=&quot;checkbox&quot;&gt;Option 3
-              &lt;/label&gt;
-            &lt;/div&gt;
-          &lt;/fieldset&gt;
-        </code>
+          </code>
       </pre>  
-      <br>
+      <hr>
 
       <!--========== BUTTON ==========-->
-      <h6>Button</h6>
+      <h4>Button</h4>
       <p>A <span class="red">form-control</span> can wrap a single <span class="red">button</span>, or if you want to group two <span class="red">form-control(s)</span> for two single <span class="red">button</span>, you can do that by adding the class <span class="red">group-btn</span> on the <span class="red">form-field</span>  container.</p>
       <p>You can also adjust the position of group of buttons. The default position is on the left side, you can position them to center by adding <span class="red">group-center</span> class, together with <span class="red">form-field</span> and <span class="red">group-btn</span> class on <span class="red">form-field</span> container.</p>
       <br>
