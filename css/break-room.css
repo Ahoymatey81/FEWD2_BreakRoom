@@ -106,6 +106,7 @@ img {
 /* FONT FAMILY */
 html {
     font-family: 'Open Sans', sans-serif;
+    font-size: 10px;
 }
 
 /* Heading styles */
@@ -127,14 +128,18 @@ h1, h2, h3, h4, h5, h6 {
     h2 { font-size: 4.2rem; }
     h3 { font-size: 3.6rem; }
     h4 { font-size: 3.0rem; }
-    h5 { font-size: 2.4rem; }
-    h6 { font-size: 1.5rem; }
+    h5 { font-size: 2.5rem; }
+    h6 { font-size: 2.0rem; }
   }
 
-p { margin-top: 0; padding-bottom: .2rem; }
+p { 
+    font-size: 1.5rem;    
+    margin-top: 0;
+    padding-bottom: .2rem;
+}
 p.space-p {
     letter-spacing: .2rem;
-    line-height: 1.75rem;
+    line-height: 2.75rem;
 }
 
 /* Font style/weight variations */
@@ -179,7 +184,16 @@ hr {
     margin-top: 1rem;
     margin-bottom: 1.5rem;
     border-width: 0;
-    border-top: 1px solid #E1E1E1; }
+    border-top: 1px solid #E1E1E1;
+}
+address { font-size: 1.5rem; }
+blockquote { font-size: 1.5rem; }
+pre { font-size: 1.4rem; }
+
+.navbar-example ul li { font-size: 1.4rem; }
+.forms-intro  ul li { font-size: 1.4rem; }
+.btn-intro.section ul li { font-size: 1.5rem; }
+.btn-size.section ul li { font-size: 1.5rem; }
 
 /* definition list */
 dt {
@@ -268,6 +282,11 @@ dd {
 .p3l { padding-left: 1.0rem; }
 .p4l { padding-left: 1.5rem; }
 .p5l { padding-left: 2.0rem; }
+
+/* Adds margin left spacing to main container for ul tags. */
+main.room ul {
+    margin-left: 4rem;
+}
 
 
 /* Borders and Border radius
@@ -362,7 +381,7 @@ dd {
 a {
     color: #3880ff;
     text-decoration: none;
-    font-size: 1rem;
+    font-size: 1.5rem;
 }
 a:hover {
     color: #2dd36f;
@@ -381,7 +400,7 @@ div.button-example {
     flex-wrap: wrap;
     justify-content: flex-start;
     margin-bottom: .5rem;
-    gap: 10px;
+    gap: 15px;
 }
 
 .button {
@@ -391,7 +410,7 @@ div.button-example {
     border-radius: 5px;
     cursor: pointer;
     font-size: 1.6rem;
-    box-shadow: 0 1px 3px 0, rgba(0, 0, 0, 0.1), 0 1px 2px 0, rgba(0, 0, 0, 0.6);
+    box-shadow:rgba(0, 0, 0, 0.24) 0px 3px 8px;
     font-weight: 530;
 }
 
@@ -409,10 +428,6 @@ div.button-example {
 } 
 
 /* size */
-.xsm-btn { font-size: 1.2rem; }
-
-.sm-btn { font-size: 1.6rem; }
-
 .md-btn { font-size: 2rem; }
 
 .lg-btn { font-size: 2.4rem; }
@@ -698,17 +713,9 @@ div.forms-intro {
     display: block;
     color: #363636;
     padding-top: .6em;
-    font-size: 1.7em;
+    font-size: 1.8em;
     font-weight: 700;
     margin-bottom: .7rem;
-  }
-  
-  .form-field .label.is-small {
-    font-size: 1.3em;
-  }
-  
-  .form-field .label.is-large{
-    font-size: 2.1em;
   }
   
   /*========== FORM-CONTROL ==========*/
@@ -726,7 +733,7 @@ div.forms-intro {
     padding: .7em 0.5em;
     border-radius: 3px;
     border: 2px solid #d0c4c4;
-    box-shadow: inset 0 1px 3px 0, rgba(0, 0, 0, 0.1), 0 1px 2px 0, rgba(0, 0, 0, 0.6);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     font-size: 1.6em;
     background-color: #fff;
     color: #363636;
@@ -750,24 +757,7 @@ div.forms-intro {
     height: initial;
     resize: none;
   }
-  
-  /* Size */
-  .form-control .input.is-small, 
-  .form-control .select.is-small select,
-  .form-control .text-area.is-small,
-  label.radio-btn.is-small,
-  label.checkbox.is-small {
-    font-size: 1.2em;
-  }
-  
-  .form-control .input.is-large, 
-  .form-control .select.is-large select,
-  .form-control .text-area.is-large,
-  label.radio-btn.is-large,
-  label.checkbox.is-large {
-    font-size: 1.9em;
-  }
-  
+   
   /* Hover - Focus */
   .form-control .input:hover,
   .form-control .select select:hover,
@@ -807,14 +797,6 @@ div.forms-intro {
     font-size: 1.4rem;
   }
   
-  .form-control .select.is-small select.is-small option {
-    font-size: 1rem;
-  }
-  
-  .form-control .select.is-large select.is-large option {
-    font-size: 1.7rem;
-  }
-  
   /*========== FORM-CONTROL HAS ICON ==========*/
   .form-control.has-icon .icon {
     position: absolute;
@@ -833,40 +815,6 @@ div.forms-intro {
     height: 1.6rem;
     width: 1.6rem;
     color: #363636;
-  }
-  
-  .form-control.has-icon .icon.is-small {
-    height: 2.7em;
-    width: 2.7em;
-    top: 0;
-    left: 0;
-  }
-  
-  .form-control.has-icon .icon.is-small i {
-    font-size: 1.2em;
-    height: 1.2rem;
-    width: 1.2rem;
-  }
-  
-  .form-control.has-icon input.is-small {
-    padding-left: 2.7rem;
-  }
-  
-  .form-control.has-icon .icon.is-large {
-    height: 4em;
-    width: 4em;
-    top: 0;
-    left: 0;
-  }
-  
-  .form-control.has-icon .icon.is-large i {
-    font-size: 2em;
-    height: 2rem;
-    width: 2rem;
-  }
-  
-  .form-control.has-icon input.is-large {
-    padding-left: 4rem;
   }
   
   /*========== RADIO BUTTON - CHECKBOX ==========*/
@@ -919,7 +867,8 @@ div.forms-intro {
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .table {       
     background-color: transparent;
-    border-collapse: collapse;      
+    border-collapse: collapse;
+    font-size: 1.5rem;      
     margin-bottom: 1rem;
     text-align: left;
     width: 100%;
@@ -968,7 +917,7 @@ div.forms-intro {
     }
 }
 .content-title {
-    font-size: 2rem;
+    font-size: 3rem;
     font-weight: 500;
     margin-top: 0;
 }
@@ -1044,12 +993,14 @@ img {
     color: #008000
 }
 .floatExamples {
+    font-size: 1.5rem;    
     margin: 1.5rem 0;
 }
 .floatsUL {
-    margin: 1rem;
+    margin: 1.5rem;
 }
 .floatsUL li {
+    font-size: 1.5rem;
     margin: 0 1rem;
 }
 /* Floats HTML Color Schemes */
@@ -1089,7 +1040,7 @@ img {
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 /* Updated 3:32PM Yen - changed something on navbar */
 #navigation img {
-    max-width: 40%;
+    max-width: 30%;
     height: auto;
     margin: 2em;
 }
@@ -1141,6 +1092,7 @@ img {
     color: #fefefe;
     margin: 0;
     font-size: 2.4rem;
+    font-weight: 500;
 }
 
 .navbar-menu-container {
@@ -1196,7 +1148,7 @@ a.navbar-item.active {
     color: #333;
     font-size: 2.4rem;
     font-weight: 500; 
-    padding: .5rem .7rem;
+    padding: .7rem;
 }
 
 .navbar-menu .navbar-item:not(:last-of-type) {
@@ -1215,7 +1167,7 @@ a.navbar-item.active {
 .navbar-toggle .menu-toggle-icon {
     cursor: pointer;
     display: block;
-    color: #fefefe;;
+    color: #fefefe;
     font-size: 2rem;
 }
 
@@ -1225,81 +1177,21 @@ a.navbar-item.active {
     position: absolute;
     top: 0;
     right: 0;
-    font-size: 2.9rem;
+    font-size: 2.7rem;
     margin: 10px;
 }
 
 .navbar-close .close-icon:hover {
-    font-size: 3.2rem;
+    font-size: 2.9rem;
     transition: .1s ease;
-}
-
-/* Larger than tablet */
-@media (min-width: 750px) {
-    .navbar-container {
-        max-width: 1250px;
-        height: calc(5.5rem + 1rem);
-        padding: 40px 50px;
-    }
-
-    .navbar.sticky .navbar-container {
-        height: calc(4rem + 1rem);
-    }
-
-    .navbar-menu-container {
-        width: fit-content;
-        height: fit-content;
-        position: relative;
-        top: 0;
-        visibility: visible;
-        opacity: 1;
-        background: transparent;
-    }
-
-    .navbar-menu {
-        background: transparent;
-        box-shadow: none;
-        display: flex;
-        flex-direction: row;
-        padding: 0;
-        transform: translateY(0);
-        width: auto;
-    }
-
-    .navbar-close, .navbar-toggle { display: none; }
-
-    .navbar-menu .navbar-item:not(:last-of-type) {margin-bottom: 0;}
-
-    .navbar-menu a.navbar-item {
-        color: #fefefe;;
-        font-size: 2em;
-        padding: .5rem .7rem;
-    }
-
-    .navbar-menu a.navbar-item:not(:first-of-type) {
-        margin-left: 2.8rem;
-    }
-
-    .navbar-menu .navbar-item:hover {
-        color: #4A5568;
-        font-weight: normal;
-    }
-
-    a.navbar-item.active {
-        color: #4A5568;;
-    }
-
-    .navbar-logo a.navbar-item {
-        font-size: 2.8rem;
-    }
 }
 
 /* Icons
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .icon-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
-    gap: 1.25rem;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 1.5rem;
     margin-top: 1.75em;
     margin-bottom: 1.75em;
 }
@@ -1310,62 +1202,44 @@ a.navbar-item.active {
     align-items: center;
     border: solid 1px #333;
     border-radius: 5px;
-    height: 4rem;
-    gap: 5px;
+    height: 5.5rem;
     min-width: 4rem;
-    font-size: .8rem;
-    padding: 1rem 0;
+    font-size: 1.4rem;
+    padding: .5rem 0;
     background-color: #CBD5E0;
     box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1),0 1px 2px 0 rgba(0, 0, 0, 0.06);
 }
 
 .icon-list:hover {
-    font-size: 1rem;
+    font-size: 1.6rem;
     background-color: #EDF2F7;
     transition: .2s ease;
 }
 
 .icon-list:hover i {
-    font-size: 1.1rem;
+    font-size: 1.6rem;
 }
 
 .icon {
     align-items: center;
     display: inline-flex;
     justify-content: center;
-    height: 2rem;
-    width: 2rem;
-}
-
-.icon.is-medium {
     height: 3rem;
     width: 3rem;
 }
 
-.icon.is-large {
-    height: 4rem;
-    width: 4rem;
-}
-
-.icon i { font-size: 1rem; }
-
-.icon.is-medium i { font-size: 1.5rem; }
-
-.icon.is-large i { font-size: 2rem; }
-
-
-.example {
-    border: 1px solid #333;
-    width: 100%;
-    white-space: pre-wrap;
-}
+.icon i { font-size: 1.6rem; }
 
 .icon-text {
     align-items: flex-start;
     display: inline-flex;
     flex-wrap: wrap;
     line-height: 2rem;
-    vertical-align: top;
+    align-items: center;
+}
+
+.icon-text span {
+    font-size: 1.6rem;
 }
 
 .icon-text.icon {
@@ -1766,12 +1640,12 @@ START TODO CSS
   }
   .containerTD input, .containerTD button, .containerTD li {
     padding: .25rem;
-    font-size: 1.1rem;
+    font-size: 2rem;
   }
   .containerTD input {
     width: 50%;
     padding: 0.25rem;
-    font-size: 1.1rem;
+    font-size: 2rem;
   }
   .containerTD .containerTD button {
     background-color: #efefef;
@@ -1839,10 +1713,209 @@ END TODO CSS
 @media (min-width: 550px) {}
 
 /* Larger than tablet */
-@media (min-width: 750px) {}
+@media (min-width: 750px) {
+    /* Navigation––––––––––––––––––––––––––––––––––––––––––––––––––  */
+    .navbar-container {
+        max-width: 1250px;
+        height: calc(5.5rem + 1rem);
+        width: 95%;
+    }
+            
+    .navbar.sticky .navbar-container {
+        height: calc(4rem + 1rem);
+    }
+            
+    .navbar-menu-container {
+        width: fit-content;
+        height: fit-content;
+        position: relative;
+        top: 0;
+        visibility: visible;
+        opacity: 1;
+        background: transparent;
+    }
+            
+    .navbar-menu {
+        background: transparent;
+        box-shadow: none;
+        display: flex;
+        flex-direction: row;
+        padding: 0;
+        transform: translateY(0);
+        width: auto;
+    }
+            
+    .navbar-close,
+    .navbar-toggle {
+        display: none;
+    }
+            
+    .navbar-menu .navbar-item:not(:last-of-type) {
+        margin-bottom: 0;
+    }
+            
+    .navbar-menu a.navbar-item {
+        color: #fefefe;
+        padding: .5rem .7rem;
+    }
+            
+    .navbar-menu a.navbar-item:not(:first-of-type) {
+        margin-left: 2.5rem;
+    }
+            
+    .navbar-menu .navbar-item:hover {
+        color: #4A5568;
+        font-weight: normal;
+    }
+            
+    a.navbar-item.active {
+        color: #4A5568;
+    }
+            
+    .navbar-logo a.navbar-item {
+        font-size: 2.7rem;
+    }
+
+    /* Icons
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+    .icon {
+        height: 3.6rem;
+        width: 3.6rem;
+    }
+
+    .icon i { font-size: 1.8rem; }
+    .icon-text span { font-size: 1.8rem; }
+
+    /* Button
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+    .button { font-size: 1.8rem; }
+    .md-btn { font-size: 2.2rem; }
+    .lg-btn { font-size: 2.6rem; }
+
+    /* Forms
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+    .form-field .label { font-size: 1.9em; }
+
+    .form-control .input,
+    .form-control .text-area,
+    .form-control .select select {
+        font-size: 1.75em;
+    }
+
+    .form-control .select select option {
+        font-size: 1.55rem;
+    }
+
+    .form-control.has-icon .icon {
+        height: 3.7em;
+        width: 3.7em;
+    }
+
+    .form-control.has-icon .input { padding-left: 3.7rem; }
+
+    .form-control.has-icon .icon i {
+        font-size: 1.75em;
+        height: 1.75rem;
+        width: 1.75rem;
+        color: #363636;
+    }
+
+    label.radio-btn,
+    label.checkbox { font-size: 1.75em; }
+
+
+}
 
 /* Desktop */
-@media (min-width: 1000px) {}
+@media (min-width: 1000px) {
+    /* Navigation
+–––––––––––––––––––––––––––––––––––––––––––––––––– */  
+    .navbar-container {
+        width: 90%;
+    }
+
+    .navbar-logo a.navbar-item {
+        font-size: 3rem;
+    }
+
+    .navbar-menu a.navbar-item {
+        font-size: 2.6rem;
+    }
+
+    .navbar-menu a.navbar-item:not(:first-of-type) {
+        margin-left: 3.2rem;
+    }
+
+    /* Icons
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+    .icon-list {
+        height: 6rem;
+        font-size: 1.6rem;
+    }
+
+    .icon-list:hover {
+        font-size: 1.8rem;
+    }
+
+    .icon-list:hover i {
+        font-size: 1.8rem;
+    }
+
+    .icon {
+        height: 4rem;
+        width: 4rem;
+    }
+
+    .icon i { font-size: 2rem; }
+    .icon-text span { font-size: 2rem; }    
+
+    /* Button
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+    .button { font-size: 2rem; }
+    .md-btn { font-size: 2.4rem; }
+    .lg-btn { font-size: 2.8rem; }
+
+    /* Forms
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+    .form-field .label {
+        font-size: 2.1em;
+    }   
+
+    .form-control .input, 
+    .form-control .select select,
+    .form-control .text-area,
+    label.radio-btn,
+    label.checkbox {
+        font-size: 1.9em;
+    }
+
+    .form-control .select select option {
+        font-size: 1.7rem;
+    }
+
+    .form-control.has-icon .icon {
+        height: 4em;
+        width: 4em;
+        top: 0;
+        left: 0;
+    }
+
+    .form-control.has-icon .icon i {
+        font-size: 2em;
+        height: 2rem;
+        width: 2rem;
+    }
+
+    .form-control.has-icon input {
+        padding-left: 4rem;
+    }
+  
+    label.radio-btn,
+    label.checkbox {
+        font-size: 2em;
+    }
+
+}
 
 /* Very Large Devices */
 @media (min-width: 1200px) {}
