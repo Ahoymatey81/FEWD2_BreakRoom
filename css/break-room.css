@@ -194,6 +194,8 @@ dd {
 
 /* Spacing
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
+.navbar-nav-m {margin-top: 110px;}
+
 .m0 { margin: 0; }
 .m1 { margin: .25rem; }
 .m2 { margin: .5rem; }
@@ -210,7 +212,6 @@ dd {
 .m3t { margin-top: 1.0rem; }
 .m4t { margin-top: 1.5rem; }
 .m5t { margin-top: 2.0rem; }
-.navbar-nav-m {margin-top: 105px;}
 
 .m0r { margin-top: 0; }
 .m1r{ margin-right: .25rem; }
@@ -271,7 +272,7 @@ dd {
 
 /* Borders and Border radius
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-/* See colors section for adding borders */
+/*See colors section for adding borders*/
 
 .br-sm          { border-radius: 5px;}
 .br-md          { border-radius: 15px;}
@@ -280,15 +281,6 @@ dd {
 .br-right       { border-radius: 5px 15px;}
 .br-box         { border-radius: 5px / 50px;}
 .br-box-r       { border-radius: 50px 15px / 15px 50px;}
-
-
-
-/* NOTE NOT USING 6-02-23 TRISH */
-/*–––––––––––––––––––––––––––––––––––––––––––––––––– */
-/* .shadow-sm { box-shadow: 0 1px 3px 0, rgba(0, 0, 0, 0.1), 0 1px 2px 0, rgba(0, 0, 0, 0.6);}
-.shadow-md { box-shadow: 0 4px 6px -1px, rgba(0, 0, 0, 0.1),0 2px 4px -1px, rgba(0, 0, 0, 0.6);}
-.shadow-lg { box-shadow: 0 10px 15px -3px, rgba(0, 0, 0, 0.1),0 4px 6px -2px, rgba(0, 0, 0, 0.5);} */
-
 
 /* Colors
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -1008,6 +1000,7 @@ div.forms-intro {
     border-radius: 0.4rem 0.4rem 0 0;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 1rem;
 }
 @media (min-width: 550px) {
     .p-card {
@@ -1035,8 +1028,58 @@ img {
 
 /* Helpers
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-
-
+/* Floats */
+.floatLeft {
+    float: left !important;
+    color: #069;
+    margin-bottom: 10px;
+}
+.floatRight {
+    float: right !important;
+    color: #ff0000;
+    margin-left: 6px;
+}
+.floatNone {
+    float: none !important;
+    color: #008000
+}
+.floatExamples {
+    margin: 1.5rem 0;
+}
+.floatsUL {
+    margin: 1rem;
+}
+.floatsUL li {
+    margin: 0 1rem;
+}
+/* Floats HTML Color Schemes */
+.floatsTags {
+    color: #4f5fcf;
+}
+.floatsAttribute {
+    color: #2f9f47; 
+}
+.floatsQuotes {
+    color: #d4a349; 
+}
+/* Clearfix CSS */
+.clearfix {
+    border: solid 2px #212529;
+    margin-top: 10px;
+    padding: 5px;
+}
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+/* No Print
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+@media print {
+    .no-print {
+       visibility: hidden;
+    }
+}
 
 /********************************************
     4. Components
@@ -1342,7 +1385,42 @@ a.navbar-item.active {
 
 /* No Print
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-
+@media print {
+    .no-print {
+	visibility: hidden;
+	display: none;
+    }
+    body {
+	-webkit-print-color-adjust:exact !important;
+	print-color-adjust:exact !important;
+	visibility: visible;
+    } 
+    table { 
+	page-break-after:auto;
+	visibility: visible;
+    }
+    tr { 
+	page-break-inside:avoid; 
+	page-break-after:auto;
+    }
+    td { 
+	page-break-inside:avoid; 
+	page-break-after:auto;
+    }
+    thead { 
+	display:table-header-group;
+	visibility: visible;
+    }
+    tfoot { 
+	display:table-footer-group;
+	visibility: visible;
+    }
+    table.table.tableDark {
+	background: #222;
+	color: #fff;
+	visibility: visible;
+    }
+}
 
 /********************************************
     5. Components

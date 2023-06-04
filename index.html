@@ -31,7 +31,7 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="stylesheet" href="css/break-room.css">
   <!-- custom styles -->
-
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -41,17 +41,17 @@
     <nav class="navbar">
       <div class="navbar-container">
         <div class="navbar-logo">
-          <a href="" class="navbar-item">Breakroom</a>
+          <a href="./index.html" class="navbar-item">Breakroom</a>
         </div>
         <div class="navbar-menu-container">
           <div class="navbar-menu">
             <div class="navbar-close">
               <i class="fa-sharp fa-solid fa-xmark close-icon"></i>
             </div>
-            <a href="#" class="navbar-item active">Info</a>
-            <a href="#" class="navbar-item">Elements</a>
-            <a href="#" class="navbar-item">Components</a>
-            <a href="#" class="navbar-item">Demo</a>
+            <a href="#info" class="navbar-item active">Info</a>
+            <a href="#elements" class="navbar-item">Elements</a>
+            <a href="#components" class="navbar-item">Components</a>
+            <a href="#demo" class="navbar-item">Demo</a>
           </div>
         </div>
         <div class="navbar-toggle">
@@ -66,20 +66,25 @@
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
     <section class="navbar-nav-m" id="intro">
-      <h1 class="t-center">Breakroom</h1>
+      <h1 class="t-center" id="info">Breakroom</h1>
       <p>Breakroom Framework was made for professional offices.  It uses a grid system based off flex box and highlights the use of tables, forms, and cards.  These are often needed by office websites and we have styled them for easy use with our color system.  We have chosen two color palettes which look good when used together, or they can be used separately.  One is bold and the other is muted.  We link to Font Awesome for easy use of their catalogue of icons. </p><br>
       
       <p>The Breakroom Framework has a zip file with the basic HTML, CSS and JavaScript ready to be downloaded and used. We include a boilerplate with included links and a template navigation.  You will find starter navbars, pages, and other elements that can be used and expanded upon. You add your HTML with the appropriate structure, classes, and IDs referred to in our framework.</p>
+
+      <h6 class="t-center danger">Download Breakroom Framework!</h6>
+      <div id="buttonDownload">
+        <button type="button" class="buttonDownload" onclick="location.href='#', '_blank'">Download <i class="fa fa-download"></i></button>
+      </div>
       
     </section>
     <!-- Elements
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <h2 class="t-center m4">Elements</h2><br>
-    <hr>
+    <h2 class="t-center m4t" id="elements">Elements</h2><br>
+    <div class="p3 bc-dark bg-dark br-sm"></div>
     <!-- Typography
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <section id="typography">
-      <h3>Typography</h3>
+      <h3 class="m5t">Typography</h3>
   
       <p>All type is Merriweather for headings and body text is Open Sans (both Google fonts) set in rems for responsive sizing and inclusive and accessible scaling. </p>
 
@@ -370,7 +375,7 @@
 
       <div>
         <h4>Primary Color Palette</h4>
-        <p>Our primary color palette is used by adding a class of the color name: .blue, .green, .red, .purple, .orange, .yellow, and .pink. Background color is added with the class .bg-color, for example: .bg-blue. Border is added with the class .bc-color, for example: .bc-blue.</p>
+        <p>Our primary color palette is used by adding a class of the color name: .blue, .green, .red, .purple, .orange, .yellow, and .pink. Background color is added with the class .bg-color, for example: .bg-blue. Border is added with the class .bc-color, for example: .bc-blue.</p><br>
         <div class="exPrimary-color">
           <div class="row">
             <p class="column-four blue t-center">.blue</p>
@@ -412,7 +417,7 @@
 
       <div>
         <h4>Pastel Color Palette</h4>
-        <p>Our pastel color palette is used by adding a class of .p-color: .p-blue, .p-green, .p-red, .p-purple, .p-orange, .p-yellow, and .p-pink. Background color is added with the class .bg-p-color, for example: .bg-p-blue. Border is added with the class .bc-p-color, for example: .bc-p-blue.</p>
+        <p>Our pastel color palette is used by adding a class of .p-color: .p-blue, .p-green, .p-red, .p-purple, .p-orange, .p-yellow, and .p-pink. Background color is added with the class .bg-p-color, for example: .bg-p-blue. Border is added with the class .bc-p-color, for example: .bc-p-blue.</p><br>
         <div class="exPastel-color">
           <div class="row">
             <p class="column-four p-blue bg-grey t-center">.p-blue</p>
@@ -454,7 +459,7 @@
 
       <div>
         <h4>Final Colors and Hazard Colors</h4>
-        <p>We have a dark, light and grey color, along with hazard colors of warning and hazard used by adding a class of .color, for example .dark. Background color is added with the class .bg-color, for example: .bg-dark. Border is added with the class .bc-color, for example: .bc-dark.</p>
+        <p>We have a dark, light and grey color, along with hazard colors of warning and hazard used by adding a class of .color, for example .dark. Background color is added with the class .bg-color, for example: .bg-dark. Border is added with the class .bc-color, for example: .bc-dark.</p><br>
         <div class="exHazard-color bg-dark">
           <div class="row bg-light">
             <p class="column-four dark t-center">.dark</p>
@@ -493,7 +498,7 @@
 
       <p>Borders are added automatically when you add a border color, see colors section above. It is a solid border of 2px.</p>
       <p>Border radius is added as follow:</p>
-      <p>Standard border radius of .br-sm, .br-md, and .br-lg.</p>
+      <p>Standard border radius of .br-sm, .br-md, and .br-lg.</p><br>
 
       <div class="row">
         <div class="column-four bc-dark br-sm bg-p-blue t-center p3">
@@ -507,7 +512,7 @@
         </div>
       </div>
 
-      <p>Border with stronger radius on left and right.</p>
+      <p>Border with stronger radius on left and right.</p><br>
 
       <div class="row">
         <div class="column-six bc-dark br-left bg-p-blue t-center p3">
@@ -518,7 +523,7 @@
         </div>
       </div>
 
-      <p>Borders with a box and box rounded.</p>
+      <p>Borders with a box and box rounded.</p><br>
 
       <div class="row">
         <div class="column-six bc-dark br-box bg-p-blue t-center p4">
@@ -537,7 +542,7 @@
       <h3>Our Grid System</h3>
 
       <p>Our grid system is flex based. Add a class of "row", then add a class of "column-one" through "column-twelve" as direct children. Colums have a bottom margin of 0.75 rem built in. We use a standard 12 column grid system, which allows the user to mix column legnth to fit their needs. Our grid becomes one column on screen sizes less that 550px.</p>
-      <p>We use a 960px width for our container, which we call "room". It is fully resoponsive. Use a class of "full-room" for a fluid section, which is also responsive.</p>
+      <p>We use a 960px width for our container, which we call "room". It is fully resoponsive. Use a class of "full-room" for a fluid section, which is also responsive.</p><br>
 
       <div class="exGrid">
         <div class="row">
@@ -645,7 +650,7 @@
       <p>The &lt;table&gt; tag defines an HTML table.</p>
       <p>It has just one &lt;table&gt; element with one or more &lt;tr&gt;, &lt;th&gt;, and &lt;td&gt; elements. The &lt;tr&gt; element refers to a table row, the &lt;th&gt; element refers to a table header, and the &lt;td&gt; element refers to a table cell.</p>
       <p>The HTML table may also include following: &lt;caption&gt;, &lt;colgroup&gt;, &lt;thead&gt;, &lt;tfoot&gt;, and &lt;tbody&gt; elements.</p>
-      <p>This is the documentation and examples for styling tables using our framework.</p>
+      <p>This is the documentation and examples for styling tables using our framework.</p><br>
 
       <table class="table">
         <caption>A Basic Table</caption>
@@ -741,7 +746,7 @@
       </code>
       </pre>
 
-      <p>You can also change opposite colors by inverting them from light to dark backgrounds by using .tableDark. You can also add the .tableDark class to any parts of the table, including caption, thead, tr, th, td, and tfoot.</p>
+      <p>You can also change opposite colors by inverting them from light to dark backgrounds by using .tableDark. You can also add the .tableDark class to any parts of the table, including caption, thead, tr, th, td, and tfoot.</p><br>
 
       <table class="table tableDark">
         <caption>A Basic Table</caption>
@@ -853,7 +858,7 @@
         <p>Your text would go here.</p>
       </div>
 
-      <p>Cards can be used by adding the class of card (.card), this creates a box with margin, padding, and a border. Use a class of .card-title for your card title. Use classes of .p-card, .px-card, and .py-card to add padding to your cards that is coded to apply specifically for the cards.</p>
+      <p>Cards can be used by adding the class of card (.card), this creates a box with margin, padding, and a border. Use a class of .card-title for your card title. Use classes of .p-card, .px-card, and .py-card to add padding to your cards that is coded to apply specifically for the cards.</p><br>
 
       <div class="card">
         <h3 class="card-title">
@@ -865,7 +870,7 @@
         </div>
       </div>
 
-      <p>Use our grid system along with our colors to customize your cards.</p>
+      <h6>Use our grid system along with our colors to customize your cards.</h6>
 
       <div class="row">
         <div class="column-four">
@@ -903,7 +908,7 @@
         </div>
       </div>
 
-      <p>Easily add an image inside a card. Add a class of .card-img to add border radius to top and center image.</p>
+      <h6>Easily add an image inside a card. Add a class of .card-img to add border radius to top and center image.</h6>
       <div class="card">
         <img src="./images/card-image.png" alt="leaves with grey background" height="200" width="800" class="card-img">
         <h3 class="card-title t-center">
@@ -1442,7 +1447,7 @@
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <section id="images">
       <h3>Images</h3>
-      <p>Images are automatically made responsive.</p>
+      <h6>Images are automatically made responsive.</h6>
     </section>
     <hr>
 
@@ -1462,7 +1467,7 @@
           <div class="floatLeft"><strong>Float to the left</strong></div><br>
           <div class="floatRight"><strong>Float to the right</strong></div><br>
           <div class="floatNone"><strong>Do not float</strong></div>
-      </div> 
+      </div><br> 
       <h3 class="content-title">Clearfix</h3>
       <p>Clearfix is a hack needed when an element is taller than the element containing it. And, when you float it, it will overflow outside of the container. Then we can apply overflow: auto; to the containing element to correct the problem:</p>
       <p><span class="floatsTags">.clearfix</span> { <span class="floatsAttribute">overflow:</span> <span class="floatsQuotes">auto;</span> }</p>
@@ -1486,23 +1491,16 @@
     <section id="no-print">
       <h3>No Print</h3>
       <p>If you need to print your website, there maybe certain elements that do not need to be printed, for example, certian images, buttons, etc. But, in order to remove them from the print mode, this CSS class can easily hide those elements temporarily.</p>   
-      <p>Here is the CSS code for "no-print":</p>
-      <pre>
-      .no-print {
-          visibility: hidden;
-          display: none;
-      }
-      </pre>        
-      <p>The <em>display:none;</em> is needed because without it, print mode leave a blank space where that element was removed.</p>
-      <p>Here is an example on how to add the "no-print" class to a &lt;div&gt;:</p>
-      <p>&lt;div class="no-print"&gt;</p>
+             
+      <p>Here is an example on how to add the "no-print" class to a &lt;div&gt;:</p><br>
+      <p>&lt;div class="no-print"&gt;</p><br>
     </section>
     <hr>
 
     <!-- Components
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <h2 class="t-center m4">Components</h2>
-    <hr>
+    <h2 class="t-center m4" id="components">Components</h2>
+    <div class="p3 bc-dark bg-dark br-sm"></div>
     <!-- 
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <!-- CSS TEXT EFFECT component -->
@@ -1512,7 +1510,7 @@
       <div class="text-ef">
         <div class="row">
           <div id="txt-container">
-            <h3>CSS Text Effects</h3>
+            <h1>CSS Text Effects</h1>
             <div id="bg-img-clip">
               <h1 id="csst1">Sign up today!</h1>
             </div>
@@ -1770,7 +1768,7 @@
     <!-- Example Navigation
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <section id="navigation">
-      <h2>Navigation</h2>
+      <h3>Navigation</h3>
 
       <p>A simple responsive navbar we have, has the fixed position, which appears on top of the page, has dark background and lighe text.</p>
       <img src="images/navbar-large.png" alt="Large-navbar">
@@ -1826,7 +1824,7 @@
     <!-- Forms
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <section id="forms">
-      <h2>Forms</h2>
+      <h3>Forms</h3>
       <p>Our framework supports the following native HTML form element: <span class="blue italic">&lt;form&gt;</span>, <span class="blue italic">&lt;button&gt;</span>, <span class="blue italic">&lt;input&gt; </span>, <span class="blue italic">&lt;textarera&gt;</span>, and <span class="blue italic">&lt;label&gt;.</span></p>
       <p>The following CSS classes are supported:</p>
       <div class="forms-intro">
@@ -2496,7 +2494,7 @@
       <br>
 
       <!--========== CHECKBOX ==========-->
-      <h2>Checkbox</h2>
+      <h3>Checkbox</h3>
       <p>The <span class="red">checkbox</span> class wraps around <span class="red">&lt;input type="checkbox"&gt;</span>.
 
       <fieldset class="form-field">
@@ -2662,10 +2660,10 @@
     </section>
     <hr>
 
-        <!-- To Dos
+    <!-- To Dos
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <section id="todos">
-      <h2>To Dos</h2>
+      <h3>To Dos</h3>
       <div class="containerTD">
         <header class="headerTD">
           <h2>ToDo List: Building A Website</h2>
@@ -2698,44 +2696,101 @@
       </div>
   
     <section id="todoCode">
-      <h3>Here is the ToDo code to use on your site:</h3>
+      <h4>Here is the ToDo code to use on your site:</h4>
       <p>The first item starts at number 0 not 1. Sorry,  you have to do the math! <br>Note: If you leave this page or refresh your screen your tasks are not saved. <br>Check back for the updated version.</p>
       <p></p>
-  <pre>
-  <code>
-    &lt;section class="containerTD"&gt;
-    &lt;header class="headerTD"&gt;
-      &lt;h2&gt;ToDo List: Building A Website&lt;/h2&gt;
-      &lt;p&gt;Information needed to start your project&lt;/p&gt;
-      &lt;p&gt;Here's a list you can use on your website to keep track of your tasks.&lt;/p&gt;
-    &lt;/header&gt;
-    &lt;div&gt;
-      &lt;!-- &lt;button onclick="handlers.displayTDs()"&gt;Display Website Tasks&lt;/button&gt; --&gt;
-      &lt;button onclick="handlers.tgAll()"&gt;Toggle all completed or not&lt;/button&gt;
-    &lt;/div&gt;
-    &lt;div&gt;
-      &lt;input type="text" id="addTDTextInput"&gt;
-      &lt;button onclick="handlers.addTD()"&gt;Add&lt;/button&gt;
-    &lt;/div&gt;
-    &lt;div&gt;
-      &lt;input type="number" id="editTDPosInput"&gt;
-      &lt;input type="text" id="editTDTextInput"&gt;
-      &lt;button onclick="handlers.editTD()"&gt;Edit&lt;/button&gt;
-    &lt;/div&gt;
-    &lt;div&gt;
-      &lt;input type="number" id="deleteTDPosInput"&gt;
-      &lt;button onclick="handlers.deleteTD()"&gt;Delete&lt;/button&gt;
-    &lt;/div&gt;
-    &lt;div&gt;
-      &lt;input type="number" id="tgCompletedPosInput"&gt;
-      &lt;button onclick="handlers.toggleCompleted()"&gt;Mark completed&lt;/button&gt;
-    &lt;/div&gt;
-    &lt;ul&gt;&lt;/ul&gt; &lt;!-- NOTE THE UL IS NEEDED FOR ADDING THE JAVASCRIPT TO THE PAGE --&gt;
-    &lt;/section&gt;
-  </code>
-  </pre>
-  </section>
-  </section>
+      <pre>
+        <code>
+          &lt;section class="containerTD"&gt;
+            &lt;header class="headerTD"&gt;
+              &lt;h2&gt;ToDo List: Building A Website&lt;/h2&gt;
+              &lt;p&gt;Information needed to start your project&lt;/p&gt;
+              &lt;p&gt;Here's a list you can use on your website to keep track of your tasks.&lt;/p&gt;
+            &lt;/header&gt;
+            &lt;div&gt;
+              &lt;!-- &lt;button onclick="handlers.displayTDs()"&gt;Display Website Tasks&lt;/button&gt; --&gt;
+              &lt;button onclick="handlers.tgAll()"&gt;Toggle all completed or not&lt;/button&gt;
+            &lt;/div&gt;
+            &lt;div&gt;
+              &lt;input type="text" id="addTDTextInput"&gt;
+              &lt;button onclick="handlers.addTD()"&gt;Add&lt;/button&gt;
+            &lt;/div&gt;
+            &lt;div&gt;
+              &lt;input type="number" id="editTDPosInput"&gt;
+              &lt;input type="text" id="editTDTextInput"&gt;
+              &lt;button onclick="handlers.editTD()"&gt;Edit&lt;/button&gt;
+            &lt;/div&gt;
+            &lt;div&gt;
+              &lt;input type="number" id="deleteTDPosInput"&gt;
+              &lt;button onclick="handlers.deleteTD()"&gt;Delete&lt;/button&gt;
+            &lt;/div&gt;
+            &lt;div&gt;
+              &lt;input type="number" id="tgCompletedPosInput"&gt;
+              &lt;button onclick="handlers.toggleCompleted()"&gt;Mark completed&lt;/button&gt;
+            &lt;/div&gt;
+            &lt;ul&gt;&lt;/ul&gt; &lt;!-- NOTE THE UL IS NEEDED FOR ADDING THE JAVASCRIPT TO THE PAGE --&gt;
+          &lt;/section&gt;
+        </code>
+      </pre>
+    </section>
+    <hr>
+
+    <!-- Website Demo
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <section id="demo">
+      <h2 class="t-center">Website Demo</h2>
+      <div class="p3 bc-dark bg-dark br-sm"></div>
+
+      <div class="row">
+        <div class="column-six">
+          <div class="card">
+            <h3 class="card-title">
+              Demo One
+            </h3>
+            <p class="m2b">Trish</p>
+            <div class="t-right">
+              <button type="button" class="button xsm-btn m2t">Demo</button>
+            </div>
+          </div>
+        </div>
+        <div class="column-six">
+          <div class="card">
+            <h3 class="card-title">
+              Demo Two
+            </h3>
+            <p class="m2b">Yen</p>
+            <div class="t-right">
+              <button type="button" class="button xsm-btn m2t">Demo</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="column-six">
+          <div class="card">
+            <h3 class="card-title">
+              Demo Three
+            </h3>
+            <p class="m2b">Rene</p>
+            <div class="t-right">
+              <button type="button" class="button xsm-btn m2t">Demo</button>
+            </div>
+          </div>
+        </div>
+        <div class="column-six">
+          <div class="card">
+            <h3 class="card-title">
+              Demo Four
+            </h3>
+            <p class="m2b">Drew</p>
+            <div class="t-right">
+              <button type="button" class="button xsm-btn m2t">Demo</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
 
   </main>
   <footer class="bg-dark">
