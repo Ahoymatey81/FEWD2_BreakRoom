@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Hilltop Apple Farm</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Font Awesome 
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <!-- google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+ 
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/break-room.css">
+
+  <!-- custom style -->
+  <style>
+    .navbar-menu .navbar-item:hover {
+    background: rgba(139, 195, 74, 1);
+    }
+    a.navbar-item.active {
+    background-color: hsl(106, 32%, 74%);
+    width: 100%;
+    border-radius: 7px;
+    }
+    .navbar-logo {
+    font-family: 'Merriweather', serif !important;
+    }
+    h1 { font-size: 3.0rem; letter-spacing: 0;}
+    h2 { font-size: 2.2rem; letter-spacing: 0;}
+    h3 { font-size: 2.0rem; letter-spacing: 0;}
+    h4 { font-size: 1.8rem; letter-spacing: 0;}
+    h5 { font-size: 1.4rem; letter-spacing: 0;}
+    h6 { font-size: 1.2rem; letter-spacing: 0;}
+  }
+    h1, h2, h3, h4, h5 {
+    letter-spacing: 0;
+    }
+    h3.t-center {
+    color: #E91E63;
+    font-size: 4.5rem;;
+    }
+    p {
+      font-size: 1.25rem;
+      line-height: 1.37;
+    }
+    .hero .btn {
+    background-color: #E91E63;
+    display: block;
+    width: 300px;
+    padding: 15px 40px;
+    }
+    #hero-animate {
+    background-color: #4CAF50;
+    height: 40vh;
+    font-family: 'Merriweather', serif !important;
+    }
+    .hero-inner h1, .hero-inner h2 {
+      text-shadow: 2px 2px #1f0000;
+    }
+    .hero__title {
+    left: 40%;
+    text-align: center;
+    }
+    .cube {
+    border: solid 1px #69d36d;
+    }
+    .cube:nth-child(2n) {
+    border-color: #068b35;
+    }
+    footer {
+    background-color: #02220d;
+    color: #fff;
+    text-align: center;
+    }
+    footer{
+    padding: 30px 0;
+    }
+    .small {
+      font-size: 12px;
+    }
+
+    /* media queries for content flex area */
+    @media screen and (min-width: 768px) {
+    .flex-wrapper {
+    display: flex;
+    }
+    .flex-container {
+    display: flex;
+    }
+    .content {
+    flex: 1;
+    }
+    .sidebar {
+    flex: 0 1 300px;
+    }
+    }
+
+    /* Flexbox for cards adjusted styles for my site */
+    .row {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    }
+    .column {
+    background-color: #ddd;
+    padding: 1rem 0;
+    flex: 1;
+    color: #222;
+    padding: 1rem;
+    border-radius: 6px;;
+    }
+    /* media queries for card layout grid */
+    @media screen and (max-width: 768px) {
+    .row {
+    flex-wrap: wrap;
+    }
+    .column {
+    flex-basis: 100%;
+    }
+    }
+
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="navbar-container">
+        <div class="navbar-logo">
+          <a href="" class="navbar-item "><i class="fa-solid fa-apple-whole"></i> HILLTOP APPLE FARM</a>
+        </div>
+        <div class="navbar-menu-container">
+          <div class="navbar-menu">
+            <div class="navbar-close">
+              <i class="fa-sharp fa-solid fa-xmark close-icon"></i>
+            </div>
+            <a href="#" class="navbar-item active">Home</a>
+            <a href="#" class="navbar-item">About</a>
+            <a href="#" class="navbar-item">Varieties</a>
+            <a href="#" class="navbar-item">Contact</a>
+          </div>
+        </div>
+        <div class="navbar-toggle">
+          <i class="fa-solid fa-bars menu-toggle-icon"></i>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+  <section id="hero-page">
+    <div class="hero">
+      <div class="hero-inner">
+        <h2 class="upper bold">Hilltop Apple Farm</h2>
+        <h3>Visit our farm today! <br> Pick your own,<br>Picnic in the orchard, <br>Enjoy our apple pie</h3>
+        <a href="#" class="btn">Discover Our Farm</a>
+      </div>
+    </div>
+    <section class="hero-page-content room">
+      <div class="hero-wrapper">
+        <div class="hero-inner">
+          <h3>Welcome to Julian's own Hilltop Apple Farm</h3>
+          <p>Julian is one of San Diego's favorite weekend getaways. Not only is it full of rustic buildings, wonderful hiking trails and parks, but those of us in the area know Julian is famous for something else: </p>
+          <h3 class="t-center bold">Apples!</h3>
+          <h3>Delicious, sweet apples are just the beginning.</h3>
+
+          <p>Our winding roads and scenic beauty have been a popular destination for over 50 years. It's close enough for a day trip, but even better experienced for a weekend stay. The town of Julian has a rich, backcounty history. It was a mining town and has an Old West feel to it even today. You will find the area bustling on the weekends, so make reservations early for restaurants, bed and breakfasts, and hotels. </p>
+          <h4>When is the best time to visit? </h4>
+          <p>Anytime of course. It's a perfect place to see the snow in winter, and a great escape from the heat in the summer. The elevation is over 4,000 feet so it makes a big dffference. Julian is surprisingly close to the Metro area of San Diego. You'll pass through rolling hills on back roads that are scenic but very well maintained all year round.</p>
+          <p class="bold"> Come explore the area and most importantly enjoy the fruits of Hilltop Apple Farm any time of year!</p>
+
+        </div>
+      </div>
+    </section>
+    </section>
+
+    <!-- BACKGROUND ANIMATION CSS component -->
+    <section id="animate-bg">
+      <!-- <h3>About our apples</h3> -->
+      <div id="hero-animate">
+        <div class="hero__title"><i class="fa-solid fa-apple-whole"></i> Hilltop Apple Farm </div>
+        <div class="hero__content">
+        </div>
+        <div class="cube"></div>
+        <div class="cube"></div>
+        <div class="cube"></div>
+        <div class="cube"></div>
+        <div class="cube"></div>
+        <div class="cube"></div>
+      </div>
+    </section>
+    <div class="flex-container wrapper">
+      <section class="content">
+        <!-- Cards
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <section id="exCards" class="room container">
+          <h3>Hilltop Apple Farm Adventures</h3>
+
+          <div class="row">
+            <div class="column">
+              <img src="images/road.jpg" alt="country road">
+              <p class="p3t">It's a beautiful drive - just 1 1/2 hours from San Diego.</p>
+            </div>
+            <div class="column">
+              <img src="images/ladybug.jpg" alt="ladybug friend">
+              <p class="p3t">Ladybugs - our friendly pest control.</p>
+            </div>
+            <div class="column">
+              <img src="images/pie.jpg" alt="apple pie">
+              <p class="p3t">Enjoy our freshly baked award winning pies.</p>
+            </div>
+          </div><div class="row">
+            <div class="column">
+              <img src="images/bag.jpg" alt="bag of apples">
+              <p class="p3t">Picking your own is so much fun!</p>
+            </div>
+            <div class="column">
+              <img src="images/friends.jpg" alt="picnic">
+              <p class="p3t">Have a picnic in the orchard or the forest. </p>
+            </div>
+            <div class="column">
+              <img src="images/snow.jpg" alt="snow">
+              <p class="p3t">Visit us after a snowfall. Hurry it doesn't last long! </p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="column">
+              <img src="images/animals.jpg" alt="livestock babies">
+              <p class="p3t">Baby goats for you to pet. </p>
+            </div>
+            <div class="column">
+              <img src="images/harvest.jpg" alt="picking apples">
+              <p class="p3t">Ready, set, start picking. </p>
+            </div>
+            <div class="column">
+              <img src="images/hiking.jpg" alt="hiking">
+              <p class="p3t">So many hiking trails to choose from.</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="column">
+              <img src="images/rows.jpg" alt="orchard rows">
+              <p class="p3t">Rows of apple trees in the orchard. </p>             
+            </div>
+            <div class="column">
+              <img src="images/basket.jpg" alt="basket">
+              <p class="p3t">Didn't bring lunch? Order one from us! </p>
+            </div>
+            <div class="column">
+              <img src="images/bareroot.jpg" alt="future tree">
+              <p class="p3t">Planning for the future, newly planted bareroots.</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="column">
+              <img src="images/snowshoe.jpg" alt="snowshoe">
+              <p class="p3t">Snowshoeing is a great way to hike in the winter.</p>
+            </div>
+            <div class="column">
+              <img src="images/alpacas.jpg" alt="alpacas">
+              <p class="p3t">Our alpacas love to be petted.</p>
+            </div>
+            <div class="column">
+              <img src="images/zoo.jpg" alt="petting zoo">
+              <p class="p3t">Introduce your baby to our babies.</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="column">
+              <img src="images/biking.jpg" alt="biking">
+              <p class="p3t">Great place for biking.</p>
+            </div>
+            <div class="column">
+              <img src="images/pile.jpg" alt="pile">
+              <p class="p3t">Too many apples?</p>
+            </div>
+            <div class="column">
+              <img src="images/cider.jpg" alt="cider press">
+              <p class="p3t">Let's make apple cider! </p>
+            </div>
+          </div>
+
+        </section>
+      </section>
+
+    </div>
+
+  </main>
+
+
+
+      <footer>
+        <div class="footer-wrapper">
+          <div class="footer-inner">
+            <h4>Hilltop Apple Farm</h4>
+            <p class="small">Copyright &copy; 2023 | Hilltop Apple Farm | Julian California</p>
+          </div>
+        </div>
+      </footer>
+
+
+
+
+  <!-- JavaScript
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script src="scripts/break-room.js"></script>
+</body>
+</html>
