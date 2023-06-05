@@ -1,3 +1,5 @@
+/* font-family: 'Open Sans', sans-serif; */
+/* font-family: 'Merriweather', serif; */
 /********************************************
             TABLE OF CONTENTS
 ----------------------------------------
@@ -243,7 +245,7 @@ dd {
 .m3l { margin-left: 1.0rem; }
 .m4l { margin-left: 1.5rem; }
 .m5l { margin-left: 2.0rem; }
-
+/* TRISH ADDED SUNDAY JUNE 4 4 PM */
 /* margin on sides only */
 .m0x { margin: 0; }
 .m1x{ margin: 0 .25rem; }
@@ -293,7 +295,7 @@ dd {
 .p3l { padding-left: 1.0rem; }
 .p4l { padding-left: 1.5rem; }
 .p5l { padding-left: 2.0rem; }
-
+/* TRISH ADDED SUNDAY JUNE 4 4 PM */
 /* padding on sides only */
 .p0x { padding: 0; }
 .p1x { padding: 0 .25rem; }
@@ -992,6 +994,8 @@ div.forms-intro {
     }
 }
 
+
+
 /* Images
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
@@ -1063,7 +1067,7 @@ img {
 
 /* Navigation
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-
+/* Updated 3:32PM Yen - changed something on navbar */
 #navigation img {
     max-width: 30%;
     height: auto;
@@ -1480,7 +1484,7 @@ CSS COMPONENT TEXT EFFECTS STARTS HERE
 .hero {
     margin: 0;
     font-family: sans-serif;
-    
+    /* Sizing changed from 960px for framework not needed 6-2-23 Trish */
     width: 100%; 
     height: 100vh;
     
@@ -1491,7 +1495,7 @@ CSS COMPONENT TEXT EFFECTS STARTS HERE
     
     /* Text styles */
     text-align: center;
-    color: white; 
+    color: white; /* ADD THIS LINE */
     
     /* Background styles */
     background-image: url('../images/ss2.jpg') !important;
@@ -1525,12 +1529,12 @@ CSS COMPONENT TEXT EFFECTS STARTS HERE
     margin-right: auto;
     
     /* Text styles */
-    color: white; 
+    color: white; /* CHANGE THIS LINE */
     text-decoration: none;
     font-size: 1.5em;
     
     /* Border styles */
-    border: 3px solid white; 
+    border: 3px solid white; /* CHANGE THIS LINE */
     border-radius: 20px;
       /* Background styles */
       background-color: rgba(112, 201, 219, 0.8);
@@ -1544,13 +1548,13 @@ CSS COMPONENT TEXT EFFECTS STARTS HERE
 *****************************************/
 
  /****************************************
-
+Trish changed 06-01-2023 6pm
 
  START ACCORDION CSS 
 *****************************************/
 #my-accordion {
     font-family: sans-serif;
-    max-height: 800px;  
+    max-height: 800px;  /* changed from 50vh modified from sample code */
     padding: 3em;
 }
 #my-accordion h1 {
@@ -1678,7 +1682,7 @@ START TODO CSS
     padding: 0.25rem .5rem;
     font-size: 1.1rem;
     min-width: 4rem;;
-    
+    /* min-width: 10rem;  add for larger screen*/
   }
   .containerTD li {
     list-style-type: none;
