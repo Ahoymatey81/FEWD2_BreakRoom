@@ -1,3 +1,5 @@
+/* font-family: 'Open Sans', sans-serif; */
+/* font-family: 'Merriweather', serif; */
 /********************************************
             TABLE OF CONTENTS
 ----------------------------------------
@@ -97,7 +99,8 @@ img {
 /********************************************
     3. Elements
 ********************************************/
-
+h2#info, h2#elements, h2#components, h2#demos { scroll-margin-top: 6.5rem; } 
+/*push anchor links below sticky nav */
 
 /* Typography
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -113,12 +116,12 @@ h1, h2, h3, h4, h5, h6 {
     margin-top: .5rem;
     margin-bottom: 2rem;
     font-weight: 300; }
-  h1 { font-family: 'Merriweather', serif; font-size: 5rem; line-height: 1.2;  letter-spacing: -.1rem; }
-  h2 { font-family: 'Merriweather', serif; font-size: 4rem; line-height: 1.25; letter-spacing: -.1rem; }
-  h3 { font-family: 'Merriweather', serif; font-size: 3.5rem; line-height: 1.3;  letter-spacing: -.1rem; }
-  h4 { font-family: 'Merriweather', serif; font-size: 3rem; line-height: 1.35; letter-spacing: -.08rem; }
-  h5 { font-family: 'Merriweather', serif; font-size: 2.5rem; line-height: 1.5;  letter-spacing: -.05rem; }
-  h6 { font-family: 'Merriweather', serif; font-size: 2rem; line-height: 1.6;  letter-spacing: 0; }
+    h1 { font-family: 'Merriweather', serif; font-size: 5rem; line-height: 1.2;  letter-spacing: -.1rem; }
+    h2 { font-family: 'Merriweather', serif; font-size: 3.5rem; line-height: 1.25; letter-spacing: -.1rem; }
+    h3 { font-family: 'Merriweather', serif; font-size: 2.6rem; line-height: 1.3;  letter-spacing: -.1rem; }
+    h4 { font-family: 'Merriweather', serif; font-size: 2.4rem; line-height: 1.35; letter-spacing: -.08rem; }
+    h5 { font-family: 'Merriweather', serif; font-size: 2.2rem; line-height: 1.5;  letter-spacing: -.05rem; }
+    h6 { font-family: 'Merriweather', serif; font-size: 2rem; line-height: 1.6;  letter-spacing: 0; }
 
   /* Increase font size for larger screens - changed min-width to very wide screen size */
  @media (min-width: 3500px) {
@@ -133,7 +136,7 @@ h1, h2, h3, h4, h5, h6 {
 p { 
     font-size: 1.5rem;    
     margin-top: 0;
-    padding-bottom: .2rem;
+    padding-bottom: 1rem;
 }
 p.space-p {
     letter-spacing: .2rem;
@@ -182,7 +185,7 @@ hr {
     margin-top: 1rem;
     margin-bottom: 1.5rem;
     border-width: 0;
-    border-top: 1px solid #E1E1E1;
+    border-top: 1px solid #063970;
 }
 address { font-size: 1.5rem; }
 blockquote { font-size: 1.5rem; }
@@ -192,6 +195,8 @@ pre { font-size: 1.4rem; }
 .forms-intro  ul li { font-size: 1.4rem; }
 .btn-intro.section ul li { font-size: 1.5rem; }
 .btn-size.section ul li { font-size: 1.5rem; }
+
+.column-three li { font-size: 1.5rem; }
 
 /* definition list */
 dt {
@@ -242,7 +247,7 @@ dd {
 .m3l { margin-left: 1.0rem; }
 .m4l { margin-left: 1.5rem; }
 .m5l { margin-left: 2.0rem; }
-
+/* TRISH ADDED SUNDAY JUNE 4 4 PM */
 /* margin on sides only */
 .m0x { margin: 0; }
 .m1x{ margin: 0 .25rem; }
@@ -292,7 +297,7 @@ dd {
 .p3l { padding-left: 1.0rem; }
 .p4l { padding-left: 1.5rem; }
 .p5l { padding-left: 2.0rem; }
-
+/* TRISH ADDED SUNDAY JUNE 4 4 PM */
 /* padding on sides only */
 .p0x { padding: 0; }
 .p1x { padding: 0 .25rem; }
@@ -381,6 +386,7 @@ main.room ul {
 .p-blue             { color: #9bf6ff;}
 .bg-p-blue          { background-color: #9bf6ff;}
 .bc-p-blue          { border: 2px solid #9bf6ff;}
+.darker-blue        { background-color: #001f40;}
 .p-green            { color: #caffbf;}
 .bg-p-green         { background-color: #caffbf;}
 .bc-p-green         { border: 2px solid #caffbf;}
@@ -412,7 +418,7 @@ a {
 a:hover {
     color: #2dd36f;
     text-decoration: none;
-    font-size: 1.5rem;
+    font-size: 1rem;
 }
 /* Buttons
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -684,10 +690,12 @@ div.button-example {
     .row {
         flex-direction: row;
     }
+    .row.cardLaw {
+        flex-direction: column;
+    }
 
     .column-one, 
     .column-two,
-    .column-three,
     .column-four,
     .column-five,
     .column-six,
@@ -698,6 +706,10 @@ div.button-example {
     .column-eleven,
     .column-twelve {
         margin-left: 3%;
+    }
+    .column-three {
+        margin-left: 0%;
+        min-width: 33%;
     }
 
     .column-one             {flex: 1} 
@@ -727,6 +739,7 @@ div.forms-intro {
     border: 1px solid #363636;
     border-radius: 5px;
     padding: 2em 2.3em;
+    margin-bottom: 2rem;
   }
   
   /*========== FORM-FIELD ==========*/
@@ -758,7 +771,7 @@ div.forms-intro {
   .form-control .select select {
     padding: .7em 0.5em;
     border-radius: 3px;
-    border: 2px solid #d0c4c4;
+    border: 2px solid #666666;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     font-size: 1.6em;
     background-color: #fff;
@@ -861,7 +874,7 @@ div.forms-intro {
   
   input[type='radio'],
   input[type='checkbox'] {
-    accent-color: #2dd36f;
+    accent-color: darkblue;
     width: .9em;
     height: .9em;
     border-radius: .9em;
@@ -956,7 +969,7 @@ div.forms-intro {
     border: 1px solid #050500;
 }
 .card-title {
-    font-size: 3.5rem;
+    font-size: 2.5rem;
     font-weight: 500;
     margin-top: 0;
 }
@@ -991,6 +1004,8 @@ div.forms-intro {
     }
 }
 
+
+
 /* Images
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
@@ -1002,16 +1017,7 @@ img {
 /* Helpers
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 /* Floats */
-.floatLeft {
-    float: left !important;
-    color: #069;
-    margin-bottom: 10px;
-}
-.floatRight {
-    float: right !important;
-    color: #ff0000;
-    margin-left: 6px;
-}
+
 .floatNone {
     float: none !important;
     color: #008000
@@ -1048,6 +1054,49 @@ img {
     display: table;
     clear: both;
 }
+/* Custom
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+section.bg-blue.legalQuestions {
+    margin: 20px 0 0;
+    padding: 10px;
+}
+p.legalParagraph {
+    width: 70%;
+    margin: 0 auto;
+}
+.row.cardLaw {
+    flex-direction: column;
+}
+p.pArea {
+    padding: 1rem;
+}
+img.profile.floatRight.floatNone {
+    border: solid 1px darkblue;
+    margin-bottom: 2rem;
+}
+h2.t-left {
+    border-bottom: 1px solid darkblue;
+    font-size: 3.25rem;
+}
+.lawHelpUl ul {
+    margin-left: 4rem;
+    font-size: 1.5rem;
+    padding: 0 3rem 0 0;
+    margin-bottom: 1.2rem;
+}
+.map {
+    border: solid 1px darkblue;
+    margin-bottom: 2rem;
+}
+.attorneyProfile {
+    border: solid 1px darkblue;
+    
+}
+section.bg-blue.legalQuestions h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
 /* No Print
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 @media print {
@@ -1062,7 +1111,7 @@ img {
 
 /* Navigation
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-
+/* Updated 3:32PM Yen - changed something on navbar */
 #navigation img {
     max-width: 30%;
     height: auto;
@@ -1086,7 +1135,7 @@ img {
     position: fixed;
     top: 0;
     left: 0;
-    background-color: #333;
+    background-color: #063970;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     transition: .3s ease;
     width: 100%;
@@ -1115,7 +1164,7 @@ img {
     display: inline-block;
     color: #fefefe;
     margin: 0;
-    font-size: 2.4rem;
+    font-size: 1.8rem;
     font-weight: 500;
 }
 
@@ -1479,9 +1528,9 @@ CSS COMPONENT TEXT EFFECTS STARTS HERE
 .hero {
     margin: 0;
     font-family: sans-serif;
-    
+    /* Sizing changed from 960px for framework not needed 6-2-23 Trish */
     width: 100%; 
-    height: 100vh;
+    height: 70vh;
     
     /* Flexbox */
     display: flex;
@@ -1490,26 +1539,31 @@ CSS COMPONENT TEXT EFFECTS STARTS HERE
     
     /* Text styles */
     text-align: center;
-    color: white; 
+    color: white; /* ADD THIS LINE */
     
     /* Background styles */
-    background-image: url('../images/ss2.jpg') !important;
-    background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5));
-    /* background-color: blue; */
-  
+    background-image: linear-gradient(90deg, rgba(1, 29, 59, 0.7), rgba(1, 29, 59, 0.7)), url('../images/downtownSanDiego.jpg') !important;
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
   }
-  
+  section#hero-page {
+    margin-bottom: -60px;
+    }
   .hero h1 {
     /* Text styles */
-    font-size: 5em;
+    font-size: clamp(2rem, 3.8vw, 4.5rem);
     
     /* Margins */
     margin-top: 0;
     margin-bottom: 0.5em;
+    padding: 0 1rem;
+  }
+  .hero h2 {
+    /* Text styles */
+    font-size: clamp(1.8rem, 2.5vw, 3.5rem);
+    padding: 0 1rem;
   }
   
   .hero .btn {
@@ -1524,15 +1578,19 @@ CSS COMPONENT TEXT EFFECTS STARTS HERE
     margin-right: auto;
     
     /* Text styles */
-    color: white; 
+    color: white; /* CHANGE THIS LINE */
     text-decoration: none;
     font-size: 1.5em;
+    font-weight: bold;
     
     /* Border styles */
-    border: 3px solid white; 
+    border: 3px solid white; /* CHANGE THIS LINE */
     border-radius: 20px;
       /* Background styles */
-      background-color: rgba(112, 201, 219, 0.8);
+      
+  }
+  .hero .btn:hover {
+    background-color: darkblue;
   }
   .hero-page-content {
     padding: 0.5rem 1rem;
@@ -1543,14 +1601,14 @@ CSS COMPONENT TEXT EFFECTS STARTS HERE
 *****************************************/
 
  /****************************************
-
+Trish changed 06-01-2023 6pm
 
  START ACCORDION CSS 
 *****************************************/
 #my-accordion {
     font-family: sans-serif;
-    max-height: 800px;  
-    padding: 3em;
+    min-height: 280px;
+    padding: 0 3rem 3rem 3rem;
 }
 #my-accordion h1 {
     font-size: 2.5rem;
@@ -1575,14 +1633,14 @@ CSS COMPONENT TEXT EFFECTS STARTS HERE
 #my-accordion a:hover, #my-accordion a:active {
     color: #64dfe1;
 }
-#my-accordion .aContainer {
+/*#my-accordion .aContainer {
     max-width: 50em;
     /* padding: 0;
-    margin: 0; */
-}
+    margin: 0; 
+}*/
 #my-accordion .accordion {
     position: relative;
-    background-color: #e4e4e4;
+    background-color: #9bf6ff;
     color: #333;
     /* padding: 0;
     margin: 0; */
@@ -1611,13 +1669,15 @@ CSS COMPONENT TEXT EFFECTS STARTS HERE
     border-bottom-left-radius: 1.5em; 
 }
 #my-accordion .aHeader button {
+    background-color: #063970;
+    border-bottom: 1px solid white;
+    color: #fff;
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: calc(100% - 1rem);
     margin-left: 1rem;
     padding: 1.5rem 2rem;
-    border: 0;
     text-align: left;
     font-size: 1.5rem;
     text-transform: uppercase;
@@ -1659,35 +1719,44 @@ END ACCORDION CSS
 /****************************************
 START TODO CSS 
 *****************************************/
-#todoCode h5 {
-    padding-top: 4rem;
-}
-  input {
+.containerTD h2, .containerTD p  {
+    padding-bottom: 0.5rem;
+  }
+  .containerTD input, .containerTD button, .containerTD li {
+    padding: .25rem;
+    font-size: 2rem;
+  }
+  .containerTD input {
     width: 50%;
     padding: 0.25rem;
     font-size: 2rem;
-    border: solid 1px #5f5f5f;
   }
-  button {
+  .containerTD .containerTD button {
     background-color: #efefef;
-    border: solid .5px #c9c9c9;
+    border: solid .5px #a3a3a3;
     padding: 0.25rem .5rem;
-    font-size: 2rem;
-    min-width: 4rem;
+    font-size: 1.1rem;
+    min-width: 4rem;;
+    /* min-width: 10rem;  add for larger screen*/
   }
-  .buttons {
-    padding: 2rem 0;
-  }
-  li {
+  .containerTD li {
     list-style-type: none;
     margin-left: 1rem;
     padding: 0.25rem;
-    font-size: 2rem;
+    font-size: 1.3rem;
   }
-  #todos.container {
-    border: solid 1px #ddd;
-    padding: 3rem;
+  .containerTD {
+    border: solid 1px #ccc;
     max-width: 100%;
+  }
+  header.headerTD{
+    background-color: black;
+    color: white;
+    padding: 1rem;
+    max-width: 100%;
+  }
+  .containerTD div {
+    margin: 1rem;
   }
   #editTDPosInput {
     margin-bottom: .25rem;
@@ -1695,10 +1764,26 @@ START TODO CSS
   #tgCompletedPosInput {
     margin-bottom: .5rem;
   }
-  .todo-item .text {
-    font-size: 2rem;
+
+  #todoCode {
+    margin-top: 2rem;
+  }
+  @media screen and (min-width: 600px) {
+    .containerTD {
+         max-width: 100%;
+     }
+   }
+  @media screen and (min-width: 800px) {
+    .containerTD {
+        max-width: 80%;
+    }
   }
   
+  @media screen and (min-width: 1000px) {
+    .containerTD {
+         max-width: 60%;
+     }
+   }
 /****************************************
 END TODO CSS 
 *****************************************/
@@ -1706,10 +1791,26 @@ END TODO CSS
 /* Responsive Media For Users to use 
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 /* Mobile */
-@media (min-width: 400px) {}
+@media (min-width: 400px) {
+    .column-three {
+        margin-bottom: 0;
+    }
+}
 
 /* Our Grid System is activated */
-@media (min-width: 550px) {}
+@media (min-width: 550px) {
+    p.legalParagraph {
+        width: 50%;
+        margin: 0 auto;
+    }
+    .hero {
+        height: 100vh;
+    }
+    .navbar-logo a.navbar-item {
+        font-size: 2.4rem;
+    }
+
+}
 
 /* Larger than tablet */
 @media (min-width: 750px) {
@@ -1719,7 +1820,18 @@ END TODO CSS
         height: calc(5.5rem + 1rem);
         width: 95%;
     }
-            
+    .floatRight {
+        float: right !important;
+        width: 360px !important;
+        height: auto;
+        margin: 0 0 0 20px !important;
+    }
+    .floatLeft {
+        float: left !important;
+        width: 360px !important;
+        height: auto;
+        margin: 0 2rem 2rem 0 !important;
+    }       
     .navbar.sticky .navbar-container {
         height: calc(4rem + 1rem);
     }
@@ -1772,7 +1884,7 @@ END TODO CSS
     }
             
     .navbar-logo a.navbar-item {
-        font-size: 2.7rem;
+        font-size: 2.3rem;
     }
 
     /* Icons
@@ -1821,6 +1933,17 @@ END TODO CSS
 
     label.radio-btn,
     label.checkbox { font-size: 1.75em; }
+
+    /* Cards
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+    .row.cardLaw {
+        flex-direction: row;
+        margin-bottom: 30px;
+    }
+    .card.bg-p-blue {
+        min-height: 100%;
+        padding-bottom: 0;
+    }
 
 
 }
@@ -1912,6 +2035,10 @@ END TODO CSS
     label.radio-btn,
     label.checkbox {
         font-size: 2em;
+    }
+    p.legalParagraph {
+        width: 40%;
+        margin: 0 auto;
     }
 
 }
