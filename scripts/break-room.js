@@ -34,100 +34,70 @@ accordions.forEach(accordion => {
     accordion.classList.toggle('isOpen');
   })
 })
-
 // ------- TODOS -------
-let tdList = {
-    todos: [],
-    addTD: function(tdText) {
-      this.todos.push({
-        todoText: tdText,
-        completed: false
-      });
-    },
-    editTD: function(position, todoText) {
-      this.todos[position].todoText = todoText;
-    },
-    deleteTD: function(position) {
-      this.todos.splice(position, 1);
-    },
-    toggleComplete: function(position) {
-      var td =  this.todos[position];
-      td.completed = !td.completed;
-    },
-    //  if all todos are true make them all false
-    tgAll: function() {
-      var totalTDs = this.todos.length;
-      var completedTDs = 0;
-      // track completed todos
-      for (var i = 0; i < totalTDs; i++) {
-        if (this.todos[i].completed === true) {
-          completedTDs++;
-        }
-      }
-      // if all is true condition make everything false condition
-      if(completedTDs === totalTDs) {
-        for (var i = 0; i < totalTDs; i++) {
-          this.todos[i].completed = false;
-        }
-        // otherwise make everything is true
-      } else {
-        for (var i = 0; i < totalTDs; i++) {
-          this.todos[i].completed = true;
-        }
-      }
+let todos = [];
+
+function addTodo() {
+  const todoInput = document.querySelector(".todo-input");
+  const todo = todoInput.value.trim();
+if(todo==="")
+alert("Please enter task for adding")
+else{
+  if (todo) {
+    todos.push(todo);
+    updateTodoList();
+    todoInput.value = "";
+  }
+}}
+
+function editTodo() {
+  const selectedTodo = document.querySelector(".todo-list input[type='checkbox']:checked");
+
+  if (selectedTodo) {
+    const index = selectedTodo.value;
+    const updatedTodo = prompt("Enter the updated to-do:", todos[index]);
+
+    if (updatedTodo) {
+      todos[index] = updatedTodo;
+      updateTodoList();
     }
-  };
-  // this is the handlers object which consolidates the code/methods easier
-  let handlers = {
-    addTD: function() {
-      let addTDTextInput = document.getElementById('addTDTextInput');
-      tdList.addTD(addTDTextInput.value);
-      addTDTextInput.value =' '; 
-      display.displayTDs();
-    },
-    editTD: function() {
-      let editTDPosInput = document.getElementById('editTDPosInput');
-      let editTDTextInput = document.getElementById('editTDTextInput');
-      tdList.editTD(editTDPosInput.valueAsNumber, editTDTextInput.value);
-      editTDPosInput.value = ''; // no space for a number
-      editTDTextInput.value = ' '; // space between quotes for a string
-      display.displayTDs();
-    },
-    deleteTD: function() {
-      let deleteTDPosInput = document.getElementById('deleteTDPosInput');
-      tdList.deleteTD(deleteTDPosInput.valueAsNumber);
-      deleteTDPosInput.value = '';
-      display.displayTDs();
-    },
-    toggleCompleted: function() {
-      let tgCompletedPosInput = document.getElementById('tgCompletedPosInput');
-      tdList.toggleComplete(tgCompletedPosInput.valueAsNumber);
-      tgCompletedPosInput.value = '';
-      display.displayTDs();
-    },
-    tgAll: function() {
-      tdList.tgAll();
-      display.displayTDs();
-    }
-  };
-  // object that handles what user sees on the page
-  let display = {
-    displayTDs: function() {
-      let tdUL = document.querySelector('ul');
-      tdUL.innerHTML = '';  //clears the ul before start adding items
-      
-      for (let i = 0; i < tdList.todos.length; i++) {     
-        let tdLI = document.createElement('li');
-        let todo = tdList.todos[i];
-        let tdTextWithCompletion = '';     
-        if(todo.completed === true) {
-          tdTextWithCompletion = '(x) ' + todo.todoText;
-        } else {
-          tdTextWithCompletion = '( ) ' + todo.todoText;
-        }
-        tdLI.textContent = tdTextWithCompletion;
-        tdUL.appendChild(tdLI);
-      }
-    }
-  };
- 
+  } else {
+    alert("Please select task to edit.");
+  }
+}
+
+function deleteTodo() {
+  const selectedTodo = document.querySelector(".todo-list input[type='checkbox']:checked");
+
+  if (selectedTodo) {
+    const index = selectedTodo.value;
+    todos.splice(index, 1);
+    updateTodoList();
+  } else {
+    alert("Please select task to delete.");
+  }
+}
+
+function updateTodoList() {
+  const todoList = document.querySelector(".todo-list");
+  todoList.innerHTML = "";
+
+  for (let i = 0; i < todos.length; i++) {
+    const todo = todos[i];
+
+     const todoItem = document.createElement("div");
+     todoItem.className = "todo-item";
+
+    const checkbox = document.createElement("input");
+    checkbox.type = "checkbox";
+    checkbox.value = i;
+
+    const text = document.createElement("span");
+    text.className = "text";
+    text.innerText = todo;
+
+    todoItem.appendChild(checkbox);
+    todoItem.appendChild(text);
+    todoList.appendChild(todoItem);
+  }
+}
