@@ -97,8 +97,7 @@ img {
 /********************************************
     3. Elements
 ********************************************/
- 
-/*push anchor links below sticky nav */
+
 
 /* Typography
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -1695,6 +1694,9 @@ START TODO CSS
   }
   #tgCompletedPosInput {
     margin-bottom: .5rem;
+  }
+  .todo-item .text {
+    font-size: 2rem;
   }
   
 /****************************************
