@@ -6,3 +6,4 @@
 #about img {
     margin-top: 30px;
 }
+#home, #about, #listings, #form { scroll-margin-top: 6.5rem; } 
