@@ -11,7 +11,7 @@ button.buttonDownload {
     box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0, rgba(0, 0, 0, 0.6);
     -webkit-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0, rgba(0, 0, 0, 0.6); 
     -moz-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0, rgba(0, 0, 0, 0.6);
-    font-size: 1.6rem;
+    font-size: 2rem;
     font-weight: 530;
     padding: 1rem;
     text-align: center;
@@ -26,3 +26,4 @@ button.buttonDownload:active {
     transform: translateY(3px);
     transition: all .3s ease;
 } 
+h2#info, h2#elements, h2#components, h2#demos { scroll-margin-top: 6.5rem; }
