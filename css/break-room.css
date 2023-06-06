@@ -1660,44 +1660,35 @@ END ACCORDION CSS
 /****************************************
 START TODO CSS 
 *****************************************/
-.containerTD h2, .containerTD p  {
-    padding-bottom: 0.5rem;
-  }
-  .containerTD input, .containerTD button, .containerTD li {
-    padding: .25rem;
-    font-size: 2rem;
-  }
-  .containerTD input {
+#todoCode h5 {
+    padding-top: 4rem;
+}
+  input {
     width: 50%;
     padding: 0.25rem;
     font-size: 2rem;
+    border: solid 1px #5f5f5f;
   }
-  .containerTD .containerTD button {
+  button {
     background-color: #efefef;
-    border: solid .5px #a3a3a3;
+    border: solid .5px #c9c9c9;
     padding: 0.25rem .5rem;
-    font-size: 1.1rem;
-    min-width: 4rem;;
-    
+    font-size: 2rem;
+    min-width: 4rem;
   }
-  .containerTD li {
+  .buttons {
+    padding: 2rem 0;
+  }
+  li {
     list-style-type: none;
     margin-left: 1rem;
     padding: 0.25rem;
-    font-size: 1.3rem;
+    font-size: 2rem;
   }
-  .containerTD {
-    border: solid 1px #ccc;
+  #todos.container {
+    border: solid 1px #ddd;
+    padding: 3rem;
     max-width: 100%;
-  }
-  header.headerTD{
-    background-color: black;
-    color: white;
-    padding: 1rem;
-    max-width: 100%;
-  }
-  .containerTD div {
-    margin: 1rem;
   }
   #editTDPosInput {
     margin-bottom: .25rem;
@@ -1705,26 +1696,7 @@ START TODO CSS
   #tgCompletedPosInput {
     margin-bottom: .5rem;
   }
-
-  #todoCode {
-    margin-top: 2rem;
-  }
-  @media screen and (min-width: 600px) {
-    .containerTD {
-         max-width: 100%;
-     }
-   }
-  @media screen and (min-width: 800px) {
-    .containerTD {
-        max-width: 80%;
-    }
-  }
   
-  @media screen and (min-width: 1000px) {
-    .containerTD {
-         max-width: 60%;
-     }
-   }
 /****************************************
 END TODO CSS 
 *****************************************/
