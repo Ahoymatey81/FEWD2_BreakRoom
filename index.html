@@ -2351,75 +2351,53 @@
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <section id="todos">
       <h3>To Dos</h3>
-      <p>A handy list to make notes for building a website.</p>
-      <img src="images/todos.jpg" alt="To do list">  
-      <!-- <div class="containerTD">
-        <header class="headerTD">
-          <h2>ToDo List: Building A Website</h2>
-          <p>Information needed to start your project</p>
-          <p>Here's a list you can use on your website to keep track of your tasks.</p>
-        </header>
-        <div>
-          <button onclick="handlers.tgAll()">Toggle all completed or not</button>
+      <p>To-Do List example.</p>
+      <img src="images/todos.jpg" alt="To do list">
+      <section id="todos">
+        <h2>To-Do List</h2>
+        <p>You can use To-Do lists to make notes about a project or any time you want to create a list of reminders. <br>
+        Just enter a task in the input field below to start creating your list. <br> Click the Add button and your tasks will appear below the input box.</p>
+    
+        <div class="buttons-container">
+          <!-- <input type="text" class="todo-input" placeholder="Enter a new to-do item"> -->
+          <div id="todoBtn" class="buttons">
+          <button id="todosbtn" onclick="addTodo()">Add a task</button>
+          <button id="todosbtn" onclick="editTodo()">Edit task</button>
+          <button id="todosbtn" onclick="deleteTodo()">Delete task</button>
+          </div>
+          <input type="text" class="todo-input" placeholder="Enter a new task" id="todosInput">
         </div>
-        <div>
-          <input type="text" id="addTDTextInput">
-          <button onclick="handlers.addTD()">Add</button>
+        <div class="todo-list">
+          <!-- 
+          <li>item1</li>
+          <li>item2</li>
+          <li>item3</li> -->
         </div>
-        <div>
-          <input type="number" id="editTDPosInput">
-          <input type="text" id="editTDTextInput">
-          <button onclick="handlers.editTD()">Edit</button>
-        </div>
-        <div>
-          <input type="number" id="deleteTDPosInput">
-          <button onclick="handlers.deleteTD()">Delete</button>
-        </div>
-        <div>
-          <input type="number" id="tgCompletedPosInput">
-          <button onclick="handlers.toggleCompleted()">Mark completed</button>
-        </div>
-        <ul></ul> 
-      </div> -->
-      <!-- <button onclick="handlers.displayTDs()">Display Website Tasks</button> -->
-      <!-- NOTE THE UL IS NEEDED FOR ADDING THE JAVASCRIPT TO THE PAGE -->
+
     </section>
 
     <section id="todoCode">
-      <h4>Here is the ToDo code to use on your site:</h4>
-      <p>The first item starts at number 0 not 1. Sorry,  you have to do the math! <br>Note: If you leave this page or refresh your screen your tasks are not saved. <br>Check back for the updated version.</p>
+      <h5>Here is To-Do code to use on your site:</h5>
+
       <p></p>
       <pre>
         <code>
-          &lt;section class="containerTD"&gt;
-            &lt;header class="headerTD"&gt;
-              &lt;h2&gt;ToDo List: Building A Website&lt;/h2&gt;
-              &lt;p&gt;Information needed to start your project&lt;/p&gt;
-              &lt;p&gt;Here's a list you can use on your website to keep track of your tasks.&lt;/p&gt;
-            &lt;/header&gt;
-            &lt;div&gt;
-              &lt;!-- &lt;button onclick="handlers.displayTDs()"&gt;Display Website Tasks&lt;/button&gt; --&gt;
-              &lt;button onclick="handlers.tgAll()"&gt;Toggle all completed or not&lt;/button&gt;
-            &lt;/div&gt;
-            &lt;div&gt;
-              &lt;input type="text" id="addTDTextInput"&gt;
-              &lt;button onclick="handlers.addTD()"&gt;Add&lt;/button&gt;
-            &lt;/div&gt;
-            &lt;div&gt;
-              &lt;input type="number" id="editTDPosInput"&gt;
-              &lt;input type="text" id="editTDTextInput"&gt;
-              &lt;button onclick="handlers.editTD()"&gt;Edit&lt;/button&gt;
-            &lt;/div&gt;
-            &lt;div&gt;
-              &lt;input type="number" id="deleteTDPosInput"&gt;
-              &lt;button onclick="handlers.deleteTD()"&gt;Delete&lt;/button&gt;
-            &lt;/div&gt;
-            &lt;div&gt;
-              &lt;input type="number" id="tgCompletedPosInput"&gt;
-              &lt;button onclick="handlers.toggleCompleted()"&gt;Mark completed&lt;/button&gt;
-            &lt;/div&gt;
-            &lt;ul&gt;&lt;/ul&gt; &lt;!-- NOTE THE UL IS NEEDED FOR ADDING THE JAVASCRIPT TO THE PAGE --&gt;
-          &lt;/section&gt;
+ &lt;div class="buttons-container"&gt;
+  &lt;!-- &lt;input type="text" class="todo-input" placeholder="Enter a new to-do item"&gt; --&gt;
+  &lt;div id="todoBtn" class="buttons"&gt;
+  &lt;button id="todosbtn" onclick="addTodo()"&gt;Add a task&lt;/button&gt;
+  &lt;button id="todosbtn" onclick="editTodo()"&gt;Edit task&lt;/button&gt;
+  &lt;button id="todosbtn" onclick="deleteTodo()"&gt;Delete task&lt;/button&gt;
+  &lt;/div&gt;
+  &lt;input type="text" class="todo-input" placeholder="Enter a new task" id="todosInput"&gt;
+&lt;/div&gt;
+&lt;div class="todo-list"&gt;
+  &lt;!-- 
+  &lt;li&gt;item1&lt;/li&gt;
+  &lt;li&gt;item2&lt;/li&gt;
+  &lt;li&gt;item3&lt;/li&gt; --&gt;
+&lt;/div&gt;
+
         </code>
       </pre>
     </section>
